@@ -1,5 +1,6 @@
 package io.github.ololx.leetcode.examples.medium;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 /**
@@ -11,7 +12,7 @@ import org.testng.annotations.Test;
 public class SolutionTest {
 
     @Test
-    public void addTwoNumbers() {
+    public void addTwoNumbers_whenTwoNumbersIsNotEmpty_thenReturnRightSumm() {
         Solution.ListNode l13 = new Solution.ListNode(3);
         Solution.ListNode l12 = new Solution.ListNode(4, l13);
         Solution.ListNode l1 = new Solution.ListNode(2, l12);
@@ -21,9 +22,8 @@ public class SolutionTest {
         Solution.ListNode l2 = new Solution.ListNode(5, l22);
 
         Solution addTwoNumbersSolution = new Solution();
-
         Solution.ListNode result = addTwoNumbersSolution.addTwoNumbers(l1, l2);
 
-        System.out.println(result);
+        System.out.println("Result = " + result);
     }
 }

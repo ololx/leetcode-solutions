@@ -79,31 +79,19 @@ class Solution {
             return summNode;
         }
 
-        summNode.next = addTwoNumbers(
-                l1.next == null ? new ListNode(0) : l1.next,
-                l2.next == null ? new ListNode(0) : l2.next,
-                summNode.next == null ? new ListNode(0) : summNode.next
-        );
-
-        return summNode;
-    }
-
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2, ListNode lSumm) {
-        ListNode summNode = new ListNode(l1.val + l2.val + lSumm.val);
-        if (summNode.val > 9) {
-            summNode.next = new ListNode(summNode.val / 10);
-            summNode.val = summNode.val % 10;
+        if (l1.next == null) {
+            l1.next = new ListNode(0);
         }
 
-        if (l1.next == null && l2.next == null) {
-            return summNode;
+        if (l2.next == null) {
+            l2.next = new ListNode(0);
         }
 
-        summNode.next = addTwoNumbers(
-                l1.next == null ? new ListNode(0) : l1.next,
-                l2.next == null ? new ListNode(0) : l2.next,
-                summNode.next == null ? new ListNode(0) : summNode.next
-        );
+        if (summNode.next != null) {
+            l1.next.val += summNode.next.val;
+        }
+
+        summNode.next = addTwoNumbers(l1.next, l2.next);
 
         return summNode;
     }
