@@ -1,5 +1,9 @@
 package io.github.ololx.leetcode.examples.medium.task3;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /**
  * 3. Longest Substring Without Repeating Characters
  *
@@ -39,13 +43,29 @@ package io.github.ololx.leetcode.examples.medium.task3;
  * @author Alexander A. Kropotin
  */
 class Solution {
+
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() < 1) {
             return 0;
         }
 
+        String[] sArray = s.split("");
+        Set<String> tmpSubstring = new HashSet<>();
+        int startPos = 0, maxLength = 0;
+        for (int currentPos = startPos; currentPos < sArray.length; currentPos++) {
+            if (tmpSubstring.contains(sArray[currentPos])) {
+                tmpSubstring = new HashSet<>();
+                startPos++;
+                currentPos = startPos;
+            }
 
+            tmpSubstring.add(sArray[currentPos]);
 
-        return 1;
+            if (1 + currentPos - startPos > maxLength) {
+                maxLength = 1 + currentPos - startPos;
+            }
+        }
+
+        return maxLength;
     }
 }
