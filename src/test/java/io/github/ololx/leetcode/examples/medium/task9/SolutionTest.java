@@ -26,7 +26,7 @@ public class SolutionTest {
     }
 
     @Test(dataProvider = "numbers")
-    public void isPalindrome_whenStringIsPalindrome_rhenReturntrue(int number, boolean isPalindrome) {
+    public void isPalindrome_whenNumberIsPalindrome_thenReturnTrue(int number, boolean isPalindrome) {
         assertEquals(
                 new Solution().isPalindrome(number),
                 isPalindrome

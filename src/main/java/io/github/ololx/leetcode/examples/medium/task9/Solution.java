@@ -29,7 +29,7 @@ package io.github.ololx.leetcode.examples.medium.task9;
  * Constraints:
  * <ul>
  *     <li>
- *         -231 <= x <= 231 - 1
+ *         -2^31 <= x <= 2^31 - 1
  *     </li>
  * </ul>
  *
