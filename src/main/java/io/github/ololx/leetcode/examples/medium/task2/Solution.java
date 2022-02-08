@@ -65,7 +65,6 @@ class Solution {
 
             return str;
         }
-
     }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

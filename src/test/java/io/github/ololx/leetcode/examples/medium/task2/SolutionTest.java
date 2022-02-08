@@ -3,6 +3,8 @@ package io.github.ololx.leetcode.examples.medium.task2;
 import io.github.ololx.leetcode.examples.medium.task2.Solution;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 /**
  * project leetcode-solutions
  * created 06.02.2022 18:28
@@ -13,16 +15,32 @@ public class SolutionTest {
 
     @Test
     public void addTwoNumbers_whenTwoNumbersIsNotEmpty_thenReturnRightSumm() {
-        Solution.ListNode l13 = new Solution.ListNode(3);
-        Solution.ListNode l12 = new Solution.ListNode(4, l13);
-        Solution.ListNode l1 = new Solution.ListNode(2, l12);
+        Solution.ListNode l1 = new Solution.ListNode(
+                2,
+                new Solution.ListNode(4,
+                        new Solution.ListNode(3)
+                )
+        );
 
-        Solution.ListNode l23 = new Solution.ListNode(4);
-        Solution.ListNode l22 = new Solution.ListNode(6, l23);
-        Solution.ListNode l2 = new Solution.ListNode(5, l22);
+        Solution.ListNode l2 = new Solution.ListNode(
+                5,
+                new Solution.ListNode(6,
+                        new Solution.ListNode(4)
+                )
+        );
 
-        Solution addTwoNumbersSolution = new Solution();
-        Solution.ListNode result = addTwoNumbersSolution.addTwoNumbers(l1, l2);
+        Solution.ListNode lr = new Solution.ListNode(
+                7,
+                new Solution.ListNode(0,
+                        new Solution.ListNode(8)
+                )
+        );
+
+        Solution.ListNode result = new Solution().addTwoNumbers(l1, l2);
+
+        assertEquals(result.val, lr.val);
+        assertEquals(result.next.val, lr.next.val);
+        assertEquals(result.next.next.val, lr.next.next.val);
 
         System.out.println("Result = " + result);
     }
