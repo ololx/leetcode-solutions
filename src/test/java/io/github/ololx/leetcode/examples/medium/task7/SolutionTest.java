@@ -17,6 +17,7 @@ public class SolutionTest {
     @DataProvider(name = "numbers")
     public static Object[][] numbers() {
         return new Object[][] {
+                {-2147483648, 0},
                 {121, 121},
                 {123, 321},
                 {-121, -121},
@@ -24,8 +25,7 @@ public class SolutionTest {
                 {120, 21},
                 {1, 1},
                 {0, 0},
-                {1534236469, 0},
-                {-2147483648, 0}
+                {1534236469, 0}
         };
     }
 

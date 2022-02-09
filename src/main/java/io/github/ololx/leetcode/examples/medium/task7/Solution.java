@@ -43,22 +43,22 @@ public class Solution {
         }
 
         int sign = x < 0 ? -1 : 1;
-        x = x * sign;
+        long positiveX = (long) x * sign;
 
-        int length = (int) (Math.log10(x) + 1);
+        int length = (int) (Math.log10(positiveX) + 1);
         if (length == 1) {
-            return x * sign;
+            return x;
         }
 
         long digit = 10;
-        long reverseX = (int) (x % digit);
+        long reverseX = positiveX % digit;
         for (int digitIndex = 1; digitIndex < length; digitIndex++) {
             digit *= 10;
-            reverseX = (reverseX * 10) + (x % digit) / (digit / 10);
+            reverseX = (reverseX * 10) + (positiveX % digit) / (digit / 10);
+        }
 
-            if (reverseX > Integer.MAX_VALUE) {
-                return 0;
-            }
+        if (reverseX > Integer.MAX_VALUE) {
+            return 0;
         }
 
         return (int) (sign * reverseX);
