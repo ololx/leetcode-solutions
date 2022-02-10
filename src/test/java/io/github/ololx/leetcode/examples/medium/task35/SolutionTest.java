@@ -31,6 +31,16 @@ public class SolutionTest {
                     new int[]{1, 3, 5, 6},
                         7,
                         4
+                },
+                {
+                        new int[]{1, 3},
+                        1,
+                        0
+                },
+                {
+                        new int[]{1, 3, 5, 6},
+                        0,
+                        0
                 }
         };
     }

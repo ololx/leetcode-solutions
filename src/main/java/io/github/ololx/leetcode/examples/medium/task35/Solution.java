@@ -43,15 +43,23 @@ package io.github.ololx.leetcode.examples.medium.task35;
 public class Solution {
 
     public int searchInsert(int[] nums, int target) {
-        int pos = target - 1;
-        if (nums.length < target) {
-            pos = nums.length - 1;
+        return searchInsert(nums, target, 0, nums.length - 1);
+    }
+
+    public int searchInsert(int[] nums, int target, int start, int end) {
+        if (start >= end) {
+            return nums[start] >= target ? start : end + 1;
         }
 
+        int median = (end + start) / 2;
+        if (nums[median] == target) {
+            return median;
+        } if(nums[median] < target) {
+            return searchInsert(nums, target, median  + 1, end);
+        } else if(nums[median] > target) {
+            return searchInsert(nums, target, start, median - 1);
+        }
 
-
-        System.out.println("POS = " + pos + "   target = " + target);
-
-        return 0;
+        return median;
     }
 }
