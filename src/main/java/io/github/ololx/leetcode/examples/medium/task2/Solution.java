@@ -1,7 +1,5 @@
 package io.github.ololx.leetcode.examples.medium.task2;
 
-import java.util.stream.Stream;
-
 /**
  * 2. Add Two Numbers
  *

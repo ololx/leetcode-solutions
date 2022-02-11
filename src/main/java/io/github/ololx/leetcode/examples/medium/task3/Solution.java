@@ -1,7 +1,6 @@
 package io.github.ololx.leetcode.examples.medium.task3;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**
