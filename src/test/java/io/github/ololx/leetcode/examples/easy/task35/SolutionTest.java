@@ -1,6 +1,5 @@
-package io.github.ololx.leetcode.examples.medium.task35;
+package io.github.ololx.leetcode.examples.easy.task35;
 
-import io.github.ololx.leetcode.examples.medium.task35.Solution;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 

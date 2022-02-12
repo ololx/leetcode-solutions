@@ -1,4 +1,4 @@
-package io.github.ololx.leetcode.examples.medium.task9;
+package io.github.ololx.leetcode.examples.easy.task9;
 
 /**
  * 9. Palindrome Number

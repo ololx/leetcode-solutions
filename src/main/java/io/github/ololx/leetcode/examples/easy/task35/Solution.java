@@ -1,4 +1,4 @@
-package io.github.ololx.leetcode.examples.medium.task35;
+package io.github.ololx.leetcode.examples.easy.task35;
 
 /**
  * Given a sorted array of distinct integers and a target value, return the index
