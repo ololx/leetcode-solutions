@@ -24,7 +24,7 @@ public class SolutionTest {
     }
 
     @Test(dataProvider = "sentencesAndResult")
-    public void firstBadVersion_whenBadVersionExists_thenReturnVersionNumber(String sentence , boolean result) {
+    public void areNumbersAscending_whenNumbersAscending_thenReturnTrue(String sentence , boolean result) {
         assertEquals(new Solution().areNumbersAscending(sentence), result);
     }
 }

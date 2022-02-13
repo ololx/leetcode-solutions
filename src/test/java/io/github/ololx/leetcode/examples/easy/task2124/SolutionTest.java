@@ -24,7 +24,7 @@ public class SolutionTest {
     }
 
     @Test(dataProvider = "sentencesAndResult")
-    public void firstBadVersion_whenBadVersionExists_thenReturnVersionNumber(String sentence , boolean result) {
+    public void checkString_whenAAppearsBeforeEveryB_thenReturnTrue(String sentence , boolean result) {
         assertEquals(new Solution().checkString(sentence), result);
     }
 }
