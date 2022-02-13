@@ -10,7 +10,7 @@ package io.github.ololx.leetcode.examples.medium.task7;
  * Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
  *
  * Example 1:
- * <p>IInput: x = 123
+ * <p>Input: x = 123
  * Output: 321</p>
  *
  * Example 2:
