@@ -1,9 +1,5 @@
 package io.github.ololx.leetcode.examples.medium.task62;
 
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
 /**
  * 62. Unique Paths
  *

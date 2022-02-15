@@ -23,7 +23,7 @@ public class SolutionTest {
     }
 
     @Test(dataProvider = "fieldsAndPaths")
-    public void intToRoman_whenIntegerIsDefine_thenReturnNonZeroRomanNumber(int m, int n, int pathsCount) {
+    public void uniquePaths_whenRobotAneExitAreNotSameCell_thenReturnNonZeroNumberOfUniqueWays(int m, int n, int pathsCount) {
         assertEquals(new Solution().uniquePaths(m, n), pathsCount);
     }
 }
