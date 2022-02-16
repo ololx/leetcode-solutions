@@ -37,7 +37,7 @@ public class SolutionTest {
     }
 
     @Test(dataProvider = "fieldsAndPaths")
-    public void uniquePaths_whenRobotAneExitAreNotSameCell_thenReturnNonZeroNumberOfUniqueWays(int[][] obstacleGrid, int pathsCount) {
+    public void uniquePathsWithObstacles_whenRobotAneExitAreNotSameCell_thenReturnNonZeroNumberOfUniqueWays(int[][] obstacleGrid, int pathsCount) {
         assertEquals(new Solution().uniquePathsWithObstacles(obstacleGrid), pathsCount);
     }
 }
