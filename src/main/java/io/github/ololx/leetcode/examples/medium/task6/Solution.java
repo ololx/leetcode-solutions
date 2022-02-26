@@ -58,15 +58,23 @@ public class Solution {
             return "";
         }
 
-        if (s.length() <= numRows) {
+        if (s.length() <= numRows || numRows == 1) {
             return s;
         }
 
         StringBuilder zigZagString = new StringBuilder();
-        for (int pointer = 0; pointer < s.length(); pointer++) {
-            if (pointer == 0 || (pointer % ((numRows - 1) * 2)) == 0) {
-                zigZagString.append(s.charAt(pointer));
+        int left = 0, right = numRows - 1;
+        while (left < numRows) {
+            for (int mainPosition = left, zigPosition = left + (right - left) * 2; mainPosition < s.length(); mainPosition += (right * 2), zigPosition += (right * 2)) {
+                zigZagString.append(s.charAt(mainPosition));
+
+                if (left > 0 && zigPosition > 0 && zigPosition != mainPosition && zigPosition < s.length()) {
+                    zigZagString.append(s.charAt(zigPosition));
+                }
+
             }
+
+            left++;
         }
 
         return zigZagString.toString();
