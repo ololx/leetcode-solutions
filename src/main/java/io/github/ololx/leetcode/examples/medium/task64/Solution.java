@@ -41,8 +41,13 @@ package io.github.ololx.leetcode.examples.medium.task64;
 public class Solution {
 
     public int minPathSum(int[][] grid) {
-        for (int x = 1; x <= grid.length - 1; x++) grid[x][0] += grid[x - 1][0];
-        for (int y = 1; y <= grid[0].length - 1; y++) grid[0][y] += grid[0][y - 1];
+        for (int x = 1; x <= grid.length - 1; x++) {
+            grid[x][0] += grid[x - 1][0];
+        }
+
+        for (int y = 1; y <= grid[0].length - 1; y++) {
+            grid[0][y] += grid[0][y - 1];
+        }
 
         for (int x = 1; x <= grid.length - 1; x++) {
             for (int y = 1; y <= grid[0].length - 1; y++) {
