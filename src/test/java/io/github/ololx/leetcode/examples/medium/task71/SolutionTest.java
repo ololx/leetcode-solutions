@@ -7,6 +7,12 @@ import java.util.logging.Logger;
 
 import static org.testng.Assert.assertEquals;
 
+/**
+ * project leetcode-solutions
+ * created 09.03.2022 21:41
+ *
+ * @author Alexander A. Kropotin
+ */
 public class SolutionTest {
 
     private static final Logger log = Logger.getLogger(SolutionTest.class.getName());
