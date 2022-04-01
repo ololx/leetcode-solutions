@@ -1,6 +1,5 @@
 package io.github.ololx.leetcode.examples.easy.task1694;
 
-import io.github.ololx.leetcode.examples.easy.task1694.Solution;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 

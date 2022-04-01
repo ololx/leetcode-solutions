@@ -1,6 +1,5 @@
 package io.github.ololx.leetcode.examples.easy.task20;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 

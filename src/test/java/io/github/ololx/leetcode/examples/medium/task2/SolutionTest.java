@@ -1,6 +1,5 @@
 package io.github.ololx.leetcode.examples.medium.task2;
 
-import io.github.ololx.leetcode.examples.medium.task2.Solution;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

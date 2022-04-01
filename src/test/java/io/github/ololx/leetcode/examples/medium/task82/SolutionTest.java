@@ -1,13 +1,9 @@
 package io.github.ololx.leetcode.examples.medium.task82;
 
-import io.github.ololx.leetcode.examples.medium.task82.Solution;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.sql.Array;
 import java.util.logging.Logger;
-
-import static org.testng.Assert.assertEquals;
 
 /**
  * project leetcode-solutions

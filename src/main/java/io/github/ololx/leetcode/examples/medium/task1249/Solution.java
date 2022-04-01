@@ -1,6 +1,8 @@
 package io.github.ololx.leetcode.examples.medium.task1249;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Stack;
 
 /**
  * 1249. Minimum Remove to Make Valid Parentheses
