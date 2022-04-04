@@ -1,5 +1,7 @@
 package io.github.ololx.leetcode.examples.medium.task287;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.stream.Stream;
 
 /**
@@ -59,21 +61,16 @@ public class Solution {
             return 0;
         }
 
-        int actualSum = 0, maxNum = 0;
-        int expectedSum= Stream.iterate(1, n -> n + 1)
-                .limit(nums.length - 1)
-                .reduce(Integer::sum)
-                .orElse(0);
-
+        Set<Integer> uniqueNums = new HashSet<Integer>();
         for (int num : nums) {
-            actualSum += num;
-
-            if (maxNum < num) {
-                maxNum = num;
+            if (uniqueNums.contains(num)) {
+                return num;
             }
+
+            uniqueNums.add(num);
         }
 
-        return actualSum - expectedSum;
+        return 0;
     }
 }
 
