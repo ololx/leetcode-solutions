@@ -56,7 +56,7 @@ import java.util.Stack;
  * "+" - Add 9 + 5 = 14 to the record, record is now [5, -2, -4, 9, 5, 14].
  * The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.</p>
  *
- * Example 2:
+ * Example 3:
  * <p>Input: ops = ["1"]
  * Output: 1</p>
  *
