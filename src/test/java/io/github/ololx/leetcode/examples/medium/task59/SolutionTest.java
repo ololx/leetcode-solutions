@@ -14,8 +14,6 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest {
 
-    private static final Logger log = Logger.getLogger(SolutionTest.class.getCanonicalName());
-
     @DataProvider(name = "sizes")
     public static Object[][] sizes() {
         return new Object[][] {
