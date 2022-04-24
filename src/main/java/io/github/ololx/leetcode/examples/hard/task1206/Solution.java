@@ -13,23 +13,30 @@ public class Solution {
 
         private final int levels;
 
-        private SkipListEntry list;
+        private SkipListEntry head;
+
+        private SkipListEntry tail;
 
         public Skiplist() {
             this(MAX_LEVEL);
         }
 
         public Skiplist(int levels) {
-            final SkipListEntry head = new SkipListEntry(Integer.MIN_VALUE, Integer.MIN_VALUE);
-            final SkipListEntry tail = new SkipListEntry(Integer.MAX_VALUE, Integer.MAX_VALUE);
+            this.head = new SkipListEntry(Integer.MIN_VALUE, Integer.MIN_VALUE);
+            this.tail = new SkipListEntry(Integer.MAX_VALUE, Integer.MAX_VALUE);
             head.setRight(tail);
             tail.setLeft(head);
-            this.list = head;
 
             this.levels = levels;
         }
 
         public boolean search(int target) {
+            SkipListEntry currentEntry = this.head;
+
+            while (currentEntry.hasDown()) {
+                currentEntry = currentEntry.getDown();
+            }
+
 
             return false;
         }
