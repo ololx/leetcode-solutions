@@ -9,7 +9,7 @@ public class Solution {
 
     public static class Skiplist {
 
-        public static final int MAX_LEVEL = 8;
+        public static final int MAX_LEVEL = 4;
 
         private final int levels;
 
@@ -22,12 +22,30 @@ public class Solution {
         }
 
         public Skiplist(int levels) {
-            this.head = new SkipListEntry(Integer.MIN_VALUE, Integer.MIN_VALUE);
-            this.tail = new SkipListEntry(Integer.MAX_VALUE, Integer.MAX_VALUE);
-            head.setRight(tail);
-            tail.setLeft(head);
-
             this.levels = levels;
+
+            SkipListEntry nodeHeadT = new SkipListEntry(Integer.MIN_VALUE, Integer.MIN_VALUE);
+            SkipListEntry nodeTailT = new SkipListEntry(Integer.MAX_VALUE, Integer.MAX_VALUE);
+            nodeHeadT.setRight(nodeTailT);
+            nodeTailT.setLeft(nodeHeadT);
+
+            this.head = nodeHeadT;
+            this.tail = nodeTailT;
+
+            for (int i = 0; i < this.levels - 1; i++) {
+                SkipListEntry nodeHead = new SkipListEntry(Integer.MIN_VALUE, Integer.MIN_VALUE);
+                SkipListEntry nodeTail = new SkipListEntry(Integer.MAX_VALUE, Integer.MAX_VALUE);
+
+                nodeHead.setRight(nodeTail);
+                nodeTail.setLeft(nodeHead);
+                nodeHead.setUp(nodeHeadT);
+                nodeTail.setUp(nodeTailT);
+                nodeHeadT.setDown(nodeHead);
+                nodeTailT.setDown(nodeTail);
+
+                nodeHeadT = nodeHead;
+                nodeTailT = nodeTail;
+            }
         }
 
         public boolean search(int target) {
@@ -42,12 +60,58 @@ public class Solution {
         }
 
         public void add(int num) {
+            SkipListEntry currentEntry = this.head;
+            SkipListEntry nextEntry = currentEntry.right();
 
+            while (currentEntry.hasDown()) {
+                if (num > nextEntry.getKey()) {
+                    currentEntry = nextEntry;
+
+                    if (currentEntry.hasRight()) {
+                        nextEntry = currentEntry.right();
+                    }
+                } else {
+                    if (currentEntry.hasDown()) {
+                        currentEntry = currentEntry.down();
+                        nextEntry = currentEntry.right();
+                    }
+                }
+            }
+
+            if (num == currentEntry.getKey()) {
+                return;
+            }
+
+            SkipListEntry newNode = new SkipListEntry(num, num, currentEntry, nextEntry);
+            currentEntry.setRight(newNode);
+            nextEntry.setLeft(newNode);
+
+            int i = 1;
+            while (i < this.levels && this.coinFlip(i)) {
+                SkipListEntry newNodeL = new SkipListEntry(num, num);
+                newNodeL.setDown(newNode);
+                currentEntry = currentEntry.up();
+                nextEntry = nextEntry.up();
+
+                newNodeL.setLeft(currentEntry);
+                newNodeL.setRight(nextEntry);
+                currentEntry.setRight(newNodeL);
+                nextEntry.setRight(newNodeL);
+
+                newNode = newNodeL;
+
+
+                i++;
+            }
         }
 
         public boolean erase(int num) {
 
             return false;
+        }
+
+        private boolean coinFlip(int level) {
+            return true;
         }
 
         public static class SkipListEntry {
@@ -97,7 +161,11 @@ public class Solution {
                 return this.value;
             }
 
-            public SkipListEntry getLeft() {
+            public SkipListEntry left() {
+                if (!this.hasLeft()) {
+                    return null;
+                }
+
                 return this.left;
             }
 
@@ -105,7 +173,11 @@ public class Solution {
                 this.left = Objects.requireNonNull(entry);
             }
 
-            public SkipListEntry getRight() {
+            public SkipListEntry right() {
+                if (!this.hasRight()) {
+                    return null;
+                }
+
                 return this.right;
             }
 
@@ -113,7 +185,11 @@ public class Solution {
                 this.right = Objects.requireNonNull(entry);
             }
 
-            public SkipListEntry getUp() {
+            public SkipListEntry up() {
+                if (!this.hasUp()) {
+                    return null;
+                }
+
                 return this.up;
             }
 
@@ -122,6 +198,14 @@ public class Solution {
             }
 
             public SkipListEntry getDown() {
+                return this.down;
+            }
+
+            public SkipListEntry down() {
+                if (!this.hasDown()) {
+                    return null;
+                }
+
                 return this.down;
             }
 
