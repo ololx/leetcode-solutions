@@ -1,7 +1,5 @@
 package io.github.ololx.leetcode.examples.easy.task705;
 
-import java.util.Arrays;
-
 /**
  * 705. Design HashSet
  *

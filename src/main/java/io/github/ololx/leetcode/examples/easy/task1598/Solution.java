@@ -1,7 +1,5 @@
 package io.github.ololx.leetcode.examples.easy.task1598;
 
-import java.util.Stack;
-
 /**
  * 1598. Crawler Log Folder
  *
