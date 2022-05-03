@@ -18,9 +18,9 @@ public class SolutionTest {
     public static Object[][] providesStrings() {
         return new Object[][] {
                 {"a##c", "#a#c", true},
-                //{"ab#c", "ad#c", true},
-                //{"ab##", "c#d#", true},
-                //{"a#c", "b", false},
+                {"ab#c", "ad#c", true},
+                {"ab##", "c#d#", true},
+                {"a#c", "b", false}
         };
     }
 
