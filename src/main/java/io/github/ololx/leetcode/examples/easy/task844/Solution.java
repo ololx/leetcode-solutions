@@ -15,8 +15,8 @@ package io.github.ololx.leetcode.examples.easy.task844;
  *
  * Example 2:
  * <p>Input: s = "ab##", t = "c#d#"
- *  * Output: true
- *  * Explanation: Both s and t become "".</p>
+ * Output: true
+ * Explanation: Both s and t become "".</p>
  *
  * Example 3:
  * <p>Input: s = "a#c", t = "b"
