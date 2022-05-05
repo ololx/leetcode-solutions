@@ -1,7 +1,5 @@
 package io.github.ololx.leetcode.examples.easy.task844;
 
-import java.util.Stack;
-
 /**
  * 844. Backspace String Compare
  *

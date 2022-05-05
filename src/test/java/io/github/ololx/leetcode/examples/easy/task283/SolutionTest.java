@@ -1,10 +1,8 @@
 package io.github.ololx.leetcode.examples.easy.task283;
 
-import io.github.ololx.leetcode.examples.easy.task283.Solution;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
