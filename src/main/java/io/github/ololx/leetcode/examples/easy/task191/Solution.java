@@ -56,9 +56,7 @@ package io.github.ololx.leetcode.examples.easy.task191;
  */
 public class Solution {
 
-    // you need to treat n as an unsigned value
     public int hammingWeight(int n) {
-
         int weight = 0;
 
         for (int currentDigit = 0; currentDigit < 32; currentDigit++) {
