@@ -37,7 +37,7 @@ package io.github.ololx.leetcode.examples.easy.task231;
  */
 public class SolutionV2 {
 
-    public boolean isPowerOfTwo2(int n) {
+    public boolean isPowerOfTwo(int n) {
         return n > 0 && (n & (n - 1)) == 0;
     }
 }
