@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.logging.Logger;
 
+import static java.lang.Math.floor;
 import static org.testng.Assert.assertEquals;
 
 /**
@@ -33,5 +34,12 @@ public class SolutionTest {
         log.info("Expected = " + expected + " & actual = " + actual);
 
         assertEquals(actual, expected);
+    }
+
+    @Test
+    public void i() {
+        int n = 5;
+        int actual = 5 ^ ((1 << 1 + (int) floor((Math.log(n) / Math.log(2)))) - 1);
+        log.info("Expected actual = " + actual);
     }
 }
