@@ -1,3 +1,5 @@
+package io.github.ololx.leetcode.examples.easy.task268;
+
 /**
  * 268. Missing Number
  *
@@ -43,7 +45,7 @@
  * 
  * created at 2022-05-09 20:55
  */
-class Solution {
+public class SolutionV2 {
     
     public int missingNumber(int[] nums) {
         int n = nums.length;
