@@ -3,10 +3,10 @@ class Solution {
     public int[] plusOne(int[] digits) {
         
         Stack<Integer> nums = new Stack<>();
-        int carry = 0;
+        int carry = 1;
         
         for (int digitIndex = digits.length - 1; digitIndex >= 0; digitIndex--) {
-            int num = carry + digits[digitIndex] + 1;
+            int num = carry + digits[digitIndex];
             carry = num / 10;
             nums.push(num % 10);
         }
