@@ -1,4 +1,6 @@
 # leetcode-solutions
 This is my leetcode solutions repository
 
-[![My LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=ololx)](https://github.com/ololx/leetcode-stats)
+<a href="https://leetcode.com/ololx/" target="_blank">
+  <img align="right" width="35%" src="https://leetcode-stats-six.vercel.app/api?username=ololx" alt="leetcode" />
+</a>
