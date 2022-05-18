@@ -1,6 +1,6 @@
 package io.github.ololx.leetcode.examples.easy.task155;
 
-import java.util.Stack;
+import java.util.*;
 
 /**
  * 155. Min Stack
@@ -59,42 +59,61 @@ import java.util.Stack;
  * </ul>
  *
  * project leetcode-solutions
- * created 17.05.2022 21:45
+ * created 18.05.2022 11:40
  *
  * @author Alexander A. Kropotin
  */
-public class Solution {
+public class SolutionV2 {
 
     public static class MinStack {
 
-        private final Stack<Element> elements;
+        private final List<Element> elements;
+
+        private int topElementIndex;
 
         public MinStack() {
-            this.elements = new Stack<>();
+            this.elements = new ArrayList<>();
+            this.topElementIndex = -1;
         }
 
         public void push(int val) {
             Element element = null;
 
-            if (this.elements.empty()) {
+            if (this.topElementIndex == -1) {
                 element = new Element(val, val);
             } else {
-                element = new Element (val, Math.min(val, this.elements.peek().minValue));
+                element = new Element (
+                        val,
+                        Math.min(val, this.elements.get(this.topElementIndex).minValue)
+                );
             }
 
-            this.elements.push(element);
+            this.elements.add(++this.topElementIndex, element);
         }
 
         public void pop() {
-            this.elements.pop();
+            if (this.topElementIndex == -1) {
+                return;
+            }
+
+            this.elements.remove(this.topElementIndex);
+            this.topElementIndex--;
         }
 
         public int top() {
-            return this.elements.peek().value;
+            return this.topElement()
+                    .orElseThrow(IndexOutOfBoundsException::new)
+                    .value;
         }
 
         public int getMin() {
-            return this.elements.peek().minValue;
+            return this.topElement()
+                    .orElseThrow(NoSuchElementException::new)
+                    .minValue;
+        }
+
+        private Optional<Element> topElement() {
+            return Optional.ofNullable(this.elements.get(this.topElementIndex));
         }
 
         private static final class Element {
