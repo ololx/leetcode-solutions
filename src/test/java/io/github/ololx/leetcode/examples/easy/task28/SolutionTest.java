@@ -17,7 +17,8 @@ public class SolutionTest {
     @DataProvider(name = "providesHaystacksAndNeedles")
     public static Object[][] providesHaystacksAndNeedles() {
         return new Object[][] {
-                {"mississippi", "issip", 4}
+                {"mississippi", "issip", 4},
+                {"mississippi", "sipp", 6}
         };
     }
 
