@@ -23,7 +23,7 @@ public class SolutionTest {
     }
 
     @Test(dataProvider = "providesNum")
-    public void calPoints_whenNumHasComplementMoreThenZero_thenReturnNonZeroNum(int num, int expected) {
+    public void findComplement_whenNumHasComplementMoreThenZero_thenReturnNonZeroNum(int num, int expected) {
         assertEquals(new Solution().findComplement(num), expected);
     }
 }
