@@ -17,8 +17,10 @@ public class SolutionTest {
     @DataProvider(name = "providesStrings")
     public static Object[][] providesStrings() {
         return new Object[][] {
+                {"abcdef", 3,"cbadef"},
+                {"a", 2, "a"},
                 {"abcdefg", 2, "bacdfeg"},
-                {"abcdefg", 2, "bacdfeg"},
+                {"abcd", 2, "bacd"}
         };
     }
 
