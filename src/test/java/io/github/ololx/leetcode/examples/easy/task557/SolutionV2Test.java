@@ -1,6 +1,5 @@
 package io.github.ololx.leetcode.examples.easy.task557;
 
-import io.github.ololx.leetcode.examples.easy.task557.Solution;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -12,11 +11,11 @@ import static org.testng.Assert.assertEquals;
  *
  * @author Alexander A. Kropotin
  */
-public class SolutionTest extends AbstractSolutionTest {
+public class SolutionV2Test extends AbstractSolutionTest {
 
     @Test(dataProvider = "providesStrings")
     public void reverseWords_whenSContainsWords_thenReturnReversedEachWorkInS(String s,
                                                                               String expected) {
-        assertEquals(new Solution().reverseWords(s), expected);
+        assertEquals(new SolutionV2().reverseWords(s), expected);
     }
 }
