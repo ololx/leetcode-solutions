@@ -17,8 +17,6 @@ public class SolutionTest {
     @DataProvider(name = "providesBits")
     public static Object[][] providesBits() {
         return new Object[][] {
-                {0x1, 0x0},
-                {0b11, 0b00},
                 {0b00000010100101000001111010011100, 0b00111001011110000010100101000000},
                 {0b11111111111111111111111111111101, 0b10111111111111111111111111111111}
         };
