@@ -11,10 +11,10 @@ import static org.testng.Assert.assertEquals;
  *
  * @author Alexander A. Kropotin
  */
-public class SolutionTest extends AbstractSolutionTest {
+public class SolutionV2Test extends AbstractSolutionTest {
 
     @Test(dataProvider = "stringsAndSubstrings")
     public void lengthOfLongestSubstring_returnSubstringLength(String string, String substring) {
-        assertEquals(substring.length(), new Solution().lengthOfLongestSubstring(string));
+        assertEquals(new SolutionV2().lengthOfLongestSubstring(string), substring.length());
     }
 }

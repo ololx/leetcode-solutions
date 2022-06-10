@@ -10,6 +10,7 @@ import java.util.Stack;
  */
 public class Solution {
 
+    //FIXME::Rewrite
     public int[] sortedSquares(int[] nums) {
         int currPointer = 1, lastMinPointer = 0;
         nums[lastMinPointer] = nums[lastMinPointer] * nums[lastMinPointer];
