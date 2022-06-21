@@ -1,9 +1,6 @@
 package io.github.ololx.leetcode.examples.medium.task3;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
-import static org.testng.Assert.assertEquals;
 
 /**
  * project leetcode-solutions

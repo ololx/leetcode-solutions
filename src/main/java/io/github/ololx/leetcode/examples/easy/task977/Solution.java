@@ -1,7 +1,5 @@
 package io.github.ololx.leetcode.examples.easy.task977;
 
-import java.util.Stack;
-
 /**
  * project leetcode-solutions
  * created 07.06.2022 14:27
