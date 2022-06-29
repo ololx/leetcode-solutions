@@ -39,30 +39,23 @@ import java.util.Set;
  *
  * @author Alexander A. Kropotin
  */
-public class Solution {
+public class SolutionV2 {
 
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         Set<Integer> slidingWindowHash = new HashSet();
 
-        //init sliding window and put values into hash
-        for (int slidingIndex = 0; slidingIndex < k && slidingIndex < nums.length; slidingIndex++) {
-            if (slidingWindowHash.contains(nums[slidingIndex])) {
-                return true;
-            }
-
-            slidingWindowHash.add(nums[slidingIndex]);
-        }
-
-        //main loop for sliding window
-        for (int index = k; index < nums.length; index++) {
+        for (int index = 0; index < nums.length; index++) {
             if (slidingWindowHash.contains(nums[index])) {
                 return true;
             }
 
             slidingWindowHash.add(nums[index]);
-            slidingWindowHash.remove(nums[index - k]);
 
+            if (index >= k) {
+                slidingWindowHash.remove(nums[index - k]);
+            }
         }
+
 
         return false;
     }
