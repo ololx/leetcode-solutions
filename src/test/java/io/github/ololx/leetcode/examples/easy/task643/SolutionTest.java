@@ -15,7 +15,7 @@ import static org.testng.Assert.assertEquals;
 public class SolutionTest extends AbstractSolutionTest {
 
     @Test(dataProvider = "providesNumsAndSubArraySize")
-    public void findMaxAverage_whenHeadNodeHasNext_thenReturnRotatedList(int[] nums,
+    public void findMaxAverage_whenNumsIsMoreThanOne_thenReturnMaxAVG(int[] nums,
                                                                       int k,
                                                                       double expected) {
         assertEquals(new Solution().findMaxAverage(nums, k), expected);
