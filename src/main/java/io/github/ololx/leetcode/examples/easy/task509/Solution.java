@@ -1,6 +1,8 @@
 package io.github.ololx.leetcode.examples.easy.task509;
 
 /**
+ *
+ *
  * project leetcode-solutions
  * created 07.07.2022 11:59
  *
