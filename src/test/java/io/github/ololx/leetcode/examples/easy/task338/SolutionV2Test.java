@@ -1,6 +1,5 @@
 package io.github.ololx.leetcode.examples.easy.task338;
 
-import io.github.ololx.leetcode.examples.easy.task338.Solution;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -12,11 +11,11 @@ import static org.testng.Assert.assertEquals;
  *
  * @author Alexander A. Kropotin
  */
-public class SolutionTest extends AbstractSolutionTest {
+public class SolutionV2Test extends AbstractSolutionTest {
 
     @Test(dataProvider = "providesN")
     public void countBits_whenNIsNotZero_thenReturnCountOfOneBitsMoreThanOne(int n,
                                                                              int[] expected) {
-        assertEquals(new Solution().countBits(n), expected);
+        assertEquals(new SolutionV2().countBits(n), expected);
     }
 }
