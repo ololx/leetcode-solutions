@@ -51,7 +51,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class Solution {
 
-    class Foo {
+    public static class Foo {
 
         private final AtomicInteger step;
 
