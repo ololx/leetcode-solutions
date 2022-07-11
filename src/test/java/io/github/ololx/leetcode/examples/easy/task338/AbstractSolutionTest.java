@@ -11,7 +11,7 @@ import static org.testng.Assert.assertEquals;
  *
  * @author Alexander A. Kropotin
  */
-public class AbstractSolutionTest {
+public abstract class AbstractSolutionTest {
 
     @DataProvider(name = "providesN")
     public static Object[][] providesN() {
