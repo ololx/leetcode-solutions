@@ -1,15 +1,11 @@
 package io.github.ololx.leetcode.examples.easy.task1114;
 
-import io.github.ololx.leetcode.examples.easy.task1114.Solution;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.IntStream;
 
 import static org.testng.Assert.assertEquals;
 

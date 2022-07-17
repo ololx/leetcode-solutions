@@ -1,14 +1,6 @@
 package io.github.ololx.leetcode.examples.easy.task1114;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import static org.testng.Assert.assertEquals;
 
 /**
  * project leetcode-solutions

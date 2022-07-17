@@ -1,4 +1,4 @@
-package io.github.ololx.leetcode.examples.easy.task1115;
+package io.github.ololx.leetcode.examples.medium.task1115;
 
 import java.util.concurrent.Semaphore;
 

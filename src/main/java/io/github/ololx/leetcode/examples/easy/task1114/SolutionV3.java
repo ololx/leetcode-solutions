@@ -1,7 +1,6 @@
 package io.github.ololx.leetcode.examples.easy.task1114;
 
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * 1114. Print in Order
