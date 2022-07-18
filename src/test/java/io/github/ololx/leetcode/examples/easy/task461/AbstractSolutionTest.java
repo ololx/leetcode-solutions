@@ -11,10 +11,13 @@ import static org.testng.Assert.assertEquals;
  *
  * @author Alexander A. Kropotin
  */
-public class SolutionTest extends AbstractSolutionTest {
+public abstract class AbstractSolutionTest {
 
-    @Test(dataProvider = "providesXY")
-    public void hammingDistance_whenXIsNotEqualsToY_thenReturnDistance(int x, int y, int expected) {
-        assertEquals(new Solution().hammingDistance(x, y), expected);
+    @DataProvider(name = "providesXY")
+    public static Object[][] providesXY() {
+        return new Object[][] {
+                {1, 4, 2},
+                {3, 1, 1}
+        };
     }
 }
