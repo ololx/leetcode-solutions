@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
  *
  * @author Alexander A. Kropotin
  */
-public class AbstractSolutionTest {
+public abstract class AbstractSolutionTest {
 
     @DataProvider(name = "providesNumsAndSubArraySize")
     public static Object[][] providesNumsAndSubArraySize() {
