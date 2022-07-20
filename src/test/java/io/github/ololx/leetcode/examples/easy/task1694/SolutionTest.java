@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(enabled = false, dataProvider = "phoneNumbersAndReformatNumbers")
+    @Test(dataProvider = "phoneNumbersAndReformatNumbers")
     public void reformatNumber_whenPhoneNumberIsNotBlank_thenReturnReformatNumber(String phoneNumber , String reformatNumber) {
         assertEquals(new Solution().reformatNumber(phoneNumber), reformatNumber);
     }

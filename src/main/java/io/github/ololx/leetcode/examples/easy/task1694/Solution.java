@@ -15,19 +15,23 @@ public class Solution {
 
         StringBuilder phoneNumber = new StringBuilder();
         for (int numberDigitIndex = 0, blockSize = 0; numberDigitIndex < number.length(); numberDigitIndex++) {
-            Character numberDigit = number.charAt(numberDigitIndex);
+            char numberDigit = number.charAt(numberDigitIndex);
             if (numberDigit == 32 || numberDigit == 45) {
                 continue;
             }
 
-            blockSize++;
-            if (blockSize > 3) {
-                phoneNumber.append((char) 45);
-                blockSize = 1;
+            if (blockSize == 3) {
+                phoneNumber.append("-");
+                blockSize = 0;
             }
 
             phoneNumber.append(number.charAt(numberDigitIndex));
+            blockSize++;
+        }
 
+        if (phoneNumber.indexOf("-", phoneNumber.length() - 2) > 0) {
+            phoneNumber.deleteCharAt(phoneNumber.length() - 2);
+            phoneNumber.insert(phoneNumber.length() - 2, "-");
         }
 
         return phoneNumber.toString();
