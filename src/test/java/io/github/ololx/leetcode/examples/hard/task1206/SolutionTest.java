@@ -10,15 +10,16 @@ import org.testng.annotations.Test;
  */
 public class SolutionTest {
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void test() {
         Solution.Skiplist skiplist = new Solution.Skiplist();
 
         skiplist.add(3);
-        skiplist.add(13);
-        skiplist.add(5);
+        //skiplist.add(2);
+        //skiplist.add(13);
+        //skiplist.add(5);
 
-        skiplist.search(3);
+        //skiplist.search(3);
     }
 }
 
