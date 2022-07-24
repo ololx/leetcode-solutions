@@ -15,11 +15,11 @@ public class SolutionTest {
         Solution.Skiplist skiplist = new Solution.Skiplist();
 
         skiplist.add(3);
-        skiplist.add(2);
-        skiplist.add(13);
-        skiplist.add(5);
+        //skiplist.add(2);
+        //skiplist.add(13);
+        //skiplist.add(5);
 
-        skiplist.search(3);
+        //skiplist.search(3);
     }
 }
 

@@ -57,18 +57,29 @@ public class Solution {
             //            v                                                  v
             // N HEAD = LEFT <------------------------------------------------> RIGHT = TAIL
             for (int i = 1; i < this.levels; i++) {
-                SkipListEntry nodeHead = new SkipListEntry(Integer.MIN_VALUE, Integer.MIN_VALUE);
-                SkipListEntry nodeTail = new SkipListEntry(Integer.MAX_VALUE, Integer.MAX_VALUE);
+                left.setDown(
+                        new SkipListEntry(
+                                Integer.MIN_VALUE,
+                                Integer.MIN_VALUE,
+                                null,
+                                null,
+                                left,
+                                null
+                        )
+                );
+                left = left.getDown();
 
-                nodeHead.setRight(nodeTail);
-                nodeTail.setLeft(nodeHead);
-                nodeHead.setUp(left);
-                nodeTail.setUp(right);
-                left.setDown(nodeHead);
-                right.setDown(nodeTail);
-
-                left = nodeHead;
-                right = nodeTail;
+                right.setDown(
+                        new SkipListEntry(
+                                Integer.MAX_VALUE,
+                                Integer.MAX_VALUE,
+                                null,
+                                null,
+                                right,
+                                null
+                        )
+                );
+                right = right.getDown();
             }
         }
 
