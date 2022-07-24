@@ -24,27 +24,51 @@ public class Solution {
         public Skiplist(int levels) {
             this.levels = levels;
 
-            SkipListEntry nodeHeadT = new SkipListEntry(Integer.MIN_VALUE, Integer.MIN_VALUE);
-            SkipListEntry nodeTailT = new SkipListEntry(Integer.MAX_VALUE, Integer.MAX_VALUE);
-            nodeHeadT.setRight(nodeTailT);
-            nodeTailT.setLeft(nodeHeadT);
+            //init new SkipList with defined level
+            //Firstly, create the root level (level = 0) entry for left (min) and right (max)
+            // and linked it
+            //          LEFT <------------------------------------------------> RIGHT
+            SkipListEntry left = new SkipListEntry(Integer.MIN_VALUE, Integer.MIN_VALUE);
+            SkipListEntry right = new SkipListEntry(Integer.MAX_VALUE, Integer.MAX_VALUE);
+            left.setRight(right);
+            right.setLeft(left);
 
-            this.head = nodeHeadT;
-            this.tail = nodeTailT;
+            // After, we can define left and right as the head and tail nodes
+            //   HEAD = LEFT <------------------------------------------------> RIGHT = TAIL
+            this.head = left;
+            this.tail = right;
 
-            for (int i = 0; i < this.levels - 1; i++) {
+            // Next, we can define left and right nodes for other levels and linked it
+            // 0 HEAD = LEFT <------------------------------------------------> RIGHT = TAIL
+            //            ^                                                  ^
+            //            |                                                  |
+            //            v                                                  v
+            // 1 HEAD = LEFT <------------------------------------------------> RIGHT = TAIL
+            //            ^                                                  ^
+            //            |                                                  |
+            //            v                                                  v
+            // 2 HEAD = LEFT <------------------------------------------------> RIGHT = TAIL
+            //            ^                                                  ^
+            //            |                                                  |
+            //            v                                                  v
+            // 3 HEAD = LEFT <------------------------------------------------> RIGHT = TAIL
+            //            ^                                                  ^
+            //            |                                                  |
+            //            v                                                  v
+            // N HEAD = LEFT <------------------------------------------------> RIGHT = TAIL
+            for (int i = 1; i < this.levels; i++) {
                 SkipListEntry nodeHead = new SkipListEntry(Integer.MIN_VALUE, Integer.MIN_VALUE);
                 SkipListEntry nodeTail = new SkipListEntry(Integer.MAX_VALUE, Integer.MAX_VALUE);
 
                 nodeHead.setRight(nodeTail);
                 nodeTail.setLeft(nodeHead);
-                nodeHead.setUp(nodeHeadT);
-                nodeTail.setUp(nodeTailT);
-                nodeHeadT.setDown(nodeHead);
-                nodeTailT.setDown(nodeTail);
+                nodeHead.setUp(left);
+                nodeTail.setUp(right);
+                left.setDown(nodeHead);
+                right.setDown(nodeTail);
 
-                nodeHeadT = nodeHead;
-                nodeTailT = nodeTail;
+                left = nodeHead;
+                right = nodeTail;
             }
         }
 
