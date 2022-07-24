@@ -30,8 +30,8 @@ public class Solution {
             //          LEFT <------------------------------------------------> RIGHT
             SkipListEntry left = new SkipListEntry(Integer.MIN_VALUE, Integer.MIN_VALUE);
             SkipListEntry right = new SkipListEntry(Integer.MAX_VALUE, Integer.MAX_VALUE);
-            left.setRight(right);
-            right.setLeft(left);
+            left.right = right;
+            right.left = left;
 
             // After, we can define left and right as the head and tail nodes
             //   HEAD = LEFT <------------------------------------------------> RIGHT = TAIL
@@ -79,60 +79,78 @@ public class Solution {
             }
         }
 
+        //FIXME:: It's for testing add only, need to be realize soon
         public boolean search(int target) {
-            SkipListEntry currentEntry = this.head;
+            // We have to always start from head
+            SkipListEntry current = this.head;
 
-            while (currentEntry.hasDown()) {
-                currentEntry = currentEntry.getDown();
+            while (current.hasDown()) {
+                current = current.down;
             }
 
+            while (target > current.key && current.hasRight()) {
+                current = current.right;
+            }
+
+            if (target == current.key) {
+                return true;
+            }
 
             return false;
         }
 
         public void add(int num) {
-            SkipListEntry currentEntry = this.head;
-            SkipListEntry nextEntry = currentEntry.right();
+            // We have to always start from head
+            SkipListEntry current = this.head;
 
-            while (currentEntry.hasDown()) {
-                if (num > nextEntry.getKey()) {
-                    currentEntry = nextEntry;
-
-                    if (currentEntry.hasRight()) {
-                        nextEntry = currentEntry.right();
-                    }
-                } else {
-                    if (currentEntry.hasDown()) {
-                        currentEntry = currentEntry.down();
-                        nextEntry = currentEntry.right();
-                    }
-                }
+            // For the searching newNode we have to:
+            // 1 - start from the head
+            // 2 - go down the bottom level
+            while (current.hasDown()) {
+                current = current.down;
             }
 
-            if (num == currentEntry.getKey()) {
+            // 3 - try to find newNode
+            while (current.hasRight() && num > current.right.key) {
+                current = current.right;
+            }
+
+            // 4 - if we found newNode on the step 3, we have to do nothing (return;)
+            if (num == current.key) {
                 return;
             }
 
-            SkipListEntry newNode = new SkipListEntry(num, num, currentEntry, nextEntry);
-            currentEntry.setRight(newNode);
-            nextEntry.setLeft(newNode);
+            // 5 - otherwise, we have to a put new newNode on the right
+            SkipListEntry newNode = new SkipListEntry(num, num, current, current.right);
+            current.right = newNode;
+            current.right.left = newNode;
 
-            int i = 1;
-            while (i < this.levels && this.coinFlip(i)) {
-                SkipListEntry newNodeL = new SkipListEntry(num, num);
-                newNodeL.setDown(newNode);
-                currentEntry = currentEntry.up();
-                nextEntry = nextEntry.up();
+            // 6 - have to go up one level
+            // 7 - flip the coin
+            // 8 - if on the step 8 true - repeat step 5
+            for (int level = this.levels - 2; level >= 0; level--) {
+                if (!this.coinFlip(level)) {
+                    return;
+                }
 
-                newNodeL.setLeft(currentEntry);
-                newNodeL.setRight(nextEntry);
-                currentEntry.setRight(newNodeL);
-                nextEntry.setRight(newNodeL);
+                // go up one level and find left node for new level
+                while (!current.hasUp()) {
+                    current = current.left;
+                }
+                current = current.up;
 
-                newNode = newNodeL;
+                newNode.up = new SkipListEntry(
+                        num,
+                        num,
+                        current,
+                        current.right,
+                        null,
+                        newNode
+                );
+                newNode = newNode.up;
 
-
-                i++;
+                current.right = newNode;
+                current.right.left = newNode;
             }
         }
 
@@ -176,7 +194,7 @@ public class Solution {
                                  SkipListEntry right,
                                  SkipListEntry up,
                                  SkipListEntry down) {
-                this.key = Objects.requireNonNull(key);
+                this.key = key;
                 this.value = value;
                 this.left = left;
                 this.right = right;

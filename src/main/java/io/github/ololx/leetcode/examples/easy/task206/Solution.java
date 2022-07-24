@@ -1,7 +1,5 @@
 package io.github.ololx.leetcode.examples.easy.task206;
 
-import java.util.Objects;
-
 /**
  * 206. Reverse Linked List
  *
