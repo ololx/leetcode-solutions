@@ -29,6 +29,9 @@ public class SolutionTest {
         assertEquals(skiplist.search(2), true);
         assertEquals(skiplist.search(13), true);
         assertEquals(skiplist.search(5), true);
+
+        assertEquals(skiplist.erase(3), true);
+        assertEquals(skiplist.search(3), false);
     }
 }
 

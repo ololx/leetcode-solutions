@@ -85,27 +85,7 @@ public class Solution {
         }
 
         public boolean search(int target) {
-            // We have to always start from head
-            SkipListEntry current = this.head;
-
-            // while node has right or down we can go down a level or right
-            // 1 - we have to go right and try to find element
-            // 2 - if element is not presented at this level, we have to go down a level
-            // 3 - we have to repeat steps from 1 till 2
-            // if we found element we can return true, otherwise - false
-            while (current.hasDown() || current.hasRight()) {
-                while (current.hasRight() && target > current.right.key) {
-                    current = current.right;
-                }
-
-                if (target == current.right.key) {
-                    return true;
-                }
-
-                current = current.down;
-            }
-
-            return false;
+            return this.find(target).key == target;
         }
 
         public void add(int num) {
@@ -164,8 +144,50 @@ public class Solution {
         }
 
         public boolean erase(int num) {
+            SkipListEntry entry = this.find(num);
+            if (entry.key != num) {
+                return false;
+            }
 
-            return false;
+            entry.left.right = entry.right;
+            entry.right.left = entry.left;
+
+        while ((entry = entry.up) != null) {
+            entry.left.right = entry.right;
+            entry.right.left = entry.left;
+        }
+
+            return true;
+        }
+
+        private SkipListEntry find(int key) {
+            // We have to always start from head
+            SkipListEntry current = this.head;
+
+            // while node has right or down we can go down a level or right
+            // 1 - we have to go right and try to find element
+            // 2 - if element is not presented at this level, we have to go down a level
+            // and repeat step 1
+            // 3 - if we found element we have to go down to the bottom
+            // if we found element we have to return it, otherwise - return last visited
+            while (current != null && current.hasRight()) {
+                while (current.hasRight() && key > current.right.key) {
+                    current = current.right;
+                }
+
+                if (key == current.right.key) {
+                    current = current.right;
+                    while (current.hasDown()) {
+                        current = current.down;
+                    }
+
+                    return current;
+                }
+
+                current = current.down;
+            }
+
+            return this.head;
         }
 
         private boolean coinFlip(int level) {
