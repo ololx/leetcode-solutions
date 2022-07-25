@@ -1,6 +1,8 @@
 package io.github.ololx.leetcode.examples.hard.task1206;
 
 import java.util.Objects;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /*
  * 1206. Design Skiplist
@@ -76,24 +78,31 @@ public class Solution {
                         null
                 );
                 right = right.down;
+
+                left.right = right;
+                right.left = left;
             }
         }
 
-        //FIXME:: It's for testing add only, need to be realize soon
         public boolean search(int target) {
             // We have to always start from head
             SkipListEntry current = this.head;
 
-            while (current.hasDown()) {
+            // while node has right or down we can go down a level or right
+            // 1 - we have to go right and try to find element
+            // 2 - if element is not presented at this level, we have to go down a level
+            // 3 - we have to repeat steps from 1 till 2
+            // if we found element we can return true, otherwise - false
+            while (current.hasDown() || current.hasRight()) {
+                while (current.hasRight() && target > current.right.key) {
+                    current = current.right;
+                }
+
+                if (target == current.right.key) {
+                    return true;
+                }
+
                 current = current.down;
-            }
-
-            while (target > current.key && current.hasRight()) {
-                current = current.right;
-            }
-
-            if (target == current.key) {
-                return true;
             }
 
             return false;
@@ -122,8 +131,8 @@ public class Solution {
 
             // 5 - otherwise, we have to a put new newNode on the right
             SkipListEntry newNode = new SkipListEntry(num, num, current, current.right);
-            current.right = newNode;
             current.right.left = newNode;
+            current.right = newNode;
 
             // 6 - have to go up one level
             // 7 - flip the coin
@@ -134,7 +143,7 @@ public class Solution {
                 }
 
                 // go up one level and find left node for new level
-                while (!current.hasUp()) {
+                while (!current.hasUp() && current.hasLeft()) {
                     current = current.left;
                 }
                 current = current.up;
@@ -149,8 +158,8 @@ public class Solution {
                 );
                 newNode = newNode.up;
 
-                current.right = newNode;
                 current.right.left = newNode;
+                current.right = newNode;
             }
         }
 
@@ -160,7 +169,7 @@ public class Solution {
         }
 
         private boolean coinFlip(int level) {
-            return true;
+            return ThreadLocalRandom.current().nextInt(this.levels - level) == 0;
         }
 
         public static class SkipListEntry {
