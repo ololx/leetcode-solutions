@@ -20,10 +20,16 @@ public class SolutionTest {
     public void test() {
         Solution.Skiplist skiplist = new Solution.Skiplist();
 
-        skiplist.add(3);
-        skiplist.add(2);
-        skiplist.add(13);
+        assertEquals(skiplist.search(3), false);
+
         skiplist.add(5);
+        skiplist.add(2);
+
+        assertEquals(skiplist.search(3), false);
+        assertEquals(skiplist.search(5), true);
+
+        skiplist.add(13);
+        skiplist.add(3);
 
         assertEquals(skiplist.search(3), true);
         assertEquals(skiplist.search(2), true);
@@ -32,6 +38,9 @@ public class SolutionTest {
 
         assertEquals(skiplist.erase(3), true);
         assertEquals(skiplist.search(3), false);
+        assertEquals(skiplist.search(2), true);
+        assertEquals(skiplist.search(13), true);
+        assertEquals(skiplist.search(5), true);
     }
 }
 
