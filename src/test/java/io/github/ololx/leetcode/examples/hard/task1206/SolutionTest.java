@@ -16,7 +16,7 @@ public class SolutionTest {
 
     private static final Logger log = Logger.getLogger(SolutionTest.class.getName());
 
-    @Test(enabled = true)
+    @Test
     public void test() {
         Solution.Skiplist skiplist = new Solution.Skiplist();
 
