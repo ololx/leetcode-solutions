@@ -50,7 +50,7 @@ public class Solution {
             3, 3, 4, 1  // 13 .. 16
     };
 
-    public int hammingWeight(int x) {
+    private int hammingWeight(int x) {
         return NIBBLE_BIT_COUNTS[0xF & x]
                 + NIBBLE_BIT_COUNTS[0xF & (x >> 4)]
                 + NIBBLE_BIT_COUNTS[0xF & (x >> 8)]
