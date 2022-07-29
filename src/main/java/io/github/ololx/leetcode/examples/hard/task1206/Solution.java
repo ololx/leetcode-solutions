@@ -1,7 +1,6 @@
 package io.github.ololx.leetcode.examples.hard.task1206;
 
 import java.util.Objects;
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
