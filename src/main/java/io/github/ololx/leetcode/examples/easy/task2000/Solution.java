@@ -52,7 +52,7 @@ package io.github.ololx.leetcode.examples.easy.task2000;
  *
  * @author Alexander A. Kropotin
  */
-public class Solution {
+class Solution {
 
     public String reversePrefix(String word, char ch) {
         int rightPointer = 0;
@@ -66,14 +66,15 @@ public class Solution {
         }
 
         StringBuilder reversedWord = new StringBuilder();
-        int leftPointer = rightPointer;
+        int leftPointer = rightPointer + 1;
 
         while (leftPointer < word.length() || rightPointer >= 0) {
-            if (rightPointer > 0) {
+            if (rightPointer >= 0) {
                 reversedWord.append(word.charAt(rightPointer));
                 rightPointer--;
-            } else {
-                reversedWord.append(word.charAt(++leftPointer));
+            } else if (leftPointer < word.length()) {
+                reversedWord.append(word.charAt(leftPointer));
+                leftPointer++;
             }
         }
 
