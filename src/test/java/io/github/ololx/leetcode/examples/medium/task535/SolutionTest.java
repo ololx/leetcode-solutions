@@ -27,6 +27,10 @@ public class SolutionTest {
 
     @Test(dataProvider = "providesUrls")
     public void decode_whenLongUrlIsNotNull_thenReturnTinyUrl(String longUrl, String shortUrl) {
+        //We need to create short url and add the hash
+        Solution.Codec codec = new Solution.Codec();
+        codec.encode(longUrl);
+
         assertEquals(new Solution.Codec().decode(shortUrl), longUrl);
     }
 }
