@@ -42,7 +42,7 @@ public class SolutionTest {
     }
 
     @Test(dataProvider = "providesLists")
-    public void hasCycle_whnCycleIsPresented_thenReturnTrue(Solution.ListNode list,
+    public void hasCycle_whenCycleIsPresented_thenReturnTrue(Solution.ListNode list,
                                                             boolean expected) {
         assertEquals(new Solution().hasCycle(list), expected);
     }

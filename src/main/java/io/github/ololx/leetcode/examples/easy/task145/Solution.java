@@ -77,5 +77,15 @@ public class Solution {
             this.left = left;
             this.right = right;
         }
+
+        @Override
+        public String toString() {
+            return String.format(
+                    "[%s, %s, %s]",
+                    this.val,
+                    this.left != null ? this.left.toString() : null,
+                    this.right != null ? this.right.toString() : null
+            );
+        }
     }
 }
