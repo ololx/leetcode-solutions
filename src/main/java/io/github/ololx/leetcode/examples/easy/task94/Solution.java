@@ -1,17 +1,17 @@
-package io.github.ololx.leetcode.examples.easy.task145;
+package io.github.ololx.leetcode.examples.easy.task94;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
 /**
- * 145. Binary Tree Postorder Traversal
+ * 94. Binary Tree Inorder Traversal
  *
- * Given the root of a binary tree, return the postorder traversal of its nodes' values.
+ * Given the root of a binary tree, return the inorder traversal of its nodes' values.
  *
  * Example 1:
  * <p>Input: root = [1,null,2,3]
- * Output: [3,2,1]</p>
+ * Output: [1,3,2]</p>
  *
  * Example 2:
  * <p>Input: root = []
@@ -40,20 +40,20 @@ import java.util.Stack;
  */
 public class Solution {
 
-    public List<Integer> postorderTraversal(TreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> values = new ArrayList<>();
         Stack<TreeNode> tempNodes = new Stack<>();
         TreeNode currentNode = root;
 
-        while(!tempNodes.isEmpty() || currentNode != null) {
-            while(currentNode != null) {
+        while (!tempNodes.isEmpty() || currentNode != null) {
+            while (currentNode != null) {
                 tempNodes.push(currentNode);
-                values.add(0, currentNode.val);
-                currentNode = currentNode.right;
+                currentNode = currentNode.left;
             }
 
-            TreeNode node = tempNodes.pop();
-            currentNode = node.left;
+            currentNode = tempNodes.pop();
+            values.add(currentNode.val);
+            currentNode = currentNode.right;
         }
 
         return values;

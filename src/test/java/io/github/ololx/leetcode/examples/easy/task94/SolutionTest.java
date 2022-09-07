@@ -1,4 +1,4 @@
-package io.github.ololx.leetcode.examples.easy.task145;
+package io.github.ololx.leetcode.examples.easy.task94;
 
 import io.github.ololx.cranberry.logging.annotation.LogParam;
 import org.testng.annotations.DataProvider;
@@ -11,7 +11,7 @@ import static org.testng.Assert.assertEquals;
 
 /**
  * project leetcode-solutions
- * created 07.09.2022 09:00
+ * created 07.09.2022 15:00
  *
  * @author Alexander A. Kropotin
  */
@@ -30,7 +30,7 @@ public class SolutionTest {
                                     null
                             )
                     ),
-                        List.of(3, 2, 1)
+                        List.of(1, 3, 2)
                 },
                 {
                     new Solution.TreeNode(1),
@@ -45,8 +45,8 @@ public class SolutionTest {
 
     @LogParam
     @Test(dataProvider = "providesTreeNodesAndLists")
-    public void postorderTraversal_whenRootIsNotNull_thenReturnAllInPostOrder(Solution.TreeNode root,
-                                                                              List<Integer> expected) {
-        assertEquals(new Solution().postorderTraversal(root), expected);
+    public void inorderTraversal_whenRootIsNotNull_thenReturnAllInPostOrder(Solution.TreeNode root,
+                                                                            List<Integer> expected) {
+        assertEquals(new Solution().inorderTraversal(root), expected);
     }
 }
