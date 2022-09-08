@@ -1,5 +1,7 @@
 # general exclude
 !.gitignore
+!.github
+!.codecov.yml
 
 # all hidden files
 .*
