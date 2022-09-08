@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All tests suite">
+    <test name="All easy solutions tests">
+        <packages>
+            <package name="io.github.ololx.leetcode.solutions.easy.*"/>
+        </packages>
+    </test>
+    <test name="All medium solutions tests">
+        <packages>
+            <package name="io.github.ololx.leetcode.solutions.medium.*"/>
+        </packages>
+    </test>
+    <test name="All hard solutions tests">
+        <packages>
+            <package name="io.github.ololx.leetcode.solutions.hard.*"/>
+        </packages>
+    </test>
+</suite>
