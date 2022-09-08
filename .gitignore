@@ -1,10 +1,10 @@
+# all hidden files
+.*
+
 # general exclude
 !.gitignore
 !.github
 !.codecov.yml
-
-# all hidden files
-.*
 
 # general swap/backup files
 *.so
