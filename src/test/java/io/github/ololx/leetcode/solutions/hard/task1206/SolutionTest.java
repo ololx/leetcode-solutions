@@ -18,7 +18,7 @@ public class SolutionTest {
 
     @Test
     public void test() {
-        Solution.Skiplist skiplist = new Solution.Skiplist();
+        Solution.Skiplist skiplist = Solution.newInstance();
 
         assertEquals(skiplist.search(3), false);
 

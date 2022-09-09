@@ -78,6 +78,10 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class Solution {
 
+    public static Skiplist newInstance() {
+        return new Skiplist();
+    }
+
     public static class Skiplist {
 
         public static final int MAX_LEVEL = 4;
