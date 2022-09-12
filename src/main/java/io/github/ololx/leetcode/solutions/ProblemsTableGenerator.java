@@ -64,8 +64,7 @@ public class ProblemsTableGenerator {
                     .toString();
             String levelPackageName = path.getParent()
                     .getParent().getFileName()
-                    .toString()
-                    .toUpperCase();
+                    .toString();
             tableContent.append("        <td>");
             tableContent.append(
                     hyperLinkBuilder.build(
@@ -77,7 +76,7 @@ public class ProblemsTableGenerator {
             tableContent.append("</td>\n");
 
             tableContent.append("        <td>");
-            tableContent.append(levelPackageName);
+            tableContent.append(levelPackageName.toUpperCase());
             tableContent.append("</td>\n");
 
             tableContent.append("    </tr>\n");
