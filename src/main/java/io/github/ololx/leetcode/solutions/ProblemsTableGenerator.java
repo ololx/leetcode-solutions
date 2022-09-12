@@ -14,10 +14,14 @@ public class ProblemsTableGenerator {
 
     private static final String PROBLEM_NAME_DUMP_SYMBOLS = "\\s\\*\\s";
 
-    private static final String LINK_PREFIX = "https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions";
+    private static final String GIT_LINK = "https://github.com/ololx/leetcode-solutions/tree/main";
+
+    private static final String LEETCODE_LINK = "https://leetcode.com/problems";
 
     public static void main(String[] args) throws IOException {
-        List<Path> paths = Files.walk(Path.of(System.getProperty("user.dir") + "/src/main/java"))
+        Path projectDirectoryPath = Path.of(System.getProperty("user.dir"));
+
+        List<Path> paths = Files.walk(Path.of(projectDirectoryPath.toString(), "/src/main/java"))
                 .filter(file -> {
                     return file.toFile().isFile()
                             && file.getFileName().toString().contains("Solution")
@@ -38,7 +42,6 @@ public class ProblemsTableGenerator {
                 .collect(Collectors.toList());
 
         Pattern problemNameLinePattern = Pattern.compile(PROBLEM_NAME_REGEX);
-        HyperLinkBuilder hyperLinkBuilder = new HyperLinkBuilder(LINK_PREFIX);
         StringBuilder tableContent = new StringBuilder();
         int orderNumber = 0;
 
@@ -56,7 +59,7 @@ public class ProblemsTableGenerator {
                     .orElse("0. UNKNOWN")
                     .replaceAll(PROBLEM_NAME_DUMP_SYMBOLS, "");
             tableContent.append("        <td>");
-            tableContent.append(problemName);
+            tableContent.append(createLeetcodeHyperLink(LEETCODE_LINK, problemName));
             tableContent.append("</td>\n");
 
             String taskPackageName = path.getParent()
@@ -67,11 +70,7 @@ public class ProblemsTableGenerator {
                     .toString();
             tableContent.append("        <td>");
             tableContent.append(
-                    hyperLinkBuilder.build(
-                            levelPackageName,
-                            taskPackageName,
-                            path.getFileName().toString()
-                    )
+                    createGithubFileHyperLink(GIT_LINK, projectDirectoryPath.relativize(path))
             );
             tableContent.append("</td>\n");
 
@@ -85,23 +84,25 @@ public class ProblemsTableGenerator {
         System.out.println(tableContent.toString());
     }
 
-    private static final class HyperLinkBuilder {
+    public static String createGithubFileHyperLink(String linkPrefix, Path filePath) {
+        final String fileName = filePath.getFileName().toString();
 
-        private final String linkPrefix;
+        return String.format(
+                "<a href=\"%s/%s\">%s</a>",
+                linkPrefix,
+                filePath,
+                fileName.replaceAll("\\.java", "")
+        );
+    }
 
-        HyperLinkBuilder(String linkPrefix) {
-            this.linkPrefix = Objects.requireNonNull(linkPrefix);
-        }
-
-        public String build(String levelPackageName, String taskPackageName, String fileName) {
-            return String.format(
-                    "<a href=\"%s/%s/%s/%s\">%s</a>",
-                    this.linkPrefix,
-                    levelPackageName,
-                    taskPackageName,
-                    fileName,
-                    fileName.substring(0, fileName.length() - 5)
-            );
-        }
+    public static String createLeetcodeHyperLink(String linkPrefix, String problemName) {
+        final String title = problemName.replaceAll("\\d+\\.\\s|'", "");
+        final String urlEnd = title.toLowerCase().replaceAll("\\s", "-");
+        return String.format(
+                "<a href=\"%s/%s\">%s</a>",
+                linkPrefix,
+                urlEnd,
+                title
+        );
     }
 }
