@@ -18,15 +18,17 @@ public class ProblemsTableGenerator {
 
     public static void main(String[] args) throws IOException {
         List<Path> paths = Files.walk(Path.of(System.getProperty("user.dir") + "/src/main/java"))
-                .filter(file -> file.toFile().isFile())
-                .filter(file -> file.getParent().getFileName().toString().contains("task"))
-                .filter(file -> !file.getFileName().toString().contains("ProblemsTableGenerator"))
+                .filter(file -> {
+                    return file.toFile().isFile()
+                            && file.getFileName().toString().contains("Solution")
+                            && !file.getFileName().toString().contains("ProblemsTableGenerator");
+                })
                 .sorted((file1, file2) -> {
-                    String file1Name = file1.getParent()
+                    final String file1Name = file1.getParent()
                             .getFileName()
                             .toString()
                             .replaceAll("task", "");
-                    String file2Name = file2.getParent()
+                    final String file2Name = file2.getParent()
                             .getFileName()
                             .toString()
                             .replaceAll("task", "");
@@ -38,12 +40,13 @@ public class ProblemsTableGenerator {
         Pattern problemNameLinePattern = Pattern.compile(PROBLEM_NAME_REGEX);
         HyperLinkBuilder hyperLinkBuilder = new HyperLinkBuilder(LINK_PREFIX);
         StringBuilder tableContent = new StringBuilder();
+        int orderNumber = 0;
+
         for (Path path : paths) {
             tableContent.append("    <tr>\n");
 
-            String taskPackageName = path.getParent().getFileName().toString();
             tableContent.append("        <td>");
-            tableContent.append(taskPackageName.substring(4, taskPackageName.length()));
+            tableContent.append(++orderNumber);
             tableContent.append("</td>\n");
 
             String problemName = Files.readAllLines(path)
@@ -56,7 +59,13 @@ public class ProblemsTableGenerator {
             tableContent.append(problemName);
             tableContent.append("</td>\n");
 
-            String levelPackageName = path.getParent().getParent().getFileName().toString();
+            String taskPackageName = path.getParent()
+                    .getFileName()
+                    .toString();
+            String levelPackageName = path.getParent()
+                    .getParent().getFileName()
+                    .toString()
+                    .toUpperCase();
             tableContent.append("        <td>");
             tableContent.append(
                     hyperLinkBuilder.build(
