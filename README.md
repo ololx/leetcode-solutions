@@ -16,7 +16,7 @@ This is a repository with my solutions to problems from www.leetcode.com.
     <th>Solution</th>
     <th>Difficulty</th>
   </tr>
-    <tr>
+      <tr>
         <td>1</td>
         <td><a href="https://leetcode.com/problems/two-sum">Two Sum</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task1/Solution.java">Solution</a></td>
@@ -778,4 +778,11 @@ This is a repository with my solutions to problems from www.leetcode.com.
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2220/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
+    <tr>
+        <td>128</td>
+        <td><a href="https://leetcode.com/problems/most-frequent-even-element">Most Frequent Even Element</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2404/Solution.java">Solution</a></td>
+        <td>EASY</td>
+    </tr>
+
 </table>

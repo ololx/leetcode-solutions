@@ -1,6 +1,10 @@
 package io.github.ololx.leetcode.solutions;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
@@ -18,7 +22,7 @@ public class ProblemsTableGenerator {
 
     private static final String LEETCODE_LINK = "https://leetcode.com/problems";
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, URISyntaxException {
         Path projectDirectoryPath = Path.of(System.getProperty("user.dir"));
 
         List<Path> paths = Files.walk(Path.of(projectDirectoryPath.toString(), "/src/main/java"))
@@ -81,7 +85,19 @@ public class ProblemsTableGenerator {
             tableContent.append("    </tr>\n");
         }
 
-        System.out.println(tableContent.toString());
+        File readmePattern = loadReadmePattern();
+        List<String> readmeLines = Files.readAllLines(readmePattern.toPath())
+                .stream()
+                .map(line -> {
+                    if (!line.contains("{problems}")) {
+                        return line;
+                    }
+
+                    return line.replaceAll("\\{problems\\}", tableContent.toString());
+                })
+                .collect(Collectors.toList());
+        System.out.println(readmeLines);
+        Files.write(Path.of(System.getProperty("user.dir"), "/README.md"), readmeLines);
     }
 
     public static String createGithubFileHyperLink(String linkPrefix, Path filePath) {
@@ -104,5 +120,16 @@ public class ProblemsTableGenerator {
                 urlEnd,
                 title
         );
+    }
+
+    public static File loadReadmePattern() throws URISyntaxException {
+        URL resource = ProblemsTableGenerator.class.getClassLoader()
+                .getResource("README_PATTERN.md");
+
+        if (resource == null) {
+            throw new IllegalArgumentException("Readme pattern file not found");
+        }
+
+        return new File(resource.toURI());
     }
 }
