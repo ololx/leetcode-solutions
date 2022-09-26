@@ -1,14 +1,12 @@
 package io.github.ololx.leetcode.solutions;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.Objects;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -85,7 +83,7 @@ public class ProblemsTableGenerator {
             tableContent.append("    </tr>\n");
         }
 
-        File readmePattern = loadReadmePattern();
+        File readmePattern = loadReadmePattern(projectDirectoryPath);
         List<String> readmeLines = Files.readAllLines(readmePattern.toPath())
                 .stream()
                 .map(line -> {
@@ -122,14 +120,13 @@ public class ProblemsTableGenerator {
         );
     }
 
-    public static File loadReadmePattern() throws URISyntaxException {
-        URL resource = ProblemsTableGenerator.class.getClassLoader()
-                .getResource("README_PATTERN.md");
+    public static File loadReadmePattern(Path projectDirectoryPath) throws URISyntaxException {
+        File resource = Path.of(projectDirectoryPath.toString(), "/src/main/java/resources/README_PATTERN.md").toFile();
 
-        if (resource == null) {
+        if (!resource.exists()) {
             throw new IllegalArgumentException("Readme pattern file not found");
         }
 
-        return new File(resource.toURI());
+        return resource;
     }
 }
