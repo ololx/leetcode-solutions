@@ -498,7 +498,7 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>81</td>
-        <td><a href="https://leetcode.com/problems/unknown">UNKNOWN</a></td>
+        <td><a href="https://leetcode.com/problems/fizz-buzz">Fizz Buzz</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task412/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
