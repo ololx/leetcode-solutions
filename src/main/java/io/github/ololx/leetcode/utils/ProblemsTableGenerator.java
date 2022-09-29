@@ -1,4 +1,4 @@
-package io.github.ololx.leetcode.solutions;
+package io.github.ololx.leetcode.utils;
 
 import java.io.File;
 import java.io.IOException;

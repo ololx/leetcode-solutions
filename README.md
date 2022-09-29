@@ -636,7 +636,7 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>104</td>
-        <td><a href="https://leetcode.com/problems/unknown">UNKNOWN</a></td>
+        <td><a href="https://leetcode.com/problems/squares-of-a-sorted-array">Squares of a Sorted Array</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task977/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
