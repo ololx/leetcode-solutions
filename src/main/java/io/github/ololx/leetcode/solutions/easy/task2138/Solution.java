@@ -65,26 +65,20 @@ package io.github.ololx.leetcode.solutions.easy.task2138;
 public class Solution {
 
     public String[] divideString(String s, int k, char fill) {
-        int groupsCount = s.length() / k;
-        if (s.length() % k != 0) {
-            groupsCount++;
-        }
+        String[] groups = new String[s.length() % k != 0 ? s.length() / k + 1 : s.length() / k];
 
-        String[] groups = new String[groupsCount];
-        StringBuilder group = new StringBuilder();
-        int mainIndex = -1;
+        for (int mainIndex = 0; mainIndex < groups.length * k; mainIndex += k) {
+            StringBuilder group = new StringBuilder();
 
-        while (++mainIndex <= groupsCount * k) {
-            if (mainIndex > 0 && mainIndex % k == 0) {
-                groups[(mainIndex / k) - 1] = group.toString();
-                group = new StringBuilder();
+            for (int nestedIndex = 0; nestedIndex < k; nestedIndex++) {
+                if (mainIndex + nestedIndex >= s.length()) {
+                    group.append(fill);
+                } else {
+                    group.append(s.charAt(mainIndex + nestedIndex));
+                }
             }
 
-            if (mainIndex >= s.length()) {
-                group.append(fill);
-            } else {
-                group.append(s.charAt(mainIndex));
-            }
+            groups[mainIndex / k] = group.toString();
         }
 
         return groups;
