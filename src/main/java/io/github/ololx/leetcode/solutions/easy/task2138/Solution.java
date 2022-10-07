@@ -71,11 +71,7 @@ public class Solution {
             StringBuilder group = new StringBuilder();
 
             for (int nestedIndex = 0; nestedIndex < k; nestedIndex++) {
-                if (mainIndex + nestedIndex >= s.length()) {
-                    group.append(fill);
-                } else {
-                    group.append(s.charAt(mainIndex + nestedIndex));
-                }
+                group.append(mainIndex + nestedIndex >= s.length() ? fill : s.charAt(mainIndex + nestedIndex));
             }
 
             groups[mainIndex / k] = group.toString();
