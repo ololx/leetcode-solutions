@@ -14,14 +14,13 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest {
 
-    @DataProvider(name = "divideString_whenStringIsNotEmpty_thenDivideString")
+    @DataProvider(name = "providesStringsKAndFill")
     public static Object[][] providesStringsKAndFill() {
         return new Object[][] {
                 {"abcdefghi", 3, 'x', new String[] {"abc", "def", "ghi"}}
         };
     }
 
-    @LogParam
     @Test(dataProvider = "providesStringsKAndFill")
     public void divideString_whenStringIsNotEmpty_thenDivideString(String s,
                                                                    int k,

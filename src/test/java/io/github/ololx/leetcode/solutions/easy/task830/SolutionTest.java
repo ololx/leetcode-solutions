@@ -16,7 +16,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest {
 
-    @DataProvider(name = "largeGroupPositions_whenStringWithGroups_thenReturnPositions")
+    @DataProvider(name = "providesStrings")
     public static Object[][] providesStrings() {
         return new Object[][] {
                 {"aaa", List.of(List.of(0, 2))},
