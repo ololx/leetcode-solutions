@@ -1,7 +1,6 @@
 package io.github.ololx.leetcode.solutions.easy.task2138;
 
 import io.github.ololx.cranberry.logging.annotation.LogParam;
-import io.github.ololx.leetcode.solutions.easy.task2138.Solution;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -15,7 +14,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest {
 
-    @DataProvider(name = "providesStringsKAndFill")
+    @DataProvider(name = "divideString_whenStringIsNotEmpty_thenDivideString")
     public static Object[][] providesStringsKAndFill() {
         return new Object[][] {
                 {"abcdefghi", 3, 'x', new String[] {"abc", "def", "ghi"}}
@@ -24,7 +23,10 @@ public class SolutionTest {
 
     @LogParam
     @Test(dataProvider = "providesStringsKAndFill")
-    public void test(String s, int k, char fill, String[] expected) {
+    public void divideString_whenStringIsNotEmpty_thenDivideString(String s,
+                                                                   int k,
+                                                                   char fill,
+                                                                   String[] expected) {
         assertEquals(new Solution().divideString(s, k, fill), expected);
     }
 }
