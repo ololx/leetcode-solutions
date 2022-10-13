@@ -9,7 +9,7 @@ import java.util.List;
  *
  * @author Alexander A. Kropotin
  */
-public class Solution {
+class Solution {
 
     public List<String> fullJustify(String[] words, int maxWidth) {
         List<String> justificatedStrings = new ArrayList<>();
@@ -22,16 +22,25 @@ public class Solution {
             if (wordIndex == words.length - 1 || currentWidth + words[wordIndex + 1].length() + currentWordsCount - 1 >= maxWidth) {
                 StringBuilder justificatedString = new StringBuilder();
                 int totalSpaceWidth = maxWidth - currentWidth;
-                int spaceWidth = (int) Math.ceil((double) totalSpaceWidth / (currentWordsCount - 1));
 
                 while (--currentWordsCount >= 0) {
                     justificatedString.append(words[wordIndex - currentWordsCount]);
+
+                    int spaceWidth = (int) Math.ceil((double)totalSpaceWidth / currentWordsCount);
+
+                    if (wordIndex == words.length - 1) {
+                        spaceWidth = 1;
+                    }
 
                     for (int j = 0; j < Math.min(spaceWidth, totalSpaceWidth); j++) {
                         justificatedString.append(" ");
                     }
 
                     totalSpaceWidth -= spaceWidth;
+                }
+
+                for (int j = 0; j < totalSpaceWidth; j++) {
+                    justificatedString.append(" ");
                 }
 
                 justificatedStrings.add(justificatedString.toString());
