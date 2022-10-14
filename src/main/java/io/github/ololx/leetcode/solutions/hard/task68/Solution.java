@@ -106,19 +106,19 @@ public class Solution {
 
             if (wordIndex == words.length - 1
                     || width + words[wordIndex + 1].length() + wordsCount - 1 >= maxWidth) {
-                int totalSpaceWidth = maxWidth - width;
+                int allSpaces = maxWidth - width;
                 StringBuilder processedString = new StringBuilder();
 
                 while (--wordsCount >= 0) {
                     processedString.append(words[wordIndex - wordsCount]);
-                    int spaceWidth = wordIndex == words.length - 1
+                    int spaces = wordIndex == words.length - 1
                             ? 1
-                            : (int) Math.ceil((double)totalSpaceWidth / wordsCount);
-                    processedString.append(" ".repeat(Math.min(spaceWidth, totalSpaceWidth)));
-                    totalSpaceWidth -= spaceWidth;
+                            : (int) Math.ceil((double) allSpaces / wordsCount);
+                    processedString.append(" ".repeat(Math.max(0, Math.min(spaces, allSpaces))));
+                    allSpaces -= spaces;
                 }
 
-                processedString.append(" ".repeat(totalSpaceWidth));
+                processedString.append(" ".repeat(Math.max(0, allSpaces)));
                 processedStrings.add(processedString.toString());
                 wordsCount = 0;
                 width = 0;
