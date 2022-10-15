@@ -120,7 +120,7 @@ public class ProblemsTableGenerator {
     }
 
     public static File loadReadmePattern(Path projectDirectoryPath) {
-        File resource = Path.of(projectDirectoryPath.toString(), "/src/main/java/resources/README_PATTERN.md").toFile();
+        File resource = Path.of(projectDirectoryPath.toString(), "/src/main/resources/README_PATTERN.md").toFile();
 
         if (!resource.exists()) {
             throw new IllegalArgumentException("Readme pattern file not found");
