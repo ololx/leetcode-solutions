@@ -1,14 +1,12 @@
 package io.github.ololx.leetcode.solutions.medium.task229;
 
 import io.github.ololx.cranberry.logging.annotation.LogParam;
-import io.github.ololx.leetcode.solutions.medium.task229.Solution;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 /**
  * project leetcode-solutions

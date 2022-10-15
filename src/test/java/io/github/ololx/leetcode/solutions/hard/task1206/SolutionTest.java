@@ -2,8 +2,6 @@ package io.github.ololx.leetcode.solutions.hard.task1206;
 
 import org.testng.annotations.Test;
 
-import java.util.logging.Logger;
-
 import static org.testng.Assert.assertEquals;
 
 /**

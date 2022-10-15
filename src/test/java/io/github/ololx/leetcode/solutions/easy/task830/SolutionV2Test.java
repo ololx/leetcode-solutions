@@ -13,11 +13,11 @@ import static org.testng.Assert.assertEquals;
  *
  * @author Alexander A. Kropotin
  */
-public class SolutionTest extends AbstractSolutionTest {
+public class SolutionV2Test extends AbstractSolutionTest {
 
     @LogParam
     @Test(dataProvider = "providesStrings")
     public void largeGroupPositions_whenStringWithGroups_thenReturnPositions(String s, List<List<Integer>> expected) {
-        assertEquals(new Solution().largeGroupPositions(s), expected);
+        assertEquals(new SolutionV2().largeGroupPositions(s), expected);
     }
 }
