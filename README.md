@@ -732,84 +732,90 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>120</td>
+        <td><a href="https://leetcode.com/problems/rearrange-spaces-between-words">Rearrange Spaces Between Words</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task1592/Solution.java">Solution</a></td>
+        <td>EASY</td>
+    </tr>
+    <tr>
+        <td>121</td>
         <td><a href="https://leetcode.com/problems/crawler-log-folder">Crawler Log Folder</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task1598/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>121</td>
+        <td>122</td>
         <td><a href="https://leetcode.com/problems/max-number-of-k-sum-pairs">Max Number of K-Sum Pairs</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1679/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>122</td>
+        <td>123</td>
         <td><a href="https://leetcode.com/problems/reformat-phone-number">Reformat Phone Number</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task1694/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>123</td>
+        <td>124</td>
         <td><a href="https://leetcode.com/problems/merge-strings-alternately">Merge Strings Alternately</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task1768/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>124</td>
+        <td>125</td>
         <td><a href="https://leetcode.com/problems/reverse-prefix-of-word">Reverse Prefix of Word</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2000/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>125</td>
+        <td>126</td>
         <td><a href="https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence">Check if Numbers Are Ascending in a Sentence</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2042/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>126</td>
+        <td>127</td>
         <td><a href="https://leetcode.com/problems/k-radius-subarray-averages">K Radius Subarray Averages</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2090/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>127</td>
+        <td>128</td>
         <td><a href="https://leetcode.com/problems/find-first-palindromic-string-in-the-array">Find First Palindromic String in the Array</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2108/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>128</td>
+        <td>129</td>
         <td><a href="https://leetcode.com/problems/a-number-after-a-double-reversal">A Number After a Double Reversal</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2119/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>129</td>
+        <td>130</td>
         <td><a href="https://leetcode.com/problems/check-if-all-as-appears-before-all-bs">Check if All As Appears Before All Bs</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2124/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>130</td>
+        <td>131</td>
         <td><a href="https://leetcode.com/problems/divide-a-string-into-groups-of-size-k">Divide a String Into Groups of Size k</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2138/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>131</td>
+        <td>132</td>
         <td><a href="https://leetcode.com/problems/count-operations-to-obtain-zero">Count Operations to Obtain Zero</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2169/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>132</td>
+        <td>133</td>
         <td><a href="https://leetcode.com/problems/minimum-bit-flips-to-convert-number">Minimum Bit Flips to Convert Number</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2220/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>133</td>
+        <td>134</td>
         <td><a href="https://leetcode.com/problems/most-frequent-even-element">Most Frequent Even Element</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2404/Solution.java">Solution</a></td>
         <td>EASY</td>
