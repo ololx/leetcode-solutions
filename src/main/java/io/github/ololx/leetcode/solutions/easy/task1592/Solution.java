@@ -1,8 +1,5 @@
 package io.github.ololx.leetcode.solutions.easy.task1592;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 /**
  * 1592. Rearrange Spaces Between Words
  *

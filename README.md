@@ -820,5 +820,11 @@ This is a repository with my solutions to problems from www.leetcode.com.
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2404/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
+    <tr>
+        <td>135</td>
+        <td><a href="https://leetcode.com/problems/remove-letter-to-equalize-frequency">Remove Letter To Equalize Frequency</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2423/Solution.java">Solution</a></td>
+        <td>EASY</td>
+    </tr>
 
 </table>
