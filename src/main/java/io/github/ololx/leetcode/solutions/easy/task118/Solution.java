@@ -14,11 +14,11 @@ import java.util.List;
  *  1 2 1
  * 1 3 3 1
  *
- * Example1:
+ * Example 1:
  * <p>Input: numRows = 5
  * Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]</p>
  *
- * Example2:
+ * Example 2:
  * <p>Input: numRows = 1
  * Output: [[1]]</p>
  *
