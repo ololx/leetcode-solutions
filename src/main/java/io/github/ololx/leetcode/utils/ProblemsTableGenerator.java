@@ -110,7 +110,9 @@ public class ProblemsTableGenerator {
 
     public static String createLeetcodeHyperLink(String linkPrefix, String problemName) {
         final String title = problemName.replaceAll("\\d+\\.\\s|'", "");
-        final String urlEnd = title.toLowerCase().replaceAll("\\s", "-");
+        final String urlEnd = title.toLowerCase()
+                .replaceAll("-+", " ")
+                .replaceAll("\\s+", "-");
         return String.format(
                 "<a href=\"%s/%s\">%s</a>",
                 linkPrefix,

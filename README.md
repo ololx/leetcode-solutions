@@ -462,13 +462,13 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>74</td>
-        <td><a href="https://leetcode.com/problems/range-sum-query---immutable">Range Sum Query - Immutable</a></td>
+        <td><a href="https://leetcode.com/problems/range-sum-query-immutable">Range Sum Query - Immutable</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task303/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
         <td>75</td>
-        <td><a href="https://leetcode.com/problems/range-sum-query-2d---immutable">Range Sum Query 2D - Immutable</a></td>
+        <td><a href="https://leetcode.com/problems/range-sum-query-2d-immutable">Range Sum Query 2D - Immutable</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task304/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
