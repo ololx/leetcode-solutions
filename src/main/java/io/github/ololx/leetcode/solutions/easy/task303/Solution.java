@@ -1,7 +1,7 @@
 package io.github.ololx.leetcode.solutions.easy.task303;
 
 /**
- * 303. Range Sum Query - Immutable
+ * 303. Range Sum Query Immutable
  *
  * Given an integer array nums, handle multiple queries of the following type:
  *
