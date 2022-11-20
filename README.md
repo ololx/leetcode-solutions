@@ -876,6 +876,12 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>143</td>
+        <td><a href="https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three">Average Value of Even Numbers That Are Divisible by Three</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2455/Solution.java">Solution</a></td>
+        <td>EASY</td>
+    </tr>
+    <tr>
+        <td>144</td>
         <td><a href="https://leetcode.com/problems/convert-the-temperature">Convert the Temperature</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2469/Solution.java">Solution</a></td>
         <td>EASY</td>
