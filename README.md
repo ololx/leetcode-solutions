@@ -886,5 +886,11 @@ This is a repository with my solutions to problems from www.leetcode.com.
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2469/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
+    <tr>
+        <td>145</td>
+        <td><a href="https://leetcode.com/problems/number-of-unequal-triplets-in-array">Number of Unequal Triplets in Array</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2475/Solution.java">Solution</a></td>
+        <td>EASY</td>
+    </tr>
 
 </table>
