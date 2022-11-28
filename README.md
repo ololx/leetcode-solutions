@@ -904,5 +904,11 @@ This is a repository with my solutions to problems from www.leetcode.com.
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2475/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
+    <tr>
+        <td>148</td>
+        <td><a href="https://leetcode.com/problems/append-characters-to-string-to-make-subsequence">Append Characters to String to Make Subsequence</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2486/Solution.java">Solution</a></td>
+        <td>MEDIUM</td>
+    </tr>
 
 </table>
