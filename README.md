@@ -906,6 +906,12 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>148</td>
+        <td><a href="https://leetcode.com/problems/find-the-pivot-integer">Find the Pivot Integer</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2485/Solution.java">Solution</a></td>
+        <td>EASY</td>
+    </tr>
+    <tr>
+        <td>149</td>
         <td><a href="https://leetcode.com/problems/append-characters-to-string-to-make-subsequence">Append Characters to String to Make Subsequence</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2486/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
