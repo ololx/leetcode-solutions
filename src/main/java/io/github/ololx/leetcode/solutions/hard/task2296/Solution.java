@@ -110,54 +110,87 @@ public class Solution {
 
     static class TextEditor {
 
-        private final Node head;
+        private final Node head = new Node(null);
 
-        private final Node tail;
+        private final Node tail = new Node(null);
+
+        private Node cursor = new Node('|');
 
         public TextEditor() {
-            this.head = new Node(null);
-            this.tail = new Node(null);
-            this.head.next = this.tail;
-            this.tail.previous = this.head;
+            this.head.next = this.cursor;
+            this.cursor.previous = this.head;
+            this.tail.previous = this.cursor;
+            this.cursor.next = this.tail;
         }
 
         public void addText(String text) {
-            Node currentNode = this.tail.previous;
+            final char[] chars = Objects.requireNonNull(text).toCharArray();
 
-            for (char character : Objects.requireNonNull(text).toCharArray()) {
+            for (char character : chars) {
                 final Node newNode = new Node(character);
-                currentNode.next = newNode;
-                newNode.previous = currentNode;
-                currentNode = newNode;
+                newNode.previous= this.cursor.previous;
+                this.cursor.previous = newNode;
+                newNode.next = this.cursor;
             }
-
-            currentNode.next = this.tail;
-            this.tail.previous = currentNode;
         }
 
         public int deleteText(int k) {
-            Node currentNode = this.tail.previous;
-
             int deleted = 0;
-            while(deleted < k && currentNode.previous != null) {
-                currentNode = currentNode.previous;
+
+            while(deleted < k && this.cursor.previous != null && this.cursor.previous.value != null) {
+                this.cursor = this.cursor.previous;
+                this.cursor.next = this.tail;
                 deleted++;
             }
-
-            currentNode.next = this.tail;
-            this.tail.previous = currentNode;
 
             return deleted;
         }
 
-        //FIXME:: Need to write body
         public String cursorLeft(int k) {
-            return new String();
+            int movedToLeft = 0;
+
+            while(movedToLeft < k && this.cursor.previous != null && this.cursor.previous.value != null) {
+                final Node current = this.cursor.previous;
+                current.next = this.cursor.next;
+                this.cursor.next = current;
+                this.cursor.previous = current.previous;
+                current.previous = this.cursor;
+
+                movedToLeft++;
+            }
+
+            return this.getLeftText();
         }
 
-        //FIXME:: Need to write body
         public String cursorRight(int k) {
-            return new String();
+            int movedToRight = 0;
+
+            while(movedToRight < k && this.cursor.next != null && this.cursor.next.value != null) {
+                final Node current = this.cursor.next;
+                current.previous= this.cursor.previous;
+                this.cursor.previous = current;
+                this.cursor.next = current.next;
+                current.next = this.cursor;
+
+                movedToRight++;
+            }
+
+            return this.getLeftText();
+        }
+
+        private String getLeftText() {
+            StringBuilder leftText = new StringBuilder();
+
+            int moveToLeft = 0;
+            Node current = this.cursor;
+
+            while(moveToLeft < 10 && current.previous != null) {
+                leftText.insert(0, current.value);
+                current = current.previous;
+                moveToLeft++;
+            }
+
+            return leftText.toString();
         }
 
         static class Node {
