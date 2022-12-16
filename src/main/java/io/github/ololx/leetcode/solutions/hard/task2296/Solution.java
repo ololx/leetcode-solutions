@@ -128,7 +128,7 @@ public class Solution {
 
             for (char character : chars) {
                 final Node newNode = new Node(character);
-                newNode.previous= this.cursor.previous;
+                newNode.previous = this.cursor.previous;
                 this.cursor.previous = newNode;
                 newNode.next = this.cursor;
             }
@@ -167,7 +167,7 @@ public class Solution {
 
             while(movedToRight < k && this.cursor.next != null && this.cursor.next.value != null) {
                 final Node current = this.cursor.next;
-                current.previous= this.cursor.previous;
+                current.previous = this.cursor.previous;
                 this.cursor.previous = current;
                 this.cursor.next = current.next;
                 current.next = this.cursor;
@@ -191,6 +191,19 @@ public class Solution {
             }
 
             return leftText.toString();
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder text = new StringBuilder();
+
+            Node current = this.head.next;
+            while(current.next != null && current.value != null) {
+               text.append(current.value);
+               current = current.next;
+            }
+
+            return text.toString();
         }
 
         static class Node {
