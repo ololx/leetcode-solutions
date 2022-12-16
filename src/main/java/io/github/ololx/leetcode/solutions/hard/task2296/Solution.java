@@ -182,9 +182,9 @@ public class Solution {
             StringBuilder leftText = new StringBuilder();
 
             int moveToLeft = 0;
-            Node current = this.cursor;
+            Node current = this.cursor.previous;
 
-            while(moveToLeft < 10 && current.previous != null) {
+            while(moveToLeft < 10 && current.value != null) {
                 leftText.insert(0, current.value);
                 current = current.previous;
                 moveToLeft++;
