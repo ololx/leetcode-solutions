@@ -124,24 +124,27 @@ public class Solution {
         }
 
         public void addText(String text) {
-            final char[] chars = Objects.requireNonNull(text).toCharArray();
+            final char[] symbols = Objects.requireNonNull(text).toCharArray();
 
-            for (char character : chars) {
-                final Node newNode = new Node(character);
-                newNode.previous = this.cursor.previous;
+            for (char symbol : symbols) {
+                final Node newNode = new Node(symbol, this.cursor.previous, this.cursor);
+                this.cursor.previous.next = newNode;
                 this.cursor.previous = newNode;
-                newNode.next = this.cursor;
             }
         }
 
         public int deleteText(int k) {
             int deleted = 0;
+            Node current = this.cursor.previous;
 
-            while(deleted < k && this.cursor.previous != null && this.cursor.previous.value != null) {
-                this.cursor = this.cursor.previous;
-                this.cursor.next = this.tail;
+            while(deleted < k && current.previous != null && current.value != null) {
+                current = current.previous;
+                current.next = this.cursor;
                 deleted++;
             }
+
+            this.cursor.previous = current;
+            this.cursor.next = this.tail;
 
             return deleted;
         }
@@ -214,7 +217,13 @@ public class Solution {
             private Node previous;
 
             private Node(Character value) {
+                this(value, null, null);
+            }
+
+            private Node(Character value, Node previous, Node next) {
                 this.value = value;
+                this.previous = previous;
+                this.next = next;
             }
         }
     }

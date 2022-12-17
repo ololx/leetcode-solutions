@@ -28,6 +28,7 @@ public class SolutionTest {
         log.info(String.valueOf(textEditor.deleteText(4))); // return 4
         // The current text is "leet|".
         // 4 characters were deleted.
+        log.info(textEditor.toString());
 
         textEditor.addText("practice"); // The current text is "leetpractice|".
         log.info(textEditor.toString());
