@@ -142,9 +142,10 @@ public class Solution {
                 deleted++;
             }
 
-            current.next = this.cursor;
-            this.cursor.previous = current;
-            this.cursor.next = this.tail;
+            if (deleted > 0) {
+                current.next = this.cursor;
+                this.cursor.previous = current;
+            }
 
             return deleted;
         }
@@ -160,6 +161,7 @@ public class Solution {
 
             if (leftSteps > 0) {
                 this.cursor.previous.next = this.cursor.next;
+                this.cursor.next.previous = this.cursor.previous;
                 this.cursor.previous = current;
                 this.cursor.next = current.next;
                 current.next = this.cursor;
@@ -172,12 +174,13 @@ public class Solution {
             int rightSteps = 0;
             Node current = this.cursor.next;
 
-            while(rightSteps < k && current.next != null && current.value != null) {
+            while(rightSteps < k - 1 && current.next != null && current.value != null) {
                 current = current.next;
                 rightSteps++;
             }
 
             if (rightSteps > 0) {
+                this.cursor.previous.next = this.cursor.next;
                 this.cursor.next.previous = this.cursor.previous;
                 this.cursor.previous = current;
                 this.cursor.next = current.next;
@@ -208,7 +211,7 @@ public class Solution {
 
             Node current = this.head.next;
             int i = 0;
-            while(++i < 23 && current.value != null) {
+            while(current.value != null) {
                text.append(current.value);
                current = current.next;
             }
@@ -217,7 +220,7 @@ public class Solution {
         }
 
         static class Node {
-            private Character value;
+            private final Character value;
 
             private Node next;
 
