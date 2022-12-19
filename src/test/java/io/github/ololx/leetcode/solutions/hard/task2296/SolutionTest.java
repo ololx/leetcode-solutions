@@ -58,6 +58,6 @@ public class SolutionTest {
         log.info(String.valueOf(textEditor.cursorRight(6))); // return "practi"
         // The current text is "practi|ce".
         // "practi" is the last min(10, 6) = 6 characters to the left of the cursor.
-
+        log.info(textEditor.toString());
     }
 }

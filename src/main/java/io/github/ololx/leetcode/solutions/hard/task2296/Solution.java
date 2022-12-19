@@ -139,10 +139,10 @@ public class Solution {
 
             while(deleted < k && current.previous != null && current.value != null) {
                 current = current.previous;
-                current.next = this.cursor;
                 deleted++;
             }
 
+            current.next = this.cursor;
             this.cursor.previous = current;
             this.cursor.next = this.tail;
 
@@ -150,32 +150,38 @@ public class Solution {
         }
 
         public String cursorLeft(int k) {
-            int movedToLeft = 0;
+            int leftSteps = 0;
+            Node current = this.cursor.previous;
 
-            while(movedToLeft < k && this.cursor.previous != null && this.cursor.previous.value != null) {
-                final Node current = this.cursor.previous;
-                current.next = this.cursor.next;
-                this.cursor.next = current;
-                this.cursor.previous = current.previous;
-                current.previous = this.cursor;
+            while(leftSteps < k && current.previous != null && current.value != null) {
+                current = current.previous;
+                leftSteps++;
+            }
 
-                movedToLeft++;
+            if (leftSteps > 0) {
+                this.cursor.previous.next = this.cursor.next;
+                this.cursor.previous = current;
+                this.cursor.next = current.next;
+                current.next = this.cursor;
             }
 
             return this.getLeftText();
         }
 
         public String cursorRight(int k) {
-            int movedToRight = 0;
+            int rightSteps = 0;
+            Node current = this.cursor.next;
 
-            while(movedToRight < k && this.cursor.next != null && this.cursor.next.value != null) {
-                final Node current = this.cursor.next;
-                current.previous = this.cursor.previous;
+            while(rightSteps < k && current.next != null && current.value != null) {
+                current = current.next;
+                rightSteps++;
+            }
+
+            if (rightSteps > 0) {
+                this.cursor.next.previous = this.cursor.previous;
                 this.cursor.previous = current;
                 this.cursor.next = current.next;
                 current.next = this.cursor;
-
-                movedToRight++;
             }
 
             return this.getLeftText();
@@ -201,7 +207,8 @@ public class Solution {
             StringBuilder text = new StringBuilder();
 
             Node current = this.head.next;
-            while(current.next != null && current.value != null) {
+            int i = 0;
+            while(++i < 23 && current.value != null) {
                text.append(current.value);
                current = current.next;
             }
