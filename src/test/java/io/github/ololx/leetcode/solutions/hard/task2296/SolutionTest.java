@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import java.util.logging.Logger;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 /**
  * project leetcode-solutions
@@ -20,44 +21,67 @@ public class SolutionTest {
 
     @Test
     public void removeElement_whenElementsWereRemoved_thenReturnCountOfStayingElements() {
-        final var textEditor = new Solution.TextEditor(); // The current text is "|". (The '|' character represents the cursor)
+        // The current text is "|". (The '|' character represents the cursor)
+        final var textEditor = new Solution.TextEditor();
 
-        textEditor.addText("leetcode"); // The current text is "leetcode|".
+        // The current text is "leetcode|".
+        textEditor.addText("leetcode");
         log.info(textEditor.toString());
+        assertEquals(textEditor.toString(), "leetcode|");
 
-        log.info(String.valueOf(textEditor.deleteText(4))); // return 4
+        // return 4
+        assertEquals(textEditor.deleteText(4), 4);
+
         // The current text is "leet|".
         // 4 characters were deleted.
         log.info(textEditor.toString());
+        assertEquals(textEditor.toString(), "leet|");
 
-        textEditor.addText("practice"); // The current text is "leetpractice|".
+        // The current text is "leetpractice|".
+        textEditor.addText("practice");
         log.info(textEditor.toString());
+        assertEquals(textEditor.toString(), "leetpractice|");
 
-        log.info(String.valueOf(textEditor.cursorRight(3))); // return "etpractice"
+        // return "etpractice"
+        assertEquals(textEditor.cursorRight(3), "etpractice");
+
         // The current text is "leetpractice|".
         // The cursor cannot be moved beyond the actual text and thus did not move.
         // "etpractice" is the last 10 characters to the left of the cursor.
         log.info(textEditor.toString());
+        assertEquals(textEditor.toString(), "leetpractice|");
 
-        log.info(String.valueOf(textEditor.cursorLeft(8))); // return "leet"
+        // return "leet"
+        assertEquals(textEditor.cursorLeft(8), "leet");
+
         // The current text is "leet|practice".
         // "leet" is the last min(10, 4) = 4 characters to the left of the cursor.
         log.info(textEditor.toString());
+        assertEquals(textEditor.toString(), "leet|practice");
 
-        log.info(String.valueOf(textEditor.deleteText(10))); // return 4
+        // return 4
+        assertEquals(textEditor.deleteText(10), 4);
+
         // The current text is "|practice".
         // Only 4 characters were deleted.
         log.info(textEditor.toString());
+        assertEquals(textEditor.toString(), "|practice");
 
-        log.info(String.valueOf(textEditor.cursorLeft(2))); // return ""
+        // return ""
+        assertTrue(textEditor.cursorLeft(2).isEmpty());
+
         // The current text is "|practice".
         // The cursor cannot be moved beyond the actual text and thus did not move.
         // "" is the last min(10, 0) = 0 characters to the left of the cursor.
         log.info(textEditor.toString());
+        assertEquals(textEditor.toString(), "|practice");
 
-        log.info(String.valueOf(textEditor.cursorRight(6))); // return "practi"
+        // return "practi"
+        assertEquals(textEditor.cursorRight(6), "practi");
+
         // The current text is "practi|ce".
         // "practi" is the last min(10, 6) = 6 characters to the left of the cursor.
         log.info(textEditor.toString());
+        assertEquals(textEditor.toString(), "practi|ce");
     }
 }
