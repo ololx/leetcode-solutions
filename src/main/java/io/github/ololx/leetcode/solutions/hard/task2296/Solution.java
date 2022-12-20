@@ -174,7 +174,7 @@ public class Solution {
             int rightSteps = 0;
             Node current = this.cursor.next;
 
-            while(rightSteps < k - 1 && current.next != null && current.value != null) {
+            while(rightSteps < k && current.next != null && current.value != null) {
                 current = current.next;
                 rightSteps++;
             }
@@ -182,9 +182,9 @@ public class Solution {
             if (rightSteps > 0) {
                 this.cursor.previous.next = this.cursor.next;
                 this.cursor.next.previous = this.cursor.previous;
-                this.cursor.previous = current;
-                this.cursor.next = current.next;
-                current.next = this.cursor;
+                this.cursor.previous = current.previous;
+                this.cursor.next = current;
+                current.previous.next = this.cursor;
             }
 
             return this.getLeftText();
