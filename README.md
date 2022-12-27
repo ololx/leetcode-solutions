@@ -4,7 +4,7 @@ This is a repository with my solutions to problems from www.leetcode.com.
 
 [![last_commit](https://img.shields.io/github/last-commit/ololx/leetcode-solutions?style=flat&logo=github)](https://github.com/ololx/leetcode-solutions/commits)
 
-[![build](https://img.shields.io/github/actions/workflow/status/ololx/leetcode-solutions/build.yml?branch=main&label=build&logo=github-actions)](https://github.com/ololx/leetcode-solutions/actions/workflows/build.yml) ![tests](https://img.shields.io/github/actions/workflow/status/ololx/leetcode-solutions/test.yml?branch=main&label=tests&logo=github-actions&style=flat) [![codecov](https://codecov.io/gh/ololx/leetcode-solutions/branch/main/graph/badge.svg?token=fs07yimJj0)](https://codecov.io/gh/ololx/leetcode-solutions)
+[![build](https://img.shields.io/github/workflow/status/ololx/leetcode-solutions/Build?label=build&logo=github-actions&style=flat)](https://github.com/ololx/leetcode-solutions/actions/workflows/build.yml) ![tests](https://img.shields.io/github/workflow/status/ololx/leetcode-solutions/Tests?label=tests&logo=github-actions&style=flat) [![codecov](https://codecov.io/gh/ololx/leetcode-solutions/branch/main/graph/badge.svg?token=fs07yimJj0)](https://codecov.io/gh/ololx/leetcode-solutions)
 
 [![licence](https://img.shields.io/github/license/ololx/leetcode-solutions?style=flat)](LICENCE)
 
@@ -876,54 +876,60 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>143</td>
+        <td><a href="https://leetcode.com/problems/check-if-number-has-equal-digit-count-and-digit-value">Check if Number Has Equal Digit Count and Digit Value</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2283/Solution.java">Solution</a></td>
+        <td>EASY</td>
+    </tr>
+    <tr>
+        <td>144</td>
         <td><a href="https://leetcode.com/problems/design-a-text-editor">Design a Text Editor</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/hard/task2296/Solution.java">Solution</a></td>
         <td>HARD</td>
     </tr>
     <tr>
-        <td>144</td>
+        <td>145</td>
         <td><a href="https://leetcode.com/problems/first-letter-to-appear-twice">First Letter to Appear Twice</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2351/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>145</td>
+        <td>146</td>
         <td><a href="https://leetcode.com/problems/most-frequent-even-element">Most Frequent Even Element</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2404/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>146</td>
+        <td>147</td>
         <td><a href="https://leetcode.com/problems/remove-letter-to-equalize-frequency">Remove Letter To Equalize Frequency</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2423/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>147</td>
+        <td>148</td>
         <td><a href="https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three">Average Value of Even Numbers That Are Divisible by Three</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2455/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>148</td>
+        <td>149</td>
         <td><a href="https://leetcode.com/problems/convert-the-temperature">Convert the Temperature</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2469/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>149</td>
+        <td>150</td>
         <td><a href="https://leetcode.com/problems/number-of-unequal-triplets-in-array">Number of Unequal Triplets in Array</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2475/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>150</td>
+        <td>151</td>
         <td><a href="https://leetcode.com/problems/find-the-pivot-integer">Find the Pivot Integer</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2485/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>151</td>
+        <td>152</td>
         <td><a href="https://leetcode.com/problems/append-characters-to-string-to-make-subsequence">Append Characters to String to Make Subsequence</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2486/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
