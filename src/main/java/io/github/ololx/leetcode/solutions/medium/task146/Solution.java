@@ -50,10 +50,14 @@ public class Solution {
         }
 
         public void put(int key, int value) {
-            if (this.elements.size() == this.capacity) {
+            if (this.elements.containsKey(key)) {
+                CachedNode<Integer, Integer> currentNode = this.elements.remove(key);
+                currentNode.previous.next = currentNode.next;
+                currentNode.next.previous = currentNode.previous;
+            } else if (this.elements.size() == this.capacity) {
                 CachedNode<Integer, Integer> lruNode = this.tail.previous;
                 this.tail.previous = lruNode.previous;
-                lruNode.previous.next = lruNode.previous;
+                lruNode.previous.next = this.tail;
                 this.elements.remove(lruNode.key);
             }
 
