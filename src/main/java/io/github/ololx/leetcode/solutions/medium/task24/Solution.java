@@ -1,7 +1,5 @@
 package io.github.ololx.leetcode.solutions.medium.task24;
 
-import java.util.Objects;
-
 /**
  * 24. Swap Nodes in Pairs
  *
