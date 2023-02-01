@@ -1,7 +1,5 @@
 package io.github.ololx.leetcode.solutions.hard.task2296;
 
-import io.github.ololx.leetcode.solutions.hard.task2296.Solution;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
 import java.util.logging.Logger;

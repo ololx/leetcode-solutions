@@ -1,6 +1,5 @@
 package io.github.ololx.leetcode.solutions.medium.task173;
 
-import io.github.ololx.leetcode.solutions.medium.task173.Solution;
 import org.testng.annotations.Test;
 
 import java.util.logging.Logger;
