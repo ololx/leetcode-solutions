@@ -34,6 +34,7 @@ public class Solution {
         }
 
         public void fix(int idx) {
+            words[idx / WORD_SIZE] |= 1L << (idx % WORD_SIZE);
         }
 
         public void unfix(int idx) {
@@ -56,10 +57,6 @@ public class Solution {
 
         public String toString() {
             return "";
-        }
-
-        private boolean get(int idx) {
-            return false;
         }
     }
 

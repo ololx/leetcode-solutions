@@ -48,4 +48,23 @@ public class SolutionTest {
     public void words_whenBitSetCreated_thenReturnCorrectWordsCount(int size, int expected) {
         assertEquals(new Solution.Bitset(size).words(), expected);
     }
+
+    @DataProvider
+    public static Object[][] providesSizesAndIndexes() {
+        return new Object[][] {
+                {0, 0},
+                {1, 1},
+                {2, 2},
+                {100, 3},
+                {200, 4},
+        };
+    }
+
+    @LogParam
+    @Test(dataProvider = "providesSizesAndWordsCounts")
+    public void wrds_whenBitSetCreated_thenReturnCorrectWordsCount(int size, int idx) {
+        var bs = new Solution.Bitset(size);
+        bs.fix(idx);
+        bs.all();
+    }
 }
