@@ -57,7 +57,8 @@ public class Solution {
         }
 
         public boolean one() {
-            return true;
+            return IntStream.range(0, words.length)
+                    .anyMatch(index -> words[index] != 0);
         }
 
         public int count() {

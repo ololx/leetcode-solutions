@@ -92,5 +92,24 @@ public class SolutionTest {
 
         bs.flip();
         assertFalse(bs.all());
+
+        bs.fix(idx);
+        assertTrue(bs.all());
+    }
+
+    @LogParam
+    @Test(dataProvider = "providesSizesAndIndexes")
+    public void one_whenUnfixConcreteBit_thenBitIsZero(int size, int idx) {
+        var bs = new Solution.Bitset(size);
+
+        bs.fix(idx);
+        assertTrue(bs.one());
+
+        bs.flip();
+        assertTrue(bs.one());
+
+        bs.fix(idx);
+        bs.flip();
+        assertFalse(bs.one());
     }
 }
