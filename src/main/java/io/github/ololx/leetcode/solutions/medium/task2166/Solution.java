@@ -44,11 +44,16 @@ public class Solution {
         }
 
         public void flip() {
-            IntStream.range(0, words.length).forEach(index -> words[index] = ~words[index]);
+            IntStream.range(0, words.length)
+                    .forEach(index -> words[index] = ~words[index]);
         }
 
         public boolean all() {
-            return true;
+            return IntStream.range(0, words.length)
+                    .allMatch(index -> {
+                        return (((words[index] + 1) & words[index]) == 0)
+                                && words[index] != 0;
+            });
         }
 
         public boolean one() {
