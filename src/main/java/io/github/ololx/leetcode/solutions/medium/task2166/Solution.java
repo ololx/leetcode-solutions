@@ -1,5 +1,7 @@
 package io.github.ololx.leetcode.solutions.medium.task2166;
 
+import java.util.stream.IntStream;
+
 /**
  * project leetcode-solutions
  * created 17.03.2023 13:48
@@ -42,6 +44,7 @@ public class Solution {
         }
 
         public void flip() {
+            IntStream.range(0, words.length).forEach(index -> words[index] = ~words[index]);
         }
 
         public boolean all() {

@@ -74,4 +74,11 @@ public class SolutionTest {
         bs.fix(idx);
         bs.unfix(idx);
     }
+
+    @LogParam
+    @Test(dataProvider = "providesSizesAndIndexes")
+    public void flip_whenUnfixConcreteBit_thenBitIsZero(int size, int idx) {
+        var bs = new Solution.Bitset(size);
+        bs.flip();
+    }
 }
