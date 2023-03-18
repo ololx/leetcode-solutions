@@ -38,6 +38,7 @@ public class Solution {
         }
 
         public void unfix(int idx) {
+            words[idx / WORD_SIZE] &= ~(1L << (idx % WORD_SIZE));
         }
 
         public void flip() {

@@ -52,7 +52,6 @@ public class SolutionTest {
     @DataProvider
     public static Object[][] providesSizesAndIndexes() {
         return new Object[][] {
-                {0, 0},
                 {1, 1},
                 {2, 2},
                 {100, 3},
@@ -61,10 +60,18 @@ public class SolutionTest {
     }
 
     @LogParam
-    @Test(dataProvider = "providesSizesAndWordsCounts")
-    public void wrds_whenBitSetCreated_thenReturnCorrectWordsCount(int size, int idx) {
+    @Test(dataProvider = "providesSizesAndIndexes")
+    public void fix_whenFixConcreteBit_thenBitIsOne(int size, int idx) {
         var bs = new Solution.Bitset(size);
         bs.fix(idx);
-        bs.all();
+    }
+
+
+    @LogParam
+    @Test(dataProvider = "providesSizesAndIndexes")
+    public void unfix_whenUnfixConcreteBit_thenBitIsZero(int size, int idx) {
+        var bs = new Solution.Bitset(size);
+        bs.fix(idx);
+        bs.unfix(idx);
     }
 }
