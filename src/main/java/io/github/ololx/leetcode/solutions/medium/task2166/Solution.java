@@ -62,12 +62,43 @@ public class Solution {
         }
 
         public int count() {
-            return 0;
+            int weight = 0;
+            for (int i = 0; i < words.length - 1; i++) {
+                weight += hammingWeight(words[i], 64);
+            }
+
+            weight += hammingWeight(words[words.length - 1], size % WORD_SIZE);
+
+            return weight;
+        }
+
+        private int hammingWeight(long word, int size) {
+            int weight = 0;
+            for (int currentDigit = 0; currentDigit < 32; currentDigit++) {
+                weight += 0x1 & (word >> currentDigit);
+            }
+
+            return weight;
         }
 
         public String toString() {
-            return "";
+            StringBuilder bitesetStr = new StringBuilder();
+            for (int i = 0; i < words.length - 1; i++) {
+                bitesetStr.append(toString(words[i], 64));
+            }
+
+            bitesetStr.append(toString(words[words.length - 1], size % WORD_SIZE));
+
+            return bitesetStr.toString();
+        }
+
+        private String toString(long word, int size) {
+           StringBuilder wordStr = new StringBuilder();
+           for (int currentDigit = 0; currentDigit < 32; currentDigit++) {
+               wordStr.append(0x1 & (word >> currentDigit));
+           }
+
+            return wordStr.toString();
         }
     }
-
 }
