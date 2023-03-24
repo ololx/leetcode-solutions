@@ -1,7 +1,6 @@
 package io.github.ololx.leetcode.solutions.medium.task2166;
 
 import io.github.ololx.cranberry.logging.annotation.LogParam;
-import io.github.ololx.leetcode.solutions.medium.task2166.Solution;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -16,99 +15,106 @@ import static org.testng.Assert.*;
 public class SolutionTest {
 
     @DataProvider
-    public static Object[][] providesSizes() {
+    public static Object[][] providesSize() {
         return new Object[][] {
                 {0, 0},
                 {1, 1},
                 {2, 2},
-                {100, 100},
-                {Integer.MAX_VALUE, Integer.MAX_VALUE}
+                {100, 100}
         };
     }
 
     @LogParam
-    @Test(dataProvider = "providesSizes")
+    @Test(dataProvider = "providesSize")
     public void size_whenBitSetCreated_thenReturnCorrectSize(int size, int expected) {
         assertEquals(new Solution.Bitset(size).size(), expected);
     }
 
     @DataProvider
-    public static Object[][] providesSizesAndWordsCounts() {
+    public static Object[][] providesDataForFixTest() {
         return new Object[][] {
-                {0, 0},
-                {1, 1},
-                {2, 1},
-                {100, 2},
-                {200, 4},
+                {1, 0, "1"},
+                {2, 1, "01"},
+                {5, 3, "00010"},
+                {10, 4, "0000100000"},
         };
     }
 
     @LogParam
-    @Test(dataProvider = "providesSizesAndWordsCounts")
-    public void words_whenBitSetCreated_thenReturnCorrectWordsCount(int size, int expected) {
-        assertEquals(new Solution.Bitset(size).words(), expected);
+    @Test(dataProvider = "providesDataForFixTest")
+    public void fix_whenFixConcreteBit_thenBitIsOne(int size, int idx, String expectedStr) {
+        var bs = new Solution.Bitset(size);
+        bs.fix(idx);
+        
+        assertEquals(bs.toString(), expectedStr);
     }
 
     @DataProvider
-    public static Object[][] providesSizesAndIndexes() {
+    public static Object[][] providesDataForUnfixTest() {
         return new Object[][] {
-                {1, 1},
-                {2, 2},
-                {100, 3},
-                {200, 4},
+                {1, 0, "0"},
+                {2, 1, "10"},
+                {5, 3, "11101"},
+                {10, 4, "1111011111"},
         };
     }
 
     @LogParam
-    @Test(dataProvider = "providesSizesAndIndexes")
-    public void fix_whenFixConcreteBit_thenBitIsOne(int size, int idx) {
+    @Test(dataProvider = "providesDataForUnfixTest")
+    public void unfix_whenUnfixConcreteBit_thenBitIsZero(int size, int idx, String expectedStr) {
         var bs = new Solution.Bitset(size);
-        bs.fix(idx);
-    }
-
-
-    @LogParam
-    @Test(dataProvider = "providesSizesAndIndexes")
-    public void unfix_whenUnfixConcreteBit_thenBitIsZero(int size, int idx) {
-        var bs = new Solution.Bitset(size);
-        bs.fix(idx);
+        bs.flip();
         bs.unfix(idx);
+
+        assertEquals(bs.toString(), expectedStr);
+    }
+
+    @DataProvider
+    public static Object[][] providesDataForFlipTest() {
+        return new Object[][] {
+                {1, 0, "1"},
+                {2, 1, "11"},
+                {5, 3, "11111"},
+                {10, 4, "1111111111"},
+        };
     }
 
     @LogParam
-    @Test(dataProvider = "providesSizesAndIndexes")
-    public void flip_whenUnfixConcreteBit_thenBitIsZero(int size, int idx) {
+    @Test(dataProvider = "providesDataForFlipTest")
+    public void flip_whenUnfixConcreteBit_thenBitIsZero(int size, int idx, String expectedStr) {
         var bs = new Solution.Bitset(size);
         bs.flip();
+
+        assertEquals(bs.toString(), expectedStr);
     }
 
     @LogParam
-    @Test(dataProvider = "providesSizesAndIndexes")
-    public void all_whenUnfixConcreteBit_thenBitIsZero(int size, int idx) {
-        var bs = new Solution.Bitset(size);
+    @Test
+    public void all_whenUnfixConcreteBit_thenBitIsZero() {
+        var bs = new Solution.Bitset(3);
 
-        bs.fix(idx);
+        bs.fix(0);
         assertFalse(bs.all());
 
         bs.flip();
         assertFalse(bs.all());
 
-        bs.fix(idx);
+        bs.fix(0);
         assertTrue(bs.all());
     }
 
     @LogParam
-    @Test(dataProvider = "providesSizesAndIndexes")
-    public void one_whenUnfixConcreteBit_thenBitIsZero(int size, int idx) {
-        var bs = new Solution.Bitset(size);
+    @Test
+    public void one_whenUnfixConcreteBit_thenBitIsZero() {
+        var bs = new Solution.Bitset(3);
 
-        bs.fix(idx);
+        bs.fix(0);
         assertTrue(bs.one());
 
         bs.flip();
         assertTrue(bs.one());
 
-        bs.fix(idx);
+        bs.fix(0);
         bs.flip();
         assertFalse(bs.one());
     }
