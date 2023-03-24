@@ -957,5 +957,11 @@ This is a repository with my solutions to problems from www.leetcode.com.
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2486/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
+    <tr>
+        <td>157</td>
+        <td><a href="https://leetcode.com/problems/number-of-even-and-odd-bits">Number of Even and Odd Bits</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2595/Solution.java">Solution</a></td>
+        <td>EASY</td>
+    </tr>
 
 </table>
