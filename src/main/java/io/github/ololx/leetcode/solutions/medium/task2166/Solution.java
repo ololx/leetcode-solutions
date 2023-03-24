@@ -49,32 +49,53 @@ public class Solution {
         }
 
         public boolean all() {
-            return IntStream.range(0, words.length)
-                    .allMatch(index -> {
-                        return (((words[index] + 1) & words[index]) == 0)
-                                && words[index] != 0;
-            });
+            for (int i = 0; i < words.length - 1; i++) {
+                if (!((((words[i] + 1) & words[i]) == 0) && words[i] != 0)) {
+                    return false;
+                }
+            }
+
+            for (int currentDigit = 0; currentDigit <= (size - 1) % WORD_SIZE; currentDigit++) {
+                if ((0x1 & (words[words.length - 1] >> currentDigit)) == 0x0) {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         public boolean one() {
-            return IntStream.range(0, words.length)
-                    .anyMatch(index -> words[index] != 0);
+            for (int i = 0; i < words.length - 1; i++) {
+                for (int currentDigit = 0; currentDigit < 64; currentDigit++) {
+                    if ((0x1 & (words[i] >> currentDigit)) == 0x1) {
+                        return true;
+                    }
+                }
+            }
+
+            for (int currentDigit = 0; currentDigit <= (size - 1) % WORD_SIZE; currentDigit++) {
+                if ((0x1 & (words[words.length - 1] >> currentDigit)) == 0x1) {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         public int count() {
             int weight = 0;
             for (int i = 0; i < words.length - 1; i++) {
-                weight += hammingWeight(words[i], 64);
+                weight += hammingWeight(words[i], 63);
             }
 
-            weight += hammingWeight(words[words.length - 1], size % WORD_SIZE);
+            weight += hammingWeight(words[words.length - 1], (size - 1) % WORD_SIZE);
 
             return weight;
         }
 
         private int hammingWeight(long word, int size) {
             int weight = 0;
-            for (int currentDigit = 0; currentDigit < 32; currentDigit++) {
+            for (int currentDigit = 0; currentDigit <= size; currentDigit++) {
                 weight += 0x1 & (word >> currentDigit);
             }
 
@@ -84,17 +105,17 @@ public class Solution {
         public String toString() {
             StringBuilder bitesetStr = new StringBuilder();
             for (int i = 0; i < words.length - 1; i++) {
-                bitesetStr.append(toString(words[i], 64));
+                bitesetStr.append(toString(words[i], 63));
             }
 
-            bitesetStr.append(toString(words[words.length - 1], size % WORD_SIZE));
+            bitesetStr.append(toString(words[words.length - 1], (size - 1) % WORD_SIZE));
 
             return bitesetStr.toString();
         }
 
         private String toString(long word, int size) {
            StringBuilder wordStr = new StringBuilder();
-           for (int currentDigit = 0; currentDigit < 32; currentDigit++) {
+           for (int currentDigit = 0; currentDigit <= size; currentDigit++) {
                wordStr.append(0x1 & (word >> currentDigit));
            }
 
