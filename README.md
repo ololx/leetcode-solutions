@@ -947,36 +947,42 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>155</td>
+        <td><a href="https://leetcode.com/problems/find-the-original-array-of-prefix-xor">Find The Original Array of Prefix Xor</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2433/Solution.java">Solution</a></td>
+        <td>MEDIUM</td>
+    </tr>
+    <tr>
+        <td>156</td>
         <td><a href="https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three">Average Value of Even Numbers That Are Divisible by Three</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2455/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>156</td>
+        <td>157</td>
         <td><a href="https://leetcode.com/problems/convert-the-temperature">Convert the Temperature</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2469/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>157</td>
+        <td>158</td>
         <td><a href="https://leetcode.com/problems/number-of-unequal-triplets-in-array">Number of Unequal Triplets in Array</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2475/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>158</td>
+        <td>159</td>
         <td><a href="https://leetcode.com/problems/find-the-pivot-integer">Find the Pivot Integer</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2485/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>159</td>
+        <td>160</td>
         <td><a href="https://leetcode.com/problems/append-characters-to-string-to-make-subsequence">Append Characters to String to Make Subsequence</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2486/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>160</td>
+        <td>161</td>
         <td><a href="https://leetcode.com/problems/number-of-even-and-odd-bits">Number of Even and Odd Bits</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2595/Solution.java">Solution</a></td>
         <td>EASY</td>
