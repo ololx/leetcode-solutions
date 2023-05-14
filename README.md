@@ -845,132 +845,138 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>138</td>
+        <td><a href="https://leetcode.com/problems/decode-xored-array">Decode XORed Array</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task1720/Solution.java">Solution</a></td>
+        <td>EASY</td>
+    </tr>
+    <tr>
+        <td>139</td>
         <td><a href="https://leetcode.com/problems/merge-strings-alternately">Merge Strings Alternately</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task1768/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>139</td>
+        <td>140</td>
         <td><a href="https://leetcode.com/problems/reverse-prefix-of-word">Reverse Prefix of Word</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2000/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>140</td>
+        <td>141</td>
         <td><a href="https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence">Check if Numbers Are Ascending in a Sentence</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2042/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>141</td>
+        <td>142</td>
         <td><a href="https://leetcode.com/problems/k-radius-subarray-averages">K Radius Subarray Averages</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2090/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>142</td>
+        <td>143</td>
         <td><a href="https://leetcode.com/problems/find-first-palindromic-string-in-the-array">Find First Palindromic String in the Array</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2108/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>143</td>
+        <td>144</td>
         <td><a href="https://leetcode.com/problems/a-number-after-a-double-reversal">A Number After a Double Reversal</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2119/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>144</td>
+        <td>145</td>
         <td><a href="https://leetcode.com/problems/check-if-all-as-appears-before-all-bs">Check if All As Appears Before All Bs</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2124/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>145</td>
+        <td>146</td>
         <td><a href="https://leetcode.com/problems/divide-a-string-into-groups-of-size-k">Divide a String Into Groups of Size k</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2138/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>146</td>
+        <td>147</td>
         <td><a href="https://leetcode.com/problems/unknown">UNKNOWN</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2166/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>147</td>
+        <td>148</td>
         <td><a href="https://leetcode.com/problems/count-operations-to-obtain-zero">Count Operations to Obtain Zero</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2169/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>148</td>
+        <td>149</td>
         <td><a href="https://leetcode.com/problems/minimum-bit-flips-to-convert-number">Minimum Bit Flips to Convert Number</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2220/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>149</td>
+        <td>150</td>
         <td><a href="https://leetcode.com/problems/check-if-number-has-equal-digit-count-and-digit-value">Check if Number Has Equal Digit Count and Digit Value</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2283/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>150</td>
+        <td>151</td>
         <td><a href="https://leetcode.com/problems/design-a-text-editor">Design a Text Editor</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/hard/task2296/Solution.java">Solution</a></td>
         <td>HARD</td>
     </tr>
     <tr>
-        <td>151</td>
+        <td>152</td>
         <td><a href="https://leetcode.com/problems/first-letter-to-appear-twice">First Letter to Appear Twice</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2351/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>152</td>
+        <td>153</td>
         <td><a href="https://leetcode.com/problems/most-frequent-even-element">Most Frequent Even Element</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2404/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>153</td>
+        <td>154</td>
         <td><a href="https://leetcode.com/problems/remove-letter-to-equalize-frequency">Remove Letter To Equalize Frequency</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2423/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>154</td>
+        <td>155</td>
         <td><a href="https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three">Average Value of Even Numbers That Are Divisible by Three</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2455/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>155</td>
+        <td>156</td>
         <td><a href="https://leetcode.com/problems/convert-the-temperature">Convert the Temperature</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2469/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>156</td>
+        <td>157</td>
         <td><a href="https://leetcode.com/problems/number-of-unequal-triplets-in-array">Number of Unequal Triplets in Array</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2475/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>157</td>
+        <td>158</td>
         <td><a href="https://leetcode.com/problems/find-the-pivot-integer">Find the Pivot Integer</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2485/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>158</td>
+        <td>159</td>
         <td><a href="https://leetcode.com/problems/append-characters-to-string-to-make-subsequence">Append Characters to String to Make Subsequence</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2486/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>159</td>
+        <td>160</td>
         <td><a href="https://leetcode.com/problems/number-of-even-and-odd-bits">Number of Even and Odd Bits</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2595/Solution.java">Solution</a></td>
         <td>EASY</td>
