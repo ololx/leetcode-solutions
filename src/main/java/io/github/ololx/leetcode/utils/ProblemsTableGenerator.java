@@ -28,18 +28,6 @@ public class ProblemsTableGenerator {
                             && file.getFileName().toString().contains("Solution")
                             && !file.getFileName().toString().contains("ProblemsTableGenerator");
                 })
-                .sorted((file1, file2) -> {
-                    final String file1Name = file1.getParent()
-                            .getFileName()
-                            .toString()
-                            .replaceAll("task", "");
-                    final String file2Name = file2.getParent()
-                            .getFileName()
-                            .toString()
-                            .replaceAll("task", "");
-
-                    return Integer.valueOf(file1Name).compareTo(Integer.valueOf(file2Name));
-                })
                 .collect(Collectors.toList());
 
         Pattern problemNameLinePattern = Pattern.compile(PROBLEM_NAME_REGEX);
