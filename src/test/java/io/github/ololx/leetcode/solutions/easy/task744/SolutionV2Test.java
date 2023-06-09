@@ -12,13 +12,13 @@ import static org.testng.Assert.assertEquals;
  *
  * @author Alexander A. Kropotin
  */
-public class SolutionTest extends AbstractSolutionTest {
+public class SolutionV2Test extends AbstractSolutionTest {
 
     @LogParam
     @Test(dataProvider = "providesLettersAndTarget")
     public void nextGreatestLetter_whenGreatestLetterExists_thenReturnIt(char[] letters,
                                                                          char target,
                                                                          char expected) {
-        assertEquals(new Solution().nextGreatestLetter(letters, target), expected);
+        assertEquals(new SolutionV2().nextGreatestLetter(letters, target), expected);
     }
 }
