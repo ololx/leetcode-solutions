@@ -32,7 +32,7 @@ package io.github.ololx.leetcode.solutions.easy.task2778;
  *          1 <= nums[i] <= 50
  *      </li>
  * </ul>
- * <p>
+ *
  * project leetcode-solutions
  * created 02.08.2023 21:19
  *
