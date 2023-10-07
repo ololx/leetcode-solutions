@@ -26,7 +26,7 @@
         <dependency>
             <groupId>io.github.ololx.cranberry</groupId>
             <artifactId>cranberry-logging</artifactId>
-            <version>0.13.0</version>
+            <version>0.14.2</version>
         </dependency>
 
         <!--[test-->
