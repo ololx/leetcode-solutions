@@ -5,7 +5,8 @@ import java.util.Objects;
 /**
  * 83. Remove Duplicates from Sorted List
  *
- * Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
+ * Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the
+ * linked list sorted as well.
  *
  * Note: You can only move either down or right at any point in time.
  *
