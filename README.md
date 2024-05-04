@@ -1065,5 +1065,11 @@ This is a repository with my solutions to problems from www.leetcode.com.
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task304/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
+    <tr>
+        <td>175</td>
+        <td><a href="https://leetcode.com/problems/house-robber">House Robber</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task198/Solution.java">Solution</a></td>
+        <td>MEDIUM</td>
+    </tr>
 
 </table>
