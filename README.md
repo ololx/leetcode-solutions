@@ -659,450 +659,456 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>107</td>
-        <td><a href="https://leetcode.com/problems/min-stack">Min Stack</a></td>
-        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task155/Solution.java">Solution</a></td>
+        <td><a href="https://leetcode.com/problems/symmetric-tree">Symmetric Tree</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task101/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
         <td>108</td>
         <td><a href="https://leetcode.com/problems/min-stack">Min Stack</a></td>
-        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task155/SolutionV2.java">SolutionV2</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task155/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
         <td>109</td>
+        <td><a href="https://leetcode.com/problems/min-stack">Min Stack</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task155/SolutionV2.java">SolutionV2</a></td>
+        <td>EASY</td>
+    </tr>
+    <tr>
+        <td>110</td>
         <td><a href="https://leetcode.com/problems/fibonacci-number">Fibonacci Number</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task509/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>110</td>
+        <td>111</td>
         <td><a href="https://leetcode.com/problems/binary-search">Binary Search</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task704/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>111</td>
+        <td>112</td>
         <td><a href="https://leetcode.com/problems/rearrange-spaces-between-words">Rearrange Spaces Between Words</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task1592/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>112</td>
+        <td>113</td>
         <td><a href="https://leetcode.com/problems/reverse-bits">Reverse Bits</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task190/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>113</td>
+        <td>114</td>
         <td><a href="https://leetcode.com/problems/same-tree">Same Tree</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task100/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>114</td>
+        <td>115</td>
         <td><a href="https://leetcode.com/problems/range-sum-query-immutable">Range Sum Query - Immutable</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task303/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>115</td>
+        <td>116</td>
         <td><a href="https://leetcode.com/problems/single-number">Single Number</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task136/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>116</td>
+        <td>117</td>
         <td><a href="https://leetcode.com/problems/single-number">Single Number</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task136/SolutionV2.java">SolutionV2</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>117</td>
+        <td>118</td>
         <td><a href="https://leetcode.com/problems/count-good-triplets">Count Good Triplets</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task1534/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>118</td>
+        <td>119</td>
         <td><a href="https://leetcode.com/problems/check-if-all-as-appears-before-all-bs">Check if All As Appears Before All Bs</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task2124/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>119</td>
+        <td>120</td>
         <td><a href="https://leetcode.com/problems/number-of-1-bits">Number of 1 Bits</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task191/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>120</td>
+        <td>121</td>
         <td><a href="https://leetcode.com/problems/design-hashset">Design HashSet</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task705/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>121</td>
+        <td>122</td>
         <td><a href="https://leetcode.com/problems/is-subsequence">Is Subsequence</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/easy/task392/Solution.java">Solution</a></td>
         <td>EASY</td>
     </tr>
     <tr>
-        <td>122</td>
+        <td>123</td>
         <td><a href="https://leetcode.com/problems/text-justification">Text Justification</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/hard/task68/Solution.java">Solution</a></td>
         <td>HARD</td>
     </tr>
     <tr>
-        <td>123</td>
+        <td>124</td>
         <td><a href="https://leetcode.com/problems/design-skiplist">Design Skiplist</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/hard/task1206/Solution.java">Solution</a></td>
         <td>HARD</td>
     </tr>
     <tr>
-        <td>124</td>
+        <td>125</td>
         <td><a href="https://leetcode.com/problems/valid-number">Valid Number</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/hard/task65/Solution.java">Solution</a></td>
         <td>HARD</td>
     </tr>
     <tr>
-        <td>125</td>
+        <td>126</td>
         <td><a href="https://leetcode.com/problems/lfu-cache">LFU Cache</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/hard/task460/Solution.java">Solution</a></td>
         <td>HARD</td>
     </tr>
     <tr>
-        <td>126</td>
+        <td>127</td>
         <td><a href="https://leetcode.com/problems/design-a-text-editor">Design a Text Editor</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/hard/task2296/Solution.java">Solution</a></td>
         <td>HARD</td>
     </tr>
     <tr>
-        <td>127</td>
+        <td>128</td>
         <td><a href="https://leetcode.com/problems/reverse-integer">Reverse Integer</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task7/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>128</td>
+        <td>129</td>
         <td><a href="https://leetcode.com/problems/unknown">UNKNOWN</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2166/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>129</td>
+        <td>130</td>
         <td><a href="https://leetcode.com/problems/validate-stack-sequences">Validate Stack Sequences</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task946/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>130</td>
+        <td>131</td>
         <td><a href="https://leetcode.com/problems/zigzag-conversion">Zigzag Conversion</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task6/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>131</td>
+        <td>132</td>
         <td><a href="https://leetcode.com/problems/flatten-nested-list-iterator">Flatten Nested List Iterator</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task341/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>132</td>
+        <td>133</td>
         <td><a href="https://leetcode.com/problems/binary-search-tree-iterator">Binary Search Tree Iterator</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task173/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>133</td>
+        <td>134</td>
         <td><a href="https://leetcode.com/problems/string-to-integer-(atoi)">String to Integer (atoi)</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task8/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>134</td>
+        <td>135</td>
         <td><a href="https://leetcode.com/problems/print-foobar-alternately">Print FooBar Alternately</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1115/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>135</td>
+        <td>136</td>
         <td><a href="https://leetcode.com/problems/rotate-list">Rotate List</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task61/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>136</td>
+        <td>137</td>
         <td><a href="https://leetcode.com/problems/spiral-matrix-ii">Spiral Matrix II</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task59/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>137</td>
+        <td>138</td>
         <td><a href="https://leetcode.com/problems/spiral-matrix-ii">Spiral Matrix II</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task59/SolutionV2.java">SolutionV2</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>138</td>
+        <td>139</td>
         <td><a href="https://leetcode.com/problems/single-number-iii">Single Number III</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task260/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>139</td>
+        <td>140</td>
         <td><a href="https://leetcode.com/problems/score-of-parentheses">Score of Parentheses</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task856/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>140</td>
+        <td>141</td>
         <td><a href="https://leetcode.com/problems/container-with-most-water">Container With Most Water</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task11/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>141</td>
+        <td>142</td>
         <td><a href="https://leetcode.com/problems/max-number-of-k-sum-pairs">Max Number of K-Sum Pairs</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1679/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>142</td>
+        <td>143</td>
         <td><a href="https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses">Minimum Remove to Make Valid Parentheses</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1249/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>143</td>
+        <td>144</td>
         <td><a href="https://leetcode.com/problems/jump-game-ii">Jump Game II</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task45/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>144</td>
+        <td>145</td>
         <td><a href="https://leetcode.com/problems/k-radius-subarray-averages">K Radius Subarray Averages</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2090/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>145</td>
+        <td>146</td>
         <td><a href="https://leetcode.com/problems/search-a-2d-matrix">Search a 2D Matrix</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task74/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>146</td>
+        <td>147</td>
         <td><a href="https://leetcode.com/problems/search-a-2d-matrix">Search a 2D Matrix</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task74/SolutionV2.java">SolutionV2</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>147</td>
+        <td>148</td>
         <td><a href="https://leetcode.com/problems/h-index">H-Index</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task274/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>148</td>
+        <td>149</td>
         <td><a href="https://leetcode.com/problems/find-the-duplicate-number">Find the Duplicate Number</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task287/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>149</td>
+        <td>150</td>
         <td><a href="https://leetcode.com/problems/basic-calculator-ii">Basic Calculator II</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task227/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>150</td>
+        <td>151</td>
         <td><a href="https://leetcode.com/problems/majority-element-ii">Majority Element II</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task229/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>151</td>
+        <td>152</td>
         <td><a href="https://leetcode.com/problems/encode-and-decode-tinyurl">Encode and Decode TinyURL</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task535/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>152</td>
+        <td>153</td>
         <td><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation">Evaluate Reverse Polish Notation</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task150/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>153</td>
+        <td>154</td>
         <td><a href="https://leetcode.com/problems/building-h2o">Building H2O</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1117/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>154</td>
+        <td>155</td>
         <td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task3/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>155</td>
+        <td>156</td>
         <td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task3/SolutionV2.java">SolutionV2</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>156</td>
+        <td>157</td>
         <td><a href="https://leetcode.com/problems/flatten-binary-tree-to-linked-list">Flatten Binary Tree to Linked List</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task114/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>157</td>
+        <td>158</td>
         <td><a href="https://leetcode.com/problems/add-two-numbers">Add Two Numbers</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>158</td>
+        <td>159</td>
         <td><a href="https://leetcode.com/problems/lru-cache">LRU Cache</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task146/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>159</td>
+        <td>160</td>
         <td><a href="https://leetcode.com/problems/print-zero-even-odd">Print Zero Even Odd</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1116/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>160</td>
+        <td>161</td>
         <td><a href="https://leetcode.com/problems/unique-paths">Unique Paths</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task62/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>161</td>
+        <td>162</td>
         <td><a href="https://leetcode.com/problems/spiral-matrix">Spiral Matrix</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task54/SolutionV2.java">SolutionV2</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>162</td>
+        <td>163</td>
         <td><a href="https://leetcode.com/problems/append-characters-to-string-to-make-subsequence">Append Characters to String to Make Subsequence</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2486/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>163</td>
+        <td>164</td>
         <td><a href="https://leetcode.com/problems/jump-game">Jump Game</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task55/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>164</td>
+        <td>165</td>
         <td><a href="https://leetcode.com/problems/unique-paths-ii">Unique Paths II</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task63/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>165</td>
+        <td>166</td>
         <td><a href="https://leetcode.com/problems/minimum-path-sum">Minimum Path Sum</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task64/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>166</td>
+        <td>167</td>
         <td><a href="https://leetcode.com/problems/map-sum-pairs">Map Sum Pairs</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task677/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>167</td>
+        <td>168</td>
         <td><a href="https://leetcode.com/problems/rotate-image">Rotate Image</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task48/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>168</td>
+        <td>169</td>
         <td><a href="https://leetcode.com/problems/swap-nodes-in-pairs">Swap Nodes in Pairs</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task24/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>169</td>
+        <td>170</td>
         <td><a href="https://leetcode.com/problems/integer-to-roman">Integer to Roman</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task12/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>170</td>
+        <td>171</td>
         <td><a href="https://leetcode.com/problems/simplify-path">Simplify Path</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task71/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>171</td>
+        <td>172</td>
         <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii">Remove Duplicates from Sorted List II</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task82/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>172</td>
+        <td>173</td>
         <td><a href="https://leetcode.com/problems/find-the-original-array-of-prefix-xor">Find The Original Array of Prefix Xor</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task2433/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>173</td>
+        <td>174</td>
         <td><a href="https://leetcode.com/problems/peeking-iterator">Peeking Iterator</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task284/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>174</td>
+        <td>175</td>
         <td><a href="https://leetcode.com/problems/peeking-iterator">Peeking Iterator</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task284/SolutionV2.java">SolutionV2</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>175</td>
+        <td>176</td>
         <td><a href="https://leetcode.com/problems/number-of-matching-subsequences">Number of Matching Subsequences</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task792/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>176</td>
+        <td>177</td>
         <td><a href="https://leetcode.com/problems/utf-8-validation">UTF-8 Validation</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task393/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>177</td>
+        <td>178</td>
         <td><a href="https://leetcode.com/problems/jump-game-iii">Jump Game III</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1306/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>178</td>
+        <td>179</td>
         <td><a href="https://leetcode.com/problems/fizz-buzz-multithreaded">Fizz Buzz Multithreaded</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1195/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>179</td>
+        <td>180</td>
         <td><a href="https://leetcode.com/problems/range-sum-query-2d-immutable">Range Sum Query 2D - Immutable</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task304/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>180</td>
+        <td>181</td>
         <td><a href="https://leetcode.com/problems/house-robber">House Robber</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task198/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>181</td>
+        <td>182</td>
         <td><a href="https://leetcode.com/problems/house-robber">House Robber</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task198/SolutionV2.java">SolutionV2</a></td>
         <td>MEDIUM</td>
