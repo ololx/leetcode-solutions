@@ -1079,24 +1079,30 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>177</td>
+        <td><a href="https://leetcode.com/problems/jump-game-iii">Jump Game III</a></td>
+        <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1306/Solution.java">Solution</a></td>
+        <td>MEDIUM</td>
+    </tr>
+    <tr>
+        <td>178</td>
         <td><a href="https://leetcode.com/problems/fizz-buzz-multithreaded">Fizz Buzz Multithreaded</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1195/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>178</td>
+        <td>179</td>
         <td><a href="https://leetcode.com/problems/range-sum-query-2d-immutable">Range Sum Query 2D - Immutable</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task304/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>179</td>
+        <td>180</td>
         <td><a href="https://leetcode.com/problems/house-robber">House Robber</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task198/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
     <tr>
-        <td>180</td>
+        <td>181</td>
         <td><a href="https://leetcode.com/problems/house-robber">House Robber</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task198/SolutionV2.java">SolutionV2</a></td>
         <td>MEDIUM</td>
