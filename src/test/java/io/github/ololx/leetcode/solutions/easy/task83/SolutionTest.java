@@ -1,12 +1,10 @@
 package io.github.ololx.leetcode.solutions.easy.task83;
 
 import io.github.ololx.cranberry.logging.annotation.LogParam;
-import io.github.ololx.leetcode.solutions.easy.task83.Solution;
 import io.github.ololx.leetcode.solutions.easy.task83.Solution.ListNode;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
 
 import java.util.logging.Logger;
 

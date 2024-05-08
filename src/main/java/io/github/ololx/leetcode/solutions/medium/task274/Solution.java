@@ -1,7 +1,6 @@
 package io.github.ololx.leetcode.solutions.medium.task274;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  * 274. H-Index

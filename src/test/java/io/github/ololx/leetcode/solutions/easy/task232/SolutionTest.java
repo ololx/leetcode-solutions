@@ -2,7 +2,9 @@ package io.github.ololx.leetcode.solutions.easy.task232;
 
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
 /**
  * project leetcode-solutions

@@ -1,7 +1,6 @@
 package io.github.ololx.leetcode.solutions.easy.task2706;
 
 import io.github.ololx.cranberry.logging.annotation.LogParam;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 

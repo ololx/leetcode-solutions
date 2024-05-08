@@ -1,11 +1,10 @@
 package io.github.ololx.leetcode.solutions.medium.task45;
 
 import io.github.ololx.cranberry.logging.annotation.LogParam;
-import io.github.ololx.leetcode.solutions.medium.task45.Solution;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 /**
  * @author Alexander A. Kropotin

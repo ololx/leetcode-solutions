@@ -17,8 +17,6 @@
 
 package io.github.ololx.leetcode.solutions.medium.task1306;
 
-import java.util.Arrays;
-
 /**
  * 1306. Jump Game III
  *
