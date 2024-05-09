@@ -67,7 +67,7 @@ public class SolutionTest {
     }
 
     @Test(dataProvider = "providesTreeNodes")
-    public void isSymmetric_whenTreesIsSymmetric_thenReturnTrue(Solution.TreeNode p, boolean expected) {
-        assertEquals(new Solution().isSymmetric(p), expected);
+    public void isSymmetric_whenTreesIsSymmetric_thenReturnTrue(Solution.TreeNode root, boolean expected) {
+        assertEquals(new Solution().isSymmetric(root), expected);
     }
 }
