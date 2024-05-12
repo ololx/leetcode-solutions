@@ -3,9 +3,7 @@ package io.github.ololx.leetcode.solutions.easy.task104;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 /**
  * @author Alexander A. Kropotin
