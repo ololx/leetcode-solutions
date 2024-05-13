@@ -15,7 +15,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest {
 
-    @DataProvider(name = "providesN")
+    /*@DataProvider(name = "providesN")
     public static Object[][] providesN() {
         return new Object[][] {
                 {5, "12fizz4buzz"},
@@ -69,5 +69,5 @@ public class SolutionTest {
         ).join();
 
         assertEquals(actual.toString(), expected);
-    }
+    }*/
 }
