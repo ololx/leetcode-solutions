@@ -15,7 +15,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest {
 
-    /*@DataProvider(name = "providesN")
+    @DataProvider(name = "providesN")
     public static Object[][] providesN() {
         return new Object[][] {
                 {5, "12fizz4buzz"},
@@ -27,9 +27,8 @@ public class SolutionTest {
         };
     }
 
-    @Test(timeOut = 3000L, dataProvider = "providesN")
-    public void zeroEventOdd_whenzeroEventOddMethodsExecuteNTimesInDifferentThreads_thenPrintNumbersInSpecialOrder(int n,
-                                                                                                                   String expected) {
+    @Test(timeOut = 30000L, dataProvider = "providesN")
+    public void zeroEventOdd_whenzeroEventOddMethodsExecuteNTimesInDifferentThreads_thenPrintNumbersInSpecialOrder(int n, String expected) {
         final StringBuffer actual = new StringBuffer();
         final Solution.FizzBuzz fizzBuzz = new Solution.FizzBuzz(n);
 
@@ -69,5 +68,5 @@ public class SolutionTest {
         ).join();
 
         assertEquals(actual.toString(), expected);
-    }*/
+    }
 }
