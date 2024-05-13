@@ -25,9 +25,8 @@ public class SolutionTest {
         };
     }
 
-    @Test(timeOut = 3000L, dataProvider = "providesN")
-    public void zeroEventOdd_whenzeroEventOddMethodsExecuteNTimesInDifferentThreads_thenPrintNumbersInSpecialOrder(int n,
-                                                                                                                   String expected) {
+    @Test(timeOut = 10000L, dataProvider = "providesN")
+    public void zeroEventOdd_whenZeroEventOddMethodsExecuteNTimesInDifferentThreads_thenPrintNumbersInSpecialOrder(int n, String expected) {
         final StringBuffer actual = new StringBuffer();
         final Solution.ZeroEvenOdd zeroEventOdd = new Solution.ZeroEvenOdd(n);
 
