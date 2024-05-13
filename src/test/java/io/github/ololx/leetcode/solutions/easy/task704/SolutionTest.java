@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesNumsAndTarget")
     public void search_whenNumsContainsTarget_thenReturnTarget(int[] nums, int target, int expected) {
         assertEquals(new Solution().search(nums, target), expected);

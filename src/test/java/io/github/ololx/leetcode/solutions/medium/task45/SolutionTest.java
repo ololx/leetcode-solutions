@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesNums")
     public void canJump_whenEndOfArrayIsReachable_thenReturnTrue(int[] nums, int expected) {
         assertEquals(new Solution().jump(nums), expected);

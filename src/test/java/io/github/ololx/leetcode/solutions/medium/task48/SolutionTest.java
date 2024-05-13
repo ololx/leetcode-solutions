@@ -32,7 +32,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "provides2Ds")
     public void rotate_whenMatrixExists_thenRotateOn90Degree(int[][] matrix, int[][] expected) {
         new Solution().rotate(matrix);

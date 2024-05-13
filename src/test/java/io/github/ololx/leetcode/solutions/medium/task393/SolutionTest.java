@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesUTF8Data")
     public void validUtf8s_whenValid_thenReturnTrue(int[] data, boolean expected) {
         assertEquals(new Solution().validUtf8(data), expected);

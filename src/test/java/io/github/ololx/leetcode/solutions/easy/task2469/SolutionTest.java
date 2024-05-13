@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesTemperatures")
     public void convertTemperature_whenInvokeWithCelsius_thenReturnConvertedPair(double t,
                                                                                  double[] expected) {

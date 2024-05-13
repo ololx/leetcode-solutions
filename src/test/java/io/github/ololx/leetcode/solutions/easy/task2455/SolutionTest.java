@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesNums")
     public void averageValue_whenEventDivisibleBy3AreExist_thenReturnAverageOfAll(int[] nums,
                                                                                   int expected) {

@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesN")
     public void evenOddBit_whenNumberIsNotNull_thenReturnEvenAndOddBitCount(int n, int[] expected) {
         assertEquals(new Solution().evenOddBit(n), expected);

@@ -25,7 +25,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesNums")
     public void majorityElement_whenNumsIsNotNull_thenReturnMajorityElements(int[] nums,
                                                                              List<Integer> expected) {

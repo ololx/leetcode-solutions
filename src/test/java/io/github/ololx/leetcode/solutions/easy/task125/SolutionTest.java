@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesStrings")
     public void isPalindrome_whenSIsPalindrome_thenReturnTrue(String haystack, boolean expected) {
         boolean actual = new Solution().isPalindrome(haystack);

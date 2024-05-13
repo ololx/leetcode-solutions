@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesArrays")
     public void canReach_whenZeroArrayValueIsReachable_thenReturnTrue(int[] nums, int start, boolean expected) {
         assertEquals(new Solution().canReach(nums, start), expected);

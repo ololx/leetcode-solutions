@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesN")
     public void pivotInteger_whenPivotIntegerExists_thenReturnIt(int n, int expected) {
         assertEquals(new Solution().pivotInteger(n), expected);

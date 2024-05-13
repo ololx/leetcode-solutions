@@ -37,7 +37,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesIslands")
     public void numIslands_whenIslandsExist_thenReturnNonZeroNum(char[][] grid, int expected) {
         assertEquals(new Solution().numIslands(grid), expected);

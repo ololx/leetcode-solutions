@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesArrays")
     public void decode_whenEncodedExists_thenReturnDecoded(int[] encoded,
                                                            int first,

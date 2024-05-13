@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesMoves")
     public void search_whenNumsContainsTarget_thenReturnTarget(String moves, int expected) {
         assertEquals(new Solution().furthestDistanceFromOrigin(moves), expected);

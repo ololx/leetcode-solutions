@@ -50,7 +50,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesListNodes")
     public void swapPairs_whenPairsExists_thenSwapListNodes(Solution.ListNode head,
                                                             Solution.ListNode expected) {

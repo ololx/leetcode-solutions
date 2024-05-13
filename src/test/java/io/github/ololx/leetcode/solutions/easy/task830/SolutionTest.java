@@ -15,7 +15,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest extends AbstractSolutionTest {
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesStrings")
     public void largeGroupPositions_whenStringWithGroups_thenReturnPositions(String s, List<List<Integer>> expected) {
         assertEquals(new Solution().largeGroupPositions(s), expected);

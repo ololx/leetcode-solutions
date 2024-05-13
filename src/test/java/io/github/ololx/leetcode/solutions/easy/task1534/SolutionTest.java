@@ -38,7 +38,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesArraysAndABC")
     public void countGoodTriplets_whenGoodTripletsAreExist_thenReturnCountOfAll(int[] arr,
                                                                                 int a,

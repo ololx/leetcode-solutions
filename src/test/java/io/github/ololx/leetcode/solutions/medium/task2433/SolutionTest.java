@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesArrays")
     public void findArray_whenPrefContainsElements_thenReturnOriginArray(int[] encoded,
                                                                          int[] expected) {

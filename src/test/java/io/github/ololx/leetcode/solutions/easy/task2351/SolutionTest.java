@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesStrings")
     public void repeatedCharacter_whenStringHasRepeatedCharacters_thenReturnFirst(String s,
                                                                                   char expected) {

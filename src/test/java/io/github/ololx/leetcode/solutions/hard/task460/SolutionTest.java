@@ -13,7 +13,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest {
 
-    @LogParam
+    //@LogParam
     @Test
     public void lfuCache_whenElementIsLFU_thenEvictThiesElement() {
         Solution.LFUCache lfu = new Solution.LFUCache(2);

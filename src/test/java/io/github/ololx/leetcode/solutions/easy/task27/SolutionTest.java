@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesNums")
     public void removeElement_whenElementsWereRemoved_thenReturnCountOfStayingElements(int[] nums,
                                                                                        int val,

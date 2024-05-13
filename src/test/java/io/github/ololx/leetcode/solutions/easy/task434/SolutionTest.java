@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesStrings")
     public void countSegments_whenStringHasWords_thenReturnCount(String s, int expected) {
         assertEquals(new Solution().countSegments(s), expected);

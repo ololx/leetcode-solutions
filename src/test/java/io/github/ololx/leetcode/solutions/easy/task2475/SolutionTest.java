@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesNums")
     public void unequalTriplets_whenUnequalTripletsExist_thenReturnCountOfAll(int[] nums,
                                                                               int expected) {

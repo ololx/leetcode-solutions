@@ -26,7 +26,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesSize")
     public void size_whenBitSetCreated_thenReturnCorrectSize(int size, int expected) {
         assertEquals(new Solution.Bitset(size).size(), expected);
@@ -42,7 +42,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesDataForFixTest")
     public void fix_whenFixConcreteBit_thenBitIsOne(int size, int idx, String expectedStr) {
         var bs = new Solution.Bitset(size);
@@ -61,7 +61,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesDataForUnfixTest")
     public void unfix_whenUnfixConcreteBit_thenBitIsZero(int size, int idx, String expectedStr) {
         var bs = new Solution.Bitset(size);
@@ -81,7 +81,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesDataForFlipTest")
     public void flip_whenUnfixConcreteBit_thenBitIsZero(int size, int idx, String expectedStr) {
         var bs = new Solution.Bitset(size);
@@ -90,7 +90,7 @@ public class SolutionTest {
         assertEquals(bs.toString(), expectedStr);
     }
 
-    @LogParam
+    //@LogParam
     @Test
     public void all_whenUnfixConcreteBit_thenBitIsZero() {
         var bs = new Solution.Bitset(3);
@@ -105,7 +105,7 @@ public class SolutionTest {
         assertTrue(bs.all());
     }
 
-    @LogParam
+    //@LogParam
     @Test
     public void one_whenUnfixConcreteBit_thenBitIsZero() {
         var bs = new Solution.Bitset(3);

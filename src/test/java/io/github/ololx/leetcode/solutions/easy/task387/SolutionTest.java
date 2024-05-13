@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesLetters")
     public void firstUniqChar_ifLettersContainsUniqueLetter_thenReturnIndex(String s, int expected) {
         assertEquals(new Solution().firstUniqChar(s), expected);

@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesTokens")
     public void findDuplicate_whenDuplicateInNums_thenReturnNum(String[] tokens, int expected) {
         assertTrue(new Solution().evalRPN(tokens) == expected);

@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesNums")
     public void digitCount_whenNumIsCorrect_thenReturnTue(String num, boolean expected) {
         assertEquals(new Solution().digitCount(num), expected);

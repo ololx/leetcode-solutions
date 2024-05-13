@@ -31,7 +31,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesWordsAndMaxWidth")
     public void fullJustify_whenEnoughWords_thenJustifyAllLines(String[] words, int maxWidth, List<String> expected) {
         assertEquals(new Solution().fullJustify(words, maxWidth), expected);

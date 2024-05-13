@@ -33,7 +33,7 @@ public class SolutionV2Test {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesMatrix")
     public void searchMatrix_whenTargetInAMatrix_thenReturnTrue(int[][] matrix,
                                                                 int target,

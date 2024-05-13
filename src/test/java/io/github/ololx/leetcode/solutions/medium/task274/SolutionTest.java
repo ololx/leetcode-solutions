@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesCitations")
     public void hIndex_whnCitationsMoreOrEqualsPublications_thenReturnCitations(int[] citations, int expected) {
         assertEquals(new Solution().hIndex(citations), expected);

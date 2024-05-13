@@ -79,7 +79,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesIslands")
     public void maxAreaOfIsland_whenIslandsExist_thenReturnMaxArea(int[][] grid, int expected) {
         assertEquals(new Solution().maxAreaOfIsland(grid), expected);

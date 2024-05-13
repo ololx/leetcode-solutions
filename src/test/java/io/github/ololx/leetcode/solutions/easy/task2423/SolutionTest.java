@@ -39,7 +39,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesWords")
     public void equalFrequency_whendecOneFrequencyAndAllFrequenciesAreSame_thenReturnTrue(String word,
                                                                                           boolean expected) {

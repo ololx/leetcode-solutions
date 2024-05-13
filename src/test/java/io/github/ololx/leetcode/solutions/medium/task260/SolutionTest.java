@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesNums")
     public void singleNumber_whenNumsContainsTwoSingleNumbers_thenReturnAll(int[] nums,
                                                                             int[] expected) {

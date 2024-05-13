@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesHights")
     public void maxArea_whenContainersMoreThanZero_thenReturnNonZeroVolume(int[] height, int expected) {
         assertEquals(new Solution().maxArea(height), expected);

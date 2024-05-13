@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesNums")
     public void search_whenNumsContainsTarget_thenReturnTarget(int[] nums, int expected) {
         assertEquals(new Solution().sumOfSquares(nums), expected);

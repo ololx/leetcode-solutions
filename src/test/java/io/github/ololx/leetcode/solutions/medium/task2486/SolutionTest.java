@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesSAndT")
     public void appendCharacters_whenTCanBeSubOfS_thenReturnCountOfAdditionalSymbols(String s,
                                                                                      String t,

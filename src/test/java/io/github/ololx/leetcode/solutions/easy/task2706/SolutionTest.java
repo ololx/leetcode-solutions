@@ -14,7 +14,7 @@ import static org.testng.AssertJUnit.assertEquals;
  */
 public class SolutionTest {
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesPricesAndMoney")
     public void testBuyChoco(int[] prices, int money, int expected) {
         Solution solution = new Solution();

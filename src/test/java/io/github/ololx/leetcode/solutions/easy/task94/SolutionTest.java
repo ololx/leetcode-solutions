@@ -43,7 +43,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesTreeNodesAndLists")
     public void inorderTraversal_whenRootIsNotNull_thenReturnAllInPostOrder(Solution.TreeNode root,
                                                                             List<Integer> expected) {

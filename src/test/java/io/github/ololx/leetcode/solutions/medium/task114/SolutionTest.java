@@ -69,7 +69,7 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
+    //@LogParam
     @Test(dataProvider = "providesTreeNodes")
     public void flatten_whenRootIsNotNull_thenReturnAllFlatten(Solution.TreeNode root,
                                                                Solution.TreeNode expected) {
