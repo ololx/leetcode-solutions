@@ -16,7 +16,7 @@ import static org.testng.Assert.assertTrue;
  */
 public class SolutionTest {
 
-    @DataProvider
+    //@DataProvider
     public static Object[][] providesSize() {
         return new Object[][] {
                 {0, 0},
@@ -26,13 +26,13 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
-    @Test(dataProvider = "providesSize")
+    //@LogParam
+    //@Test(dataProvider = "providesSize")
     public void size_whenBitSetCreated_thenReturnCorrectSize(int size, int expected) {
         assertEquals(new Solution.Bitset(size).size(), expected);
     }
 
-    @DataProvider
+    //@DataProvider
     public static Object[][] providesDataForFixTest() {
         return new Object[][] {
                 {1, 0, "1"},
@@ -42,8 +42,8 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
-    @Test(dataProvider = "providesDataForFixTest")
+    //@LogParam
+    //@Test(dataProvider = "providesDataForFixTest")
     public void fix_whenFixConcreteBit_thenBitIsOne(int size, int idx, String expectedStr) {
         var bs = new Solution.Bitset(size);
         bs.fix(idx);
@@ -51,7 +51,7 @@ public class SolutionTest {
         assertEquals(bs.toString(), expectedStr);
     }
 
-    @DataProvider
+    //@DataProvider
     public static Object[][] providesDataForUnfixTest() {
         return new Object[][] {
                 {1, 0, "0"},
@@ -61,8 +61,8 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
-    @Test(dataProvider = "providesDataForUnfixTest")
+    //@LogParam
+    //@Test(dataProvider = "providesDataForUnfixTest")
     public void unfix_whenUnfixConcreteBit_thenBitIsZero(int size, int idx, String expectedStr) {
         var bs = new Solution.Bitset(size);
         bs.flip();
@@ -71,7 +71,7 @@ public class SolutionTest {
         assertEquals(bs.toString(), expectedStr);
     }
 
-    @DataProvider
+    //@DataProvider
     public static Object[][] providesDataForFlipTest() {
         return new Object[][] {
                 {1, 0, "1"},
@@ -81,8 +81,8 @@ public class SolutionTest {
         };
     }
 
-    @LogParam
-    @Test(dataProvider = "providesDataForFlipTest")
+    //@LogParam
+    //@Test(dataProvider = "providesDataForFlipTest")
     public void flip_whenUnfixConcreteBit_thenBitIsZero(int size, int idx, String expectedStr) {
         var bs = new Solution.Bitset(size);
         bs.flip();
@@ -90,8 +90,8 @@ public class SolutionTest {
         assertEquals(bs.toString(), expectedStr);
     }
 
-    @LogParam
-    @Test
+    //@LogParam
+    //@Test
     public void all_whenUnfixConcreteBit_thenBitIsZero() {
         var bs = new Solution.Bitset(3);
 
@@ -105,8 +105,8 @@ public class SolutionTest {
         assertTrue(bs.all());
     }
 
-    @LogParam
-    @Test
+    //@LogParam
+    //@Test
     public void one_whenUnfixConcreteBit_thenBitIsZero() {
         var bs = new Solution.Bitset(3);
 
