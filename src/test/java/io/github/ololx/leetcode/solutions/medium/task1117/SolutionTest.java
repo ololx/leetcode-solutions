@@ -20,7 +20,7 @@ public class SolutionTest {
 
     private static final Logger log = Logger.getLogger(SolutionTest.class.getName());
 
-    @Test(threadPoolSize = 3, invocationCount = 6)
+    @Test(timeOut = 3000L, threadPoolSize = 3, invocationCount = 6)
     public void h2o_whenInvoke_thenRunInNeededOrder() throws InterruptedException {
         Solution.H2O h2o = new Solution.H2O();
 

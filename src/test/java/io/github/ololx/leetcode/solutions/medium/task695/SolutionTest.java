@@ -79,8 +79,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesIslands")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesIslands")
     public void maxAreaOfIsland_whenIslandsExist_thenReturnMaxArea(int[][] grid, int expected) {
         assertEquals(new Solution().maxAreaOfIsland(grid), expected);
     }

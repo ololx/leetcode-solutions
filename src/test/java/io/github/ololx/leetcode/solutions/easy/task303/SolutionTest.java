@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest {
 
-    @Test
+    @Test(timeOut = 3000L)
     public void sumRange_whenRangeIsNotEmpty_thenReturnSumOfRangeHigherThanZero() {
         Solution.NumArray numArray = new Solution.NumArray(new int[] {-2, 0, 3, -5, 2, -1});
 

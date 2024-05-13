@@ -75,7 +75,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNumsArraysAndSquares")
+    @Test(timeOut = 3000L, dataProvider = "providesNumsArraysAndSquares")
     public void findDuplicate_whenDuplicateInNums_thenReturnNum(int[][] matrix,
                                                                 int row1,
                                                                 int col1,

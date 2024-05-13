@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesWords")
+    @Test(timeOut = 3000L, dataProvider = "providesWords")
     public void firstPalindrome_whenWordsContainsPalindrome_thenIt(String[] words ,
                                                                    String expected) {
         assertEquals(new Solution().firstPalindrome(words), expected);

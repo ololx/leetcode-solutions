@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesUTF8Data")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesUTF8Data")
     public void validUtf8s_whenValid_thenReturnTrue(int[] data, boolean expected) {
         assertEquals(new Solution().validUtf8(data), expected);
     }

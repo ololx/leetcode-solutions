@@ -24,7 +24,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesPatternsAndStrings")
+    @Test(timeOut = 3000L, dataProvider = "providesPatternsAndStrings")
     public void wordPattern_whenStringIsPatterned_thenReturntrue(String pattern, String s, boolean expected) {
         assertEquals(new Solution().wordPattern(pattern, s), expected);
     }

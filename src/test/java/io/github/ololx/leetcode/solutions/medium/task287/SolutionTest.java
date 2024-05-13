@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void findDuplicate_whenDuplicateInNums_thenReturnNum(int[] nums, int expected) {
         int actual = new Solution().findDuplicate(nums);
 

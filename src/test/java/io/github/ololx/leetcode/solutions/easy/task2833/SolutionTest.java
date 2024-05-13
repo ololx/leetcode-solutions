@@ -23,8 +23,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesMoves")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesMoves")
     public void search_whenNumsContainsTarget_thenReturnTarget(String moves, int expected) {
         assertEquals(new Solution().furthestDistanceFromOrigin(moves), expected);
     }

@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void mostFrequentEven_whenNumsHasEventElements_thenReturnMostFrequent(int[] nums,
                                                                                  int expected) {
         assertEquals(new Solution().mostFrequentEven(nums), expected);

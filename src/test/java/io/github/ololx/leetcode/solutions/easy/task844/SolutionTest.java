@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesStrings")
+    @Test(timeOut = 3000L, dataProvider = "providesStrings")
     public void backspaceCompare_whenBoothAreNotNull_thenReturnCompareResult(String s, String t, boolean expected) {
         boolean actual = new Solution().backspaceCompare(s, t);
 

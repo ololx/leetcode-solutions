@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "romanAndIntegerNumbers")
+    @Test(timeOut = 3000L, dataProvider = "romanAndIntegerNumbers")
     public void romanToInt_whenRomanNumberIsDefine_thenReturnNonZeroIntegerNumber(String roman , int integer) {
         assertEquals(new Solution().romanToInt(roman), integer);
     }

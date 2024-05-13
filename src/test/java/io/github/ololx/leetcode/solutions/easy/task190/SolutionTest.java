@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesBits")
+    @Test(timeOut = 3000L, dataProvider = "providesBits")
     public void reverseBits_whenNumIsDefined_thenReturnReversedBits(int n , int expected) {
         assertEquals(new Solution().reverseBits(n), expected);
     }

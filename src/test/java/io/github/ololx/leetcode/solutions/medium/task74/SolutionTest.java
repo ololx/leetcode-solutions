@@ -32,7 +32,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesMatrix")
+    @Test(timeOut = 3000L, dataProvider = "providesMatrix")
     public void searchMatrix_whenTargetInAMatrix_thenReturnTrue(int[][] matrix,
                                                                 int target,
                                                                 boolean expected) {

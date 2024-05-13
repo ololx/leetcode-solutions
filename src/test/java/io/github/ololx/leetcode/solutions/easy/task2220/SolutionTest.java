@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesStartAndGoal")
+    @Test(timeOut = 3000L, dataProvider = "providesStartAndGoal")
     public void minBitFlips_whenStartIsNotEqualGoal_thenReturnMoreThanZero(int start,
                                                                            int goal,
                                                                            int expected) {

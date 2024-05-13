@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "stringsAndPrefix")
+    @Test(timeOut = 3000L, dataProvider = "stringsAndPrefix")
     public void romanToInt_whenRomanNumberIsDefine_thenReturnNonZeroIntegerNumber(String[] strs , String prefix) {
         assertEquals(new Solution().longestCommonPrefix(strs), prefix);
     }

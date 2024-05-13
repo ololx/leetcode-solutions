@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "sentencesAndResult")
+    @Test(timeOut = 3000L, dataProvider = "sentencesAndResult")
     public void areNumbersAscending_whenNumbersAscending_thenReturnTrue(String sentence , boolean result) {
         assertEquals(new Solution().areNumbersAscending(sentence), result);
     }

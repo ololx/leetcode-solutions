@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesNums")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void search_whenNumsContainsTarget_thenReturnTarget(int[] nums, int expected) {
         assertEquals(new Solution().sumOfSquares(nums), expected);
     }

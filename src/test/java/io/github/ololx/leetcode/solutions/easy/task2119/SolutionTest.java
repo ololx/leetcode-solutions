@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void isSameAfterReversals_whenNumIsDoubleReversal_thenReturnTrue(int num,
                                                                             boolean expected) {
         assertEquals(new Solution().isSameAfterReversals(num), expected);

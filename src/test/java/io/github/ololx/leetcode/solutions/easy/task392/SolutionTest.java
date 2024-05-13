@@ -25,7 +25,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesStrings")
+    @Test(timeOut = 3000L, dataProvider = "providesStrings")
     public void rotateRight_whenHeadNodeHasNext_thenReturnRotatedList(String s,
                                                                       String t,
                                                                       boolean expected) {

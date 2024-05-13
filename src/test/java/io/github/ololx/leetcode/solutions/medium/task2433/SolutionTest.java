@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesArrays")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesArrays")
     public void findArray_whenPrefContainsElements_thenReturnOriginArray(int[] encoded,
                                                                          int[] expected) {
         assertEquals(new Solution().findArray(encoded), expected);

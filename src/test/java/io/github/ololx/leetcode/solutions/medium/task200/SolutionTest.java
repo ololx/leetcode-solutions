@@ -37,8 +37,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesIslands")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesIslands")
     public void numIslands_whenIslandsExist_thenReturnNonZeroNum(char[][] grid, int expected) {
         assertEquals(new Solution().numIslands(grid), expected);
     }

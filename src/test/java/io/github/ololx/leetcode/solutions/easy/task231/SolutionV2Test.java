@@ -27,7 +27,7 @@ public class SolutionV2Test {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void isPowerOfTwo_whenNumIsPowerOf2_thenReturnTrue(int n , boolean expected) {
         boolean actual = new SolutionV2().isPowerOfTwo(n);
         log.info("Expected = " + expected + " & actual = " + actual);

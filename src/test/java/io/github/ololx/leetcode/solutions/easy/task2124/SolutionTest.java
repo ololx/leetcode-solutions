@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "sentencesAndResult")
+    @Test(timeOut = 3000L, dataProvider = "sentencesAndResult")
     public void checkString_whenAAppearsBeforeEveryB_thenReturnTrue(String sentence , boolean result) {
         assertEquals(new Solution().checkString(sentence), result);
     }

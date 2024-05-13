@@ -25,7 +25,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesN")
+    @Test(timeOut = 3000L, dataProvider = "providesN")
     public void zeroEventOdd_whenzeroEventOddMethodsExecuteNTimesInDifferentThreads_thenPrintNumbersInSpecialOrder(int n,
                                                                                                                    String expected) {
         final StringBuffer actual = new StringBuffer();

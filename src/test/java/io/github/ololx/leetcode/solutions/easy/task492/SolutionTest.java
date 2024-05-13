@@ -23,8 +23,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesSquaresArea")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesSquaresArea")
     public void constructRectangle_whenAreaIsNotZero_thenReturnRectangle(int area, int[] expected) {
         assertEquals(new Solution().constructRectangle(area), expected);
     }

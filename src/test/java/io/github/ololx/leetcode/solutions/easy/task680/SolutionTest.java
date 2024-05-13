@@ -23,8 +23,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesStrings")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesStrings")
     public void divideString_whenStringIsNotEmpty_thenDivideString(String s, boolean expected) {
         assertEquals(new Solution().validPalindrome(s), expected);
     }

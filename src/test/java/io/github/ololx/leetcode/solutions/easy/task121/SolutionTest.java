@@ -21,8 +21,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesPrices")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesPrices")
     public void maxProfit_whenMinPriceNotALastElement_thenReturnProfitMoreThanZero(int[] prices, int expected) {
         assertEquals(new Solution().maxProfit(prices), expected);
     }

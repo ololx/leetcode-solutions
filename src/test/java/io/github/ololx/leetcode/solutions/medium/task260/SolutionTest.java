@@ -23,8 +23,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesNums")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void singleNumber_whenNumsContainsTwoSingleNumbers_thenReturnAll(int[] nums,
                                                                             int[] expected) {
         assertEquals(new Solution().singleNumber(nums), expected);

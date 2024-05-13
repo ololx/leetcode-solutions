@@ -43,8 +43,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesTreeNodesAndLists")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesTreeNodesAndLists")
     public void postorderTraversal_whenRootIsNotNull_thenReturnAllInPostOrder(Solution.TreeNode root,
                                                                               List<Integer> expected) {
         assertEquals(new Solution().postorderTraversal(root), expected);

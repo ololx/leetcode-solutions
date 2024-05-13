@@ -44,7 +44,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "numsAndTarget")
+    @Test(timeOut = 3000L, dataProvider = "numsAndTarget")
     public void searchInsert_whenTargetInArrayOrNot_thenGetTargetPosOrProposePos(int[] nums, int target, int result) {
         assertEquals(
                 new Solution().searchInsert(nums, target),

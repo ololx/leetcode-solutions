@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "strings")
+    @Test(timeOut = 3000L, dataProvider = "strings")
     public void isIsomorphic_whenStringsAreIsomorphic_thenReturnTrue(String s , String t, boolean isIsomorphic) {
         assertEquals(new Solution().isIsomorphic(s, t), isIsomorphic);
     }

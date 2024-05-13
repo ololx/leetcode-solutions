@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionV2Test extends AbstractSolutionTest {
 
-    @Test(dataProvider = "providesN")
+    @Test(timeOut = 3000L, dataProvider = "providesN")
     public void countBits_whenNIsNotZero_thenReturnCountOfOneBitsMoreThanOne(int n,
                                                                              int[] expected) {
         assertEquals(new SolutionV2().countBits(n), expected);

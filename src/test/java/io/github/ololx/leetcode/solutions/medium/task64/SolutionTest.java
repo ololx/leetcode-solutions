@@ -32,7 +32,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "fieldsAndPaths")
+    @Test(timeOut = 3000L, dataProvider = "fieldsAndPaths")
     public void minPathSum_whenRobotAneExitAreNotSameCell_thenReturnNonZeroMinPathCost(int[][] obstacleGrid, int pathCost) {
         assertEquals(new Solution().minPathSum(obstacleGrid), pathCost);
     }

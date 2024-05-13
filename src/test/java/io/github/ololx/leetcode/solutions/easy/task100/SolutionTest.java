@@ -63,7 +63,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "treesAndAnswer")
+    @Test(timeOut = 3000L, dataProvider = "treesAndAnswer")
     public void isSameTree_whenTreesAreSame_thenReturnTrue(Solution.TreeNode p,
                                                            Solution.TreeNode q,
                                                            boolean result) {

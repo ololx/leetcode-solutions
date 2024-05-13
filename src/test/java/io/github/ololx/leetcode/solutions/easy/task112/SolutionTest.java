@@ -57,7 +57,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesTreeNodes")
+    @Test(timeOut = 3000L, dataProvider = "providesTreeNodes")
     public void hasPathSum_whenTargetSummFromRootToEndExists_thenReturnTrue(Solution.TreeNode root, int targetSum, boolean expected) {
         assertEquals(new Solution().hasPathSum(root, targetSum), expected);
     }

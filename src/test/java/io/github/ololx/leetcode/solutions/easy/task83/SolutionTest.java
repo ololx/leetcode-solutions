@@ -32,8 +32,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesListNodes")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesListNodes")
     public void deleteDuplicates_whenHeadNodeHasNext_thenReturnNodeWithUniqueValues(ListNode head,
                                                                                     ListNode expected) {
         Assert.assertEquals(new Solution().deleteDuplicates(head), expected);

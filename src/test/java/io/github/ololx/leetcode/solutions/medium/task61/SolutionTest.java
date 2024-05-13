@@ -31,7 +31,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesListNodes")
+    @Test(timeOut = 3000L, dataProvider = "providesListNodes")
     public void rotateRight_whenHeadNodeHasNext_thenReturnRotatedList(Solution.ListNode head,
                                                                       int k,
                                                                       Solution.ListNode expected) {

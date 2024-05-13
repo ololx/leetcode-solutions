@@ -50,8 +50,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesListNodes")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesListNodes")
     public void swapPairs_whenPairsExists_thenSwapListNodes(Solution.ListNode head,
                                                             Solution.ListNode expected) {
         assertEquals(new Solution().swapPairs(head), expected);

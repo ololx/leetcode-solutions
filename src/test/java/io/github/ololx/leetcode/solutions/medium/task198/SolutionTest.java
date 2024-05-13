@@ -25,8 +25,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesHouses")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesHouses")
     public void rob_whenHousesMoreThanOne_thenReturnMaxFromStreet(int[] nums, int expected) {
         assertEquals(new Solution().rob(nums), expected);
     }

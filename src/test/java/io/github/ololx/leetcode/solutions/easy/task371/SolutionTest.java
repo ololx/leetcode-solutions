@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNumbers")
+    @Test(timeOut = 3000L, dataProvider = "providesNumbers")
     public void getSum_whenNumberIsInInteger_thenReturnSumOf(int a, int b, int sum) {
         assertEquals(new Solution().getSum(a, b), sum);
     }

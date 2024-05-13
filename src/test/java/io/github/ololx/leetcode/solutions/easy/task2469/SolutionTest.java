@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesTemperatures")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesTemperatures")
     public void convertTemperature_whenInvokeWithCelsius_thenReturnConvertedPair(double t,
                                                                                  double[] expected) {
         assertEquals(new Solution().convertTemperature(t), expected);

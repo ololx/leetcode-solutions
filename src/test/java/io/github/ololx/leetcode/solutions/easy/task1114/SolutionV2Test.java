@@ -17,7 +17,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionV2Test extends AbstractSolutionTest {
 
-    @Test(dataProvider = "providesRunnableOrder")
+    @Test(timeOut = 3000L, dataProvider = "providesRunnableOrder")
     public void firstSecondThird_whenFooMethodsExecuteInDifferentOrders_thenRunItInExpectedOrder(int[] order,
                                                                                                  int[] expected) {
         int[] actual = new int[3];

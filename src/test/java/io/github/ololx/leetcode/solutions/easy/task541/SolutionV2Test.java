@@ -23,7 +23,7 @@ public class SolutionV2Test {
         };
     }
 
-    @Test(dataProvider = "providesStrings")
+    @Test(timeOut = 3000L, dataProvider = "providesStrings")
     public void reverseStr_whenKisLessThenLength_thenReturnReversedKSymbols(String s,
                                                                             int k,
                                                                             String expected) {

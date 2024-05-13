@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesArrays")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesArrays")
     public void canReach_whenZeroArrayValueIsReachable_thenReturnTrue(int[] nums, int start, boolean expected) {
         assertEquals(new Solution().canReach(nums, start), expected);
     }

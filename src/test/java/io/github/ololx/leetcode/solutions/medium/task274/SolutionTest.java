@@ -21,8 +21,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesCitations")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesCitations")
     public void hIndex_whnCitationsMoreOrEqualsPublications_thenReturnCitations(int[] citations, int expected) {
         assertEquals(new Solution().hIndex(citations), expected);
     }

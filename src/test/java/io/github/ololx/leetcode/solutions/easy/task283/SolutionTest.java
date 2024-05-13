@@ -31,7 +31,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNumsArrays")
+    @Test(timeOut = 3000L, dataProvider = "providesNumsArrays")
     public void moveZeroes_whenNumsArePresented_thenMoveZeros(int[] nums , int[] expected) {
         log.info(
                 "Start test with nums = "

@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesNums")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void unequalTriplets_whenUnequalTripletsExist_thenReturnCountOfAll(int[] nums,
                                                                               int expected) {
         assertEquals(new Solution().unequalTriplets(nums), expected);

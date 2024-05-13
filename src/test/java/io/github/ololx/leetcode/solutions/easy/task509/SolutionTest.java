@@ -24,7 +24,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesN")
+    @Test(timeOut = 3000L, dataProvider = "providesN")
     public void fib_whenNIsMoreThanOne_thenReturnFibonacciByN(int n,
                                                               int expected) {
         assertEquals(new Solution().fib(n), expected);

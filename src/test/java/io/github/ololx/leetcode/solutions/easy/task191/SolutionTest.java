@@ -26,7 +26,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void hammingWeight_whenNumHasUnits_thenReturnUnitsCount(int n , int expected) {
         int actual = new Solution().hammingWeight(n);
         log.info("Expected = " + expected + " & actual = " + actual);

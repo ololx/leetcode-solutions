@@ -29,7 +29,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesListNodes")
+    @Test(timeOut = 3000L, dataProvider = "providesListNodes")
     public void deleteDuplicates_whenHeadNodeHasNext_thenReturnNodeWithUniqueValues(ListNode head,
                                                                                     ListNode expected) {
         log.info(String.valueOf(head));

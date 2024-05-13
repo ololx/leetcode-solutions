@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void isPowerOfFour_whenNisPowerOfFour_thenReturnTrue(int n, boolean expected) {
         assertEquals(new Solution().isPowerOfFour(n), expected);
     }

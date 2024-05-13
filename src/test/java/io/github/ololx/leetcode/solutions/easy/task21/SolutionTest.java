@@ -33,7 +33,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesListNodes")
+    @Test(timeOut = 3000L, dataProvider = "providesListNodes")
     public void mergeTwoLists_whenHeadNodeHasNext_thenReturnMergedList(Solution.ListNode first,
                                                                        Solution.ListNode second,
                                                                       Solution.ListNode expected) {

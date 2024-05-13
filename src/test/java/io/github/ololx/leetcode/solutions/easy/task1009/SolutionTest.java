@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesN")
+    @Test(timeOut = 3000L, dataProvider = "providesN")
     public void bitwiseComplement_whenNHasComplementMoreThenZero_thenReturnNonZeroN(int n, int expected) {
         assertEquals(new Solution().bitwiseComplement(n), expected);
     }

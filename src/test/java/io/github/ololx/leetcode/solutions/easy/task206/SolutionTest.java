@@ -52,7 +52,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesListNodes")
+    @Test(timeOut = 3000L, dataProvider = "providesListNodes")
     public void reverseList_whenListNodeISNOtNull_thenReturnReversedListNode(Solution.ListNode head,
                                                                              Solution.ListNode expected) {
         assertEquals(new Solution().reverseList(head), expected);

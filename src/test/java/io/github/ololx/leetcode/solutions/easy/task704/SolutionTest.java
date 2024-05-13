@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesNumsAndTarget")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesNumsAndTarget")
     public void search_whenNumsContainsTarget_thenReturnTarget(int[] nums, int target, int expected) {
         assertEquals(new Solution().search(nums, target), expected);
     }

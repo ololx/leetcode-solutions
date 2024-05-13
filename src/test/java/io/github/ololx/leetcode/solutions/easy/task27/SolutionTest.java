@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesNums")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void removeElement_whenElementsWereRemoved_thenReturnCountOfStayingElements(int[] nums,
                                                                                        int val,
                                                                                        int expected) {

@@ -34,7 +34,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNumArrays")
+    @Test(timeOut = 3000L, dataProvider = "providesNumArrays")
     public void merge_whenArraysIsNotEmpty_thenMerge(int[] nums1, int[] nums2, int[] expected) {
         new Solution().merge(nums1, nums1.length - nums2.length, nums2, nums2.length);
 

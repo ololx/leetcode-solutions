@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "nums")
+    @Test(timeOut = 3000L, dataProvider = "nums")
     public void missingNumber_whenArrayIsNotEmpty_thenReturnNonZeroMissingNumber(int[] nums, int missingNumber) {
         assertEquals(new Solution().missingNumber(nums), missingNumber);
     }

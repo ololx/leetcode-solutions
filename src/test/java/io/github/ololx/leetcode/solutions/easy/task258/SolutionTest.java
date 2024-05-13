@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void addDigits_whenNumHigherZero_thenReturnDigitalRoot(int n, int expected) {
         assertEquals(new Solution().addDigits(n), expected);
     }

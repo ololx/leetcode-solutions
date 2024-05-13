@@ -27,7 +27,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesChars")
+    @Test(timeOut = 3000L, dataProvider = "providesChars")
     public void reverseString_whenCharsMoreThanOneChar_thenReverseChars(char[] s, char[] expected) {
         new Solution().reverseString(s);
 

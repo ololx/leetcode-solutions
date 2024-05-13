@@ -26,7 +26,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesPaths")
+    @Test(timeOut = 3000L, dataProvider = "providesPaths")
     public void simplifyPath_whenPathsIsNotNull_thenReturnCanonicalPath(String path,
                                                                         String expected) {
         log.info("Start test with path - " + path);

@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesParentheses")
+    @Test(timeOut = 3000L, dataProvider = "providesParentheses")
     public void scoreOfParentheses_whenStringIsNotNull_thenParenthesesCount(String s, int expected) {
         assertEquals(new Solution().scoreOfParentheses(s), expected);
     }

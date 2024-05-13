@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesStrings")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesStrings")
     public void repeatedCharacter_whenStringHasRepeatedCharacters_thenReturnFirst(String s,
                                                                                   char expected) {
         assertEquals(new Solution().repeatedCharacter(s), expected);

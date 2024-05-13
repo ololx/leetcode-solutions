@@ -38,7 +38,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesRowsCount")
+    @Test(timeOut = 3000L, dataProvider = "providesRowsCount")
     public void generate_whenNIsMoreThanZero_thenReturnTriangle(int n, List<List<Integer>> expected) {
         assertEquals(new Solution().generate(n), expected);
     }

@@ -23,8 +23,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesStrings")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesStrings")
     public void isPalindrome_whenSIsPalindrome_thenReturnTrue(String haystack, boolean expected) {
         boolean actual = new Solution().isPalindrome(haystack);
         assertEquals(actual, expected);

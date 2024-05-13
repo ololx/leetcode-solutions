@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNum")
+    @Test(timeOut = 3000L, dataProvider = "providesNum")
     public void findComplement_whenNumHasComplementMoreThenZero_thenReturnNonZeroNum(int num, int expected) {
         assertEquals(new Solution().findComplement(num), expected);
     }

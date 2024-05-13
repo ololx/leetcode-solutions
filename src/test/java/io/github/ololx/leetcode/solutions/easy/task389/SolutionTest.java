@@ -27,7 +27,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesSAndT")
+    @Test(timeOut = 3000L, dataProvider = "providesSAndT")
     public void findTheDifference_whenStringIsDifferent_thenReturnDifference(String s , String t, char expected) {
         char actual = new Solution().findTheDifference(s, t);
         log.info("Expected = " + expected + " & actual = " + actual);

@@ -24,7 +24,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesLogs")
+    @Test(timeOut = 3000L, dataProvider = "providesLogs")
     public void minOperations_whenOpsIsNotNull_thenReturnNewScore(String[] logs, int expected) {
         assertEquals(new Solution().minOperations(logs), expected);
     }

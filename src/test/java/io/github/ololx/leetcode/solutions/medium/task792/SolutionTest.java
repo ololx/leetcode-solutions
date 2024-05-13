@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesStringAndWords")
+    @Test(timeOut = 3000L, dataProvider = "providesStringAndWords")
     public void numMatchingSubseq_whenWordsContainsSubstrings_thenReturnCount(String s,
                                                                               String[] words,
                                                                               int expected) {

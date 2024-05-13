@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "nums")
+    @Test(timeOut = 3000L, dataProvider = "nums")
     public void singleNumber_whenArrayIsNotEmpty_thenReturnUniqueNumber(int[] nums, int singleNumber) {
         assertEquals(new Solution().singleNumber(nums), singleNumber);
     }

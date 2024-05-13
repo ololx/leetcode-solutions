@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionV2Test {
 
-    @Test
+    @Test(timeOut = 3000L)
     public void getMin_whenMinValueExists_thenReturnMinValue() {
         SolutionV2.MinStack minStack = new SolutionV2.MinStack();
         minStack.push(-2);

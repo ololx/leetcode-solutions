@@ -41,7 +41,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "sizes")
+    @Test(timeOut = 3000L, dataProvider = "sizes")
     void generateMatrix_whenMatrixHasNonZeroSize_thenReturnNewSpiralMatrix(int n, int[][] expected) {
         int[][] actual = new Solution().generateMatrix(n);
 

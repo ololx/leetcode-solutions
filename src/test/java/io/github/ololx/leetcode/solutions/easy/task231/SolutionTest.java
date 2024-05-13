@@ -28,18 +28,11 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void isPowerOfTwo_whenNumIsPowerOf2_thenReturnTrue(int n , boolean expected) {
         boolean actual = new Solution().isPowerOfTwo(n);
         log.info("Expected = " + expected + " & actual = " + actual);
 
         assertEquals(actual, expected);
-    }
-
-    @Test
-    public void i() {
-        int n = 5;
-        int actual = 5 ^ ((1 << 1 + (int) floor((Math.log(n) / Math.log(2)))) - 1);
-        log.info("Expected actual = " + actual);
     }
 }

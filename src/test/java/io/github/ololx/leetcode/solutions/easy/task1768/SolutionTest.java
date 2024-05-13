@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesStrings")
+    @Test(timeOut = 3000L, dataProvider = "providesStrings")
     public void mergeAlternately_whenStr1AndStr2IsNotEmpty_thenMergedString(String str1 ,
                                                                             String str2,
                                                                             String expected) {

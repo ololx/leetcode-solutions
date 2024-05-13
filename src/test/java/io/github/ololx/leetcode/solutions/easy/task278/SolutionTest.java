@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "versionsCountAndBadVersionNumber")
+    @Test(timeOut = 3000L, dataProvider = "versionsCountAndBadVersionNumber")
     public void firstBadVersion_whenBadVersionExists_thenReturnVersionNumber(int n , int bad) {
         assertEquals(new Solution(bad).firstBadVersion(n), bad);
     }

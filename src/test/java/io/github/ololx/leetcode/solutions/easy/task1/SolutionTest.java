@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "numbersAndSum")
+    @Test(timeOut = 3000L, dataProvider = "numbersAndSum")
     public void twoSum_whenTwoSumIsExists_thenReturnTwoSum(int[] nums, int target, int[] result) {
         assertEquals(new Solution().twoSum(nums, target), result);
     }

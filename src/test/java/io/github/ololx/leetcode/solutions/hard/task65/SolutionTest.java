@@ -39,7 +39,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "numbersAndResultOfValidation")
+    @Test(timeOut = 3000L, dataProvider = "numbersAndResultOfValidation")
     public void isNumber_whenStringISValidNumber_thenReturnTrue(String s, boolean result) {
         System.out.println("S = " + s + "   result = " + result);
         assertEquals(new Solution().isNumber(s), result);

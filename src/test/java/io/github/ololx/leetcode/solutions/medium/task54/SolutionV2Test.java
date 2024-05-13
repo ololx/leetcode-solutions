@@ -70,7 +70,7 @@ public class SolutionV2Test {
         };
     }
 
-    @Test(dataProvider = "providesMatrixAndList")
+    @Test(timeOut = 3000L, dataProvider = "providesMatrixAndList")
     void spiralOrder_whenMatrixIsNotNull_thenReturnListInSpiralOrder(int[][] matrix, List<Integer> expected) {
         List<Integer> actual = new SolutionV2().spiralOrder(matrix);
         log.info("Spiral Order - " + actual);

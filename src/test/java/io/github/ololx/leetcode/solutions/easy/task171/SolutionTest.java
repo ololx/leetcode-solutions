@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "columnsTitlesAndIndexes")
+    @Test(timeOut = 3000L, dataProvider = "columnsTitlesAndIndexes")
     public void titleToNumber_whenColumnTitleIsNotEmpty_thenReturnColumnIndex(String columnTitle, int columnNumber) {
         assertEquals(new Solution().titleToNumber(columnTitle), columnNumber);
     }

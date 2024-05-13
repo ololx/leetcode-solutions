@@ -26,7 +26,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "stringsAndZigZagStrings")
+    @Test(timeOut = 3000L, dataProvider = "stringsAndZigZagStrings")
     public void convert_whenStringIsNotNull_thenReturnZigZagString(String string, int numRows, String zigzagString) {
         log.info(
                 String.format(

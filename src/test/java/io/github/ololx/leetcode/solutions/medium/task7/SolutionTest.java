@@ -28,7 +28,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "numbers")
+    @Test(timeOut = 3000L, dataProvider = "numbers")
     public void reverse_whenNumberIsNot0_thenReturnReversedNumber(int number, int reversedNumber) {
         assertEquals(
                 new Solution().reverse(number),

@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesStrings")
+    @Test(timeOut = 3000L, dataProvider = "providesStrings")
     public void reorderSpaces_whenStringIsNotNull_thenReorderSpaces(String s, String expected) {
         assertEquals(new Solution().reorderSpaces(s), expected);
     }

@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "columnsNumbersAndTitles")
+    @Test(timeOut = 3000L, dataProvider = "columnsNumbersAndTitles")
     public void convertToTitle_whenColumNumberIsMoreThanZero_thenReturnNonEmptyColumnTitle(int columnNumber, String columnTitle) {
         assertEquals(new Solution().convertToTitle(columnNumber), columnTitle);
     }

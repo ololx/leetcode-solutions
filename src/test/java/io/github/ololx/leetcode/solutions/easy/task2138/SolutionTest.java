@@ -20,7 +20,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesStringsKAndFill")
+    @Test(timeOut = 3000L, dataProvider = "providesStringsKAndFill")
     public void divideString_whenStringIsNotEmpty_thenDivideString(String s,
                                                                    int k,
                                                                    char fill,

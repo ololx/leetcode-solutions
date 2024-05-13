@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "stones")
+    @Test(timeOut = 3000L, dataProvider = "stones")
     public void canWinNim_whenStonesAreNotAMultipleOfFour_thenReturnTrue(int stones , boolean canWin) {
         assertEquals(new Solution().canWinNim(stones), canWin);
     }

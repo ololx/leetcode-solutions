@@ -28,7 +28,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "parenthesesAndResult")
+    @Test(timeOut = 3000L, dataProvider = "parenthesesAndResult")
     public void isValid_whenParenthesesIsValid_thenReturnTrue(String parentheses , boolean result) {
         assertEquals(new Solution().isValid(parentheses), result);
     }

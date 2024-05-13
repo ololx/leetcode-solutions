@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesNums")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void digitCount_whenNumIsCorrect_thenReturnTue(String num, boolean expected) {
         assertEquals(new Solution().digitCount(num), expected);
     }

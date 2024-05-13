@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "fieldsAndPaths")
+    @Test(timeOut = 3000L, dataProvider = "fieldsAndPaths")
     public void uniquePaths_whenRobotAneExitAreNotSameCell_thenReturnNonZeroNumberOfUniqueWays(int m, int n, int pathsCount) {
         assertEquals(new Solution().uniquePaths(m, n), pathsCount);
     }

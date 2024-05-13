@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNum1AndNum2")
+    @Test(timeOut = 3000L, dataProvider = "providesNum1AndNum2")
     public void countOperations_whenNum1IsNotEqualNum2_thenReturnMoreOneCount(int num1,
                                                                               int num2,
                                                                               int expected) {

@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesStrings")
+    @Test(timeOut = 3000L, dataProvider = "providesStrings")
     public void reversePrefix_whenWordAndChIsNotEmpty_thenReverseWord(String word ,
                                                                       char ch,
                                                                       String expected) {

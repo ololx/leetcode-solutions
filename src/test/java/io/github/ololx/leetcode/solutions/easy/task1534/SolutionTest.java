@@ -38,8 +38,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesArraysAndABC")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesArraysAndABC")
     public void countGoodTriplets_whenGoodTripletsAreExist_thenReturnCountOfAll(int[] arr,
                                                                                 int a,
                                                                                 int b,

@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionV2Test extends AbstractSolutionTest {
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void majorityElement_whenNumsIsNotEmpty_thenReturnMajorityNum(int[] nums, int expected) {
         assertEquals(new SolutionV2().majorityElement(nums), expected);
     }

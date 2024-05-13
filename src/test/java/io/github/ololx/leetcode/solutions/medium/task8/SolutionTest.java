@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "atoiStringsAndIntegers")
+    @Test(timeOut = 3000L, dataProvider = "atoiStringsAndIntegers")
     public void myAtoi_whenStringIsNotEmpty_thenReturnNonZeroInteger(String s , int integer) {
         assertEquals(new Solution().myAtoi(s), integer);
     }

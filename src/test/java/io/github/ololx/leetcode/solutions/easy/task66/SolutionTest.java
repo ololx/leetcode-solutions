@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesDigits")
+    @Test(timeOut = 3000L, dataProvider = "providesDigits")
     public void plusOne_whenDigitsPlusOneHasCarry_thenReturnNewNumWithNewDigit(int[] digits, int[] expected) {
         assertEquals(new Solution().plusOne(digits), expected);
     }

@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesArrays")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesArrays")
     public void decode_whenEncodedExists_thenReturnDecoded(int[] encoded,
                                                            int first,
                                                            int[] expected) {

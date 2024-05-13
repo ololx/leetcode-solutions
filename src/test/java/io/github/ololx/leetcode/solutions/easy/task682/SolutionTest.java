@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesScoreOps")
+    @Test(timeOut = 3000L, dataProvider = "providesScoreOps")
     public void calPoints_whenOpsIsNotNull_thenReturnNewScore(String[] ops, int expected) {
         assertEquals(new Solution().calPoints(ops), expected);
     }

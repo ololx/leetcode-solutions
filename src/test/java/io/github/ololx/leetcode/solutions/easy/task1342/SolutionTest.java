@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void numberOfSteps_whenNumIsMoreThenZero_thenReturnNumberOfStepsToReduce(int num,
                                                                                     int expected) {
         assertEquals(new Solution().numberOfSteps(num), expected);

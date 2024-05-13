@@ -69,8 +69,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesTreeNodes")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesTreeNodes")
     public void flatten_whenRootIsNotNull_thenReturnAllFlatten(Solution.TreeNode root,
                                                                Solution.TreeNode expected) {
         new Solution().flatten(root);

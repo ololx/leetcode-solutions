@@ -38,7 +38,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesTreeNodes")
+    @Test(timeOut = 3000L, dataProvider = "providesTreeNodes")
     public void maxDepth_whenTreesHasNodes_thenReturnMaxDepth(Solution.TreeNode root, int expected) {
         assertEquals(new Solution().maxDepth(root), expected);
     }

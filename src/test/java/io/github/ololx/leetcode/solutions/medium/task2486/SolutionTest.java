@@ -23,8 +23,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesSAndT")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesSAndT")
     public void appendCharacters_whenTCanBeSubOfS_thenReturnCountOfAdditionalSymbols(String s,
                                                                                      String t,
                                                                                      int expected) {

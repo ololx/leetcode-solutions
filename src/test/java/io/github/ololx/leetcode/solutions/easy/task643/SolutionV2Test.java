@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionV2Test extends AbstractSolutionTest {
 
-    @Test(dataProvider = "providesNumsAndSubArraySize")
+    @Test(timeOut = 3000L, dataProvider = "providesNumsAndSubArraySize")
     public void findMaxAverage_whenNumsIsMoreThanOne_thenReturnMaxAVG(int[] nums,
                                                                       int k,
                                                                       double expected) {

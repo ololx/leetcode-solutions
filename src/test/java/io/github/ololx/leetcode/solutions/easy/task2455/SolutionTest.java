@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesNums")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void averageValue_whenEventDivisibleBy3AreExist_thenReturnAverageOfAll(int[] nums,
                                                                                   int expected) {
         assertEquals(new Solution().averageValue(nums), expected);

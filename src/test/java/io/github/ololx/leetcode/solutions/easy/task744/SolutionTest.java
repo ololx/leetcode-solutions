@@ -13,8 +13,8 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest extends AbstractSolutionTest {
 
-    //@LogParam
-    @Test(dataProvider = "providesLettersAndTarget")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesLettersAndTarget")
     public void nextGreatestLetter_whenGreatestLetterExists_thenReturnIt(char[] letters,
                                                                          char target,
                                                                          char expected) {

@@ -32,8 +32,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "provides2Ds")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "provides2Ds")
     public void rotate_whenMatrixExists_thenRotateOn90Degree(int[][] matrix, int[][] expected) {
         new Solution().rotate(matrix);
         assertEquals(matrix, expected);

@@ -22,8 +22,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesN")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesN")
     public void evenOddBit_whenNumberIsNotNull_thenReturnEvenAndOddBitCount(int n, int[] expected) {
         assertEquals(new Solution().evenOddBit(n), expected);
     }

@@ -21,7 +21,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesBinaryNumbersAndSum")
+    @Test(timeOut = 3000L, dataProvider = "providesBinaryNumbersAndSum")
     public void addBinary_whenNumberIsNotNull_thenReturnSumOf(String a, String b, String sum) {
         assertEquals(new Solution().addBinary(a, b), sum);
     }

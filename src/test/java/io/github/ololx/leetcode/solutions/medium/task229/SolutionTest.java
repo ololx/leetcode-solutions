@@ -25,8 +25,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesNums")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void majorityElement_whenNumsIsNotNull_thenReturnMajorityElements(int[] nums,
                                                                              List<Integer> expected) {
         assertEquals(new Solution().majorityElement(nums), expected);

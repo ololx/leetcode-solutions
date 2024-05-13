@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionV2Test extends AbstractSolutionTest {
 
-    @Test(dataProvider = "providesXY")
+    @Test(timeOut = 3000L, dataProvider = "providesXY")
     public void hammingDistance_whenXIsNotEqualsToY_thenReturnDistance(int x, int y, int expected) {
         assertEquals(new SolutionV2().hammingDistance(x, y), expected);
     }

@@ -27,7 +27,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesArraysWitDigits")
+    @Test(timeOut = 3000L, dataProvider = "providesArraysWitDigits")
     public void sortByBits_whenArrayIsNotEmpty_thenReturnSortedArrayByBitCounts(int[] digits ,
                                                                                 int[] expected) {
         assertEquals(new Solution().sortByBits(digits), expected);

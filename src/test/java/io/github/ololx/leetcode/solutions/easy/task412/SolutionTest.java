@@ -34,7 +34,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesN")
+    @Test(timeOut = 3000L, dataProvider = "providesN")
     public void fizzBuzz_whenNMoreThanZero_thenReturnFizzBuzzString(int n , List<String> expected) {
         assertEquals(new Solution().fizzBuzz(n), expected);
     }

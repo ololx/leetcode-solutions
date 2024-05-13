@@ -24,7 +24,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "integerAndRomanNumbers")
+    @Test(timeOut = 3000L, dataProvider = "integerAndRomanNumbers")
     public void intToRoman_whenIntegerIsDefine_thenReturnNonZeroRomanNumber(int integer, String roman) {
         assertEquals(new Solution().intToRoman(integer), roman);
     }

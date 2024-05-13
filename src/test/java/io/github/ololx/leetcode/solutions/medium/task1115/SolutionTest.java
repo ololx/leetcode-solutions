@@ -24,7 +24,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesFooBarPrintingCount", invocationCount = 3)
+    @Test(timeOut = 3000L, dataProvider = "providesFooBarPrintingCount", invocationCount = 3)
     public void fooBar_whenFooAndBarMethodsExecuteNTimesInDifferentThreads_thenPrintFooBarNTimes(int n,
                                                                                                  String expected) {
         final StringBuffer actual = new StringBuffer();

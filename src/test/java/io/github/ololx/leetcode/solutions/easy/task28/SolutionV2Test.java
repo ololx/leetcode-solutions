@@ -21,7 +21,7 @@ public class SolutionV2Test {
         };
     }
 
-    @Test(dataProvider = "providesHaystacksAndNeedles")
+    @Test(timeOut = 3000L, dataProvider = "providesHaystacksAndNeedles")
     public void reverseString_whenCharsMoreThanOneChar_thenReverseChars(String haystack,
                                                                         String needle,
                                                                         int expected) {

@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionTest extends AbstractSolutionTest {
 
-    @Test(dataProvider = "providesStrings")
+    @Test(timeOut = 3000L, dataProvider = "providesStrings")
     public void reverseWords_whenSContainsWords_thenReturnReversedEachWorkInS(String s,
                                                                               String expected) {
         assertEquals(new Solution().reverseWords(s), expected);

@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
  */
 public class SolutionTest {
 
-    @Test
+    @Test(timeOut = 3000L)
     public void testQueueOperations() {
         Solution.MyQueue myQueue = new Solution.MyQueue();
 

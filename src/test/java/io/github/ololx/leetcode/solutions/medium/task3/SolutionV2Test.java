@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
  */
 public class SolutionV2Test extends AbstractSolutionTest {
 
-    @Test(dataProvider = "stringsAndSubstrings")
+    @Test(timeOut = 3000L, dataProvider = "stringsAndSubstrings")
     public void lengthOfLongestSubstring_returnSubstringLength(String string, String substring) {
         assertEquals(new SolutionV2().lengthOfLongestSubstring(string), substring.length());
     }

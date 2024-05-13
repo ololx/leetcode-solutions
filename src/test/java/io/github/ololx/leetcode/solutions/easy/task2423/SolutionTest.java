@@ -39,8 +39,8 @@ public class SolutionTest {
         };
     }
 
-    //@LogParam
-    @Test(dataProvider = "providesWords")
+    @LogParam
+    @Test(timeOut = 3000L, dataProvider = "providesWords")
     public void equalFrequency_whendecOneFrequencyAndAllFrequenciesAreSame_thenReturnTrue(String word,
                                                                                           boolean expected) {
         assertEquals(new Solution().equalFrequency(word), expected);

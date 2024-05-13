@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void mySqrt_whenXMoreThanOne_thenReturnSQRTRounded(int x, int expected) {
         assertEquals(new Solution().mySqrt(x), expected);
     }

@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNums")
+    @Test(timeOut = 3000L, dataProvider = "providesNums")
     public void runningSum_whenNumsMoreThenOne_thenReturnSumOfAll(int[] nums, int[] expected) {
         assertEquals(new Solution().runningSum(nums), expected);
     }

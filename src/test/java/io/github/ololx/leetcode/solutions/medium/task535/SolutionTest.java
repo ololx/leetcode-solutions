@@ -20,12 +20,12 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesUrls")
+    @Test(timeOut = 3000L, dataProvider = "providesUrls")
     public void encode_whenLongUrlIsNotNull_thenReturnTinyUrl(String longUrl, String shortUrl) {
         assertEquals(new Solution.Codec().encode(longUrl), shortUrl);
     }
 
-    @Test(dataProvider = "providesUrls")
+    @Test(timeOut = 3000L, dataProvider = "providesUrls")
     public void decode_whenLongUrlIsNotNull_thenReturnTinyUrl(String longUrl, String shortUrl) {
         //We need to create short url and add the hash
         Solution.Codec codec = new Solution.Codec();

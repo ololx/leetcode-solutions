@@ -16,7 +16,7 @@ public class SolutionTest {
 
     private static final Logger log = Logger.getLogger(Solution.class.getCanonicalName());
 
-    @Test
+    @Test(timeOut = 3000L)
     public void push_whenElementWasPushed_thenPopReturnElement() {
         Solution.MyStack stack = new Solution.MyStack();
 

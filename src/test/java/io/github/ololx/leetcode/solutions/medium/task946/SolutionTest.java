@@ -16,7 +16,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesPushedAndPopes")
+    @Test(timeOut = 3000L, dataProvider = "providesPushedAndPopes")
     public void validateStackSequences_whenPushedCouldBePopped_thenReturnTrue(int[] pushed, int[] popped, boolean expected) {
         assertEquals(new Solution().validateStackSequences(pushed, popped), expected);
     }

@@ -41,7 +41,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesLists")
+    @Test(timeOut = 3000L, dataProvider = "providesLists")
     public void hasCycle_whenCycleIsPresented_thenReturnTrue(Solution.ListNode list,
                                                             boolean expected) {
         assertEquals(new Solution().hasCycle(list), expected);

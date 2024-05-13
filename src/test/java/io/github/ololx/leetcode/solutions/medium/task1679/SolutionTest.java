@@ -23,7 +23,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNumsAndK")
+    @Test(timeOut = 3000L, dataProvider = "providesNumsAndK")
     public void maxOperations_whenNumsContainsSumOfTwoEqualsK_thenReturnCountOfDeleteOperations(int[] nums, int k, int expected) {
         assertEquals(new Solution().maxOperations(nums, k), expected);
     }

@@ -22,7 +22,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesString")
+    @Test(timeOut = 3000L, dataProvider = "providesString")
     public void minRemoveToMakeValid_whenStringIsNotNull_thenReturnRightString(String s, String expected) {
         assertEquals(new Solution().minRemoveToMakeValid(s), expected);
     }

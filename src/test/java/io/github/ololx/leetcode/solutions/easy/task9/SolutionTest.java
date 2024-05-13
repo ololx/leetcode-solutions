@@ -25,7 +25,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "numbers")
+    @Test(timeOut = 3000L, dataProvider = "numbers")
     public void isPalindrome_whenNumberIsPalindrome_thenReturnTrue(int number, boolean isPalindrome) {
         assertEquals(
                 new Solution().isPalindrome(number),

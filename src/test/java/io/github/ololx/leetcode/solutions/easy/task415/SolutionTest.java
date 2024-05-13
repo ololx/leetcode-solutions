@@ -38,7 +38,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNumbers")
+    @Test(timeOut = 3000L, dataProvider = "providesNumbers")
     public void addString_whenNumberIsNotNull_thenReturnSumOf(String num1, String num2, String expected) {
         assertEquals(new Solution().addStrings(num1, num2), expected);
     }

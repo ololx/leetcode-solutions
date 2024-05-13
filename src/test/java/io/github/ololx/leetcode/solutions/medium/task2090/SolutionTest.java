@@ -34,7 +34,7 @@ public class SolutionTest {
         };
     }
 
-    @Test(dataProvider = "providesNumsAndRadius")
+    @Test(timeOut = 3000L, dataProvider = "providesNumsAndRadius")
     public void getAverages_whenKMoreThanZero_thenReturnRadiusArray(int[] nums,
                                                                     int k,
                                                                     int[] expected) {
