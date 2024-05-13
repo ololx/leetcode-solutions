@@ -109,7 +109,7 @@ public class Solution {
 
         Semaphore numberSemaphore = new Semaphore(1);
 
-        private int n;
+        private final int n;
 
         public FizzBuzz(int n) {
             this.n = n;
