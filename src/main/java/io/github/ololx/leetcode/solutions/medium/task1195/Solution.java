@@ -118,13 +118,11 @@ public class Solution {
         // printFizz.run() outputs "fizz".
         public void fizz(Runnable printFizz) throws InterruptedException {
             for (int number = 3; number <= n; number += 3) {
-                fizzSemaphore.acquire();
-
                 if (number % 5 == 0) {
-                    fizzSemaphore.release();
                     continue;
                 }
 
+                fizzSemaphore.acquire();
                 printFizz.run();
                 numberSemaphore.release();
             }
@@ -133,13 +131,11 @@ public class Solution {
         // printBuzz.run() outputs "buzz".
         public void buzz(Runnable printBuzz) throws InterruptedException {
             for (int number = 5; number <= n; number += 5) {
-                buzzSemaphore.acquire();
-
                 if (number % 3 == 0) {
-                    buzzSemaphore.release();
                     continue;
                 }
 
+                buzzSemaphore.acquire();
                 printBuzz.run();
                 numberSemaphore.release();
             }
@@ -149,11 +145,9 @@ public class Solution {
         public void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
             for (int number = 15; number <= n; number += 15) {
                 fizzBuzzSemaphore.acquire();
-
                 printFizzBuzz.run();
                 numberSemaphore.release();
             }
-
         }
 
         // printNumber.accept(x) outputs "x", where x is an integer.
@@ -172,11 +166,6 @@ public class Solution {
                     numberSemaphore.release();
                 }
             }
-
-            fizzBuzzSemaphore.release();
-            fizzSemaphore.release();
-            buzzSemaphore.release();
-            numberSemaphore.release();
         }
     }
 }
