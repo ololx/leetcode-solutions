@@ -84,7 +84,7 @@ public class Solution {
 
         private final AtomicBoolean isOddNext = new AtomicBoolean(true);
 
-        private int n;
+        private final int n;
 
         public ZeroEvenOdd(int n) {
             this.n = n;
