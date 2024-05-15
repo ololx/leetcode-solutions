@@ -10,11 +10,11 @@ import static org.testng.Assert.assertEquals;
  *     project leetcode-solutions
  *     created 14/05/2024 5:36pm
  */
-public class SolutionTest extends AbstractSolutionTest {
+public class SolutionV2Test extends AbstractSolutionTest {
 
     @LogParam
     @Test(timeOut = 1000L, dataProvider = "providesMaps")
     public void islandPerimeter_whenIslandExists_thenReturnPerimeter(int[][] grid, int expected) {
-        assertEquals(new Solution().islandPerimeter(grid), expected);
+        assertEquals(new SolutionV2().islandPerimeter(grid), expected);
     }
 }
