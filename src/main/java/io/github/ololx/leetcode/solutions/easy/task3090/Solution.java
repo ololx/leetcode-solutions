@@ -4,6 +4,39 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 3090. Maximum Length Substring With Two Occurrences
+ *
+ * Given a string s, return the maximum length of a substring such that it contains at most two occurrences of each
+ * character.
+ *
+ * Example 1:
+ * <p>Input: s = "bcbbbcba"
+ *
+ * Output: 4
+ *
+ * Explanation:
+ *
+ * The following substring has a length of 4 and contains at most two occurrences of each character: "bcbbbcba".</p>
+ *
+ * Example 2:
+ * <p>Input: s = "aaaa"
+ *
+ * Output: 2
+ *
+ * Explanation:
+ *
+ * The following substring has a length of 2 and contains at most two occurrences of each character: "aaaa".</p>
+ *
+ * Constraints:
+ * <ul>
+ *      <li>
+ *          2 <= s.length <= 100
+ *      </li>
+ *      <li>
+ *          s consists only of lowercase English letters.
+ *      </li>
+ * </ul>
+ *
  * @author Alexander A. Kropotin
  *     project leetcode-solutions
  *     created 20/05/2024 10:41am
