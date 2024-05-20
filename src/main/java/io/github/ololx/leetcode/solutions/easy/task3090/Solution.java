@@ -45,24 +45,19 @@ public class Solution {
 
     public int maximumLengthSubstring(String s) {
         int maxLengthOfSubstring = 0;
+        char[] occurrences = new char[26];
 
-        Map<Character, Integer> occurrences = new HashMap<>();
         for (int rightPoint = 0, leftPoint = 0; rightPoint < s.length(); rightPoint++) {
             char rightCharacter = s.charAt(rightPoint);
-            int rightOccurrences = occurrences.getOrDefault(rightCharacter, 0);
+            occurrences[rightCharacter - 'a']++;
 
-            if (rightOccurrences < 2) {
-                occurrences.put(rightCharacter, ++rightOccurrences);
+            if (occurrences[rightCharacter - 'a'] <= 2) {
                 maxLengthOfSubstring = Math.max(maxLengthOfSubstring, rightPoint - leftPoint + 1);
                 continue;
             }
 
-            rightPoint--;
-
-            while (occurrences.get(rightCharacter) == 2) {
-                char leftCharacter = s.charAt(leftPoint);
-                int leftOccurrences = occurrences.get(leftCharacter);
-                occurrences.put(leftCharacter, --leftOccurrences);
+            while (occurrences[rightCharacter - 'a'] > 2) {
+                occurrences[s.charAt(leftPoint) - 'a']--;
                 leftPoint++;
             }
         }
