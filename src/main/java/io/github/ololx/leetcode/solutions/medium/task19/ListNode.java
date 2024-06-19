@@ -1,5 +1,7 @@
 package io.github.ololx.leetcode.solutions.medium.task19;
 
+import java.util.Objects;
+
 /**
  * @author Alexander A. Kropotin
  *     project leetcode-solutions
@@ -18,5 +20,33 @@ class ListNode {
     ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
+    }
+
+    @Override
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+
+        if (!(o instanceof ListNode)) {
+            return false;
+        }
+
+        final ListNode listNode = (ListNode) o;
+
+        return val == listNode.val && Objects.equals(next, listNode.next);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(val, next);
+    }
+
+    @Override
+    public String toString() {
+        return "ListNode{" +
+            "val=" + val +
+            ", next=" + next +
+            '}';
     }
 }

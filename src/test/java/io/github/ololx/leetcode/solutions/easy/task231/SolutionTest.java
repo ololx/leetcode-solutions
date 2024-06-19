@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import java.util.logging.Logger;
 
-import static java.lang.Math.floor;
 import static org.testng.Assert.assertEquals;
 
 /**
