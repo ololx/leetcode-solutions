@@ -1,8 +1,5 @@
 package io.github.ololx.leetcode.solutions.easy.task3090;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 3090. Maximum Length Substring With Two Occurrences
  *
