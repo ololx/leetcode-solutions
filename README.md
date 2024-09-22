@@ -1007,7 +1007,7 @@ This is a repository with my solutions to problems from www.leetcode.com.
     </tr>
     <tr>
         <td>165</td>
-        <td><a href="https://leetcode.com/problems/unknown">UNKNOWN</a></td>
+        <td><a href="https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts">Find the Longest Substring Containing Vowels in Even Counts</a></td>
         <td><a href="https://github.com/ololx/leetcode-solutions/tree/main/src/main/java/io/github/ololx/leetcode/solutions/medium/task1371/Solution.java">Solution</a></td>
         <td>MEDIUM</td>
     </tr>
