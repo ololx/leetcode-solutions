@@ -23,7 +23,7 @@ package io.github.ololx.leetcode.solutions.medium.task1306;
  * One possible way to reach at index 3 with value 0 is:
  * index 0 -> index 4 -> index 1 -> index 3</p>
  *
- * Example 2:
+ * Example 3:
  * <p>Input: arr = [3,0,2,1,2], start = 2
  * Output: false
  * Explanation: There is no way to reach at index 1 with value 0.</p>
